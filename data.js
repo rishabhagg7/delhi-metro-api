@@ -8,19 +8,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jhilmil",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shaheed_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -41,19 +41,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dilshad_garden",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mansrover_park",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -74,19 +74,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jhilmil",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shahdara",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -107,19 +107,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mansrover_park",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "welcome",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -140,33 +140,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "east_azad_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jafrabad",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shahdara",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "seelam_pur",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -180,7 +180,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "red",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -194,19 +194,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "welcome",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shastri_park",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -227,19 +227,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "seelam_pur",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kashmere_gate",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -260,42 +260,42 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "lal_quila",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "civil_lines",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "chandni_chowk",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shastri_park",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "tis_hazari",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -310,17 +310,17 @@ export const stations = [
         {
           "from_line": "red",
           "to_line": "violet",
-          "time_seconds": 180
+          "time_seconds": 240
         },
         {
           "from_line": "red",
           "to_line": "yellow",
-          "time_seconds": 180
+          "time_seconds": 240
         },
         {
           "from_line": "violet",
           "to_line": "yellow",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -334,19 +334,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "pul_bangash",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kashmere_gate",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -367,19 +367,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "pratap_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "tis_hazari",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -400,19 +400,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "pul_bangash",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shastri_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -433,19 +433,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "pratap_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "inderlok",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -466,28 +466,28 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "shastri_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kanhaiya_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "ashok_park_main",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -501,7 +501,7 @@ export const stations = [
         {
           "from_line": "green",
           "to_line": "red",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -515,19 +515,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "inderlok",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "keshav_puram",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -548,19 +548,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kanhaiya_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "netaji_subash_place",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -581,33 +581,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "keshav_puram",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kohat_enclave",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shalimar_bagh",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shakurpur",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -621,7 +621,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "red",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -635,19 +635,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "netaji_subash_place",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "pitampura",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -668,19 +668,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kohat_enclave",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "rohini_east",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -701,19 +701,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "pitampura",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "rohini_west",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -734,19 +734,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rohini_east",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "rithala",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -767,14 +767,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rohini_west",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -795,19 +795,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mundka_industrial_area_(m.i.a)",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "rajdhani_park",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -828,19 +828,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mundka",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "nangloi_railway_station",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -861,19 +861,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rajdhani_park",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "nangloi",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -894,19 +894,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "nangloi_railway_station",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "maharaja_surajmal_stadium",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -927,19 +927,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "nangloi",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "udyog_nagar",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -960,19 +960,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "maharaja_surajmal_stadium",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "peera_garhi",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -993,19 +993,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "udyog_nagar",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "paschim_vihar_(west)",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -1026,19 +1026,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "peera_garhi",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "paschim_vihar_(east)",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -1059,19 +1059,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "paschim_vihar_(west)",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "madipur",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -1092,19 +1092,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "paschim_vihar_(east)",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shivaji_park",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -1125,19 +1125,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "madipur",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "punjabi_bagh",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -1158,19 +1158,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "shivaji_park",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "ashok_park_main",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -1191,24 +1191,24 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "inderlok",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "punjabi_bagh",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "satguru_ram_singh_marg",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -1229,19 +1229,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kirti_nagar",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "ashok_park_main",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -1262,14 +1262,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rohini_sector_18-19",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1290,19 +1290,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "samaypur_badli",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "haiderpur_badli_mor",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1323,19 +1323,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rohini_sector_18-19",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jahangirpuri",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1356,19 +1356,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "haiderpur_badli_mor",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "adarsh_nagar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1389,19 +1389,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jahangirpuri",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "azadpur",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1422,33 +1422,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "majlis_park",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shalimar_bagh",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "adarsh_nagar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "model_town",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1462,7 +1462,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "yellow",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -1476,19 +1476,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "azadpur",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "guru_tegh_bahadur_nagar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1509,19 +1509,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "model_town",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "vishwavidyalaya",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1542,19 +1542,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "guru_tegh_bahadur_nagar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "vidhan_sabha",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1575,19 +1575,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "vishwavidyalaya",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "civil_lines",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1608,19 +1608,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "vidhan_sabha",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kashmere_gate",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1641,19 +1641,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "chawri_bazar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kashmere_gate",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1674,19 +1674,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "chandni_chowk",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "new_delhi",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1707,28 +1707,28 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "orange/airport",
-        "dwell_time_seconds": 60
+        "name": "orange/airport",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "shivaji_stadium",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "chawri_bazar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "rajiv_chowk",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1742,7 +1742,7 @@ export const stations = [
         {
           "from_line": "orange/airport",
           "to_line": "yellow",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -1756,33 +1756,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "new_delhi",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "patel_chowk",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "barakhamba",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "rk_ashram_marg",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -1796,7 +1796,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "yellow",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -1810,19 +1810,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rajiv_chowk",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "central_secretariat",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1843,33 +1843,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "janpath",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "khan_market",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "patel_chowk",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "udyog_bhawan",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1883,7 +1883,7 @@ export const stations = [
         {
           "from_line": "violet",
           "to_line": "yellow",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -1897,19 +1897,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "central_secretariat",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "lok_kalyan_marg",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1930,19 +1930,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "udyog_bhawan",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jorbagh",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1963,19 +1963,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "lok_kalyan_marg",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dilli_haat_-_ina",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -1996,33 +1996,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sarojini_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "south_extension",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jorbagh",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "aiims",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2036,7 +2036,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "yellow",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -2050,19 +2050,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dilli_haat_-_ina",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "green_park",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2083,19 +2083,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "aiims",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "hauz_khas",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2116,33 +2116,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "panchsheel_park",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "iit",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "green_park",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "malviya_nagar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2156,7 +2156,7 @@ export const stations = [
         {
           "from_line": "magenta",
           "to_line": "yellow",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -2170,19 +2170,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "hauz_khas",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "saket",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2203,19 +2203,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "malviya_nagar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "qutab_minar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2236,19 +2236,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "saket",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "chhattarpur",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2269,19 +2269,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "qutab_minar",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sultanpur",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2302,19 +2302,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "chhattarpur",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "ghitorni",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2335,19 +2335,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sultanpur",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "arjan_garh",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2368,19 +2368,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "ghitorni",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "gurudronacharya",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2401,19 +2401,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "arjan_garh",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sikanderpur",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2434,33 +2434,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sikanderpur_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "phase-i_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "gurudronacharya",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mg_road",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2474,7 +2474,7 @@ export const stations = [
         {
           "from_line": "rapid",
           "to_line": "yellow",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -2488,19 +2488,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sikanderpur",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "iffco_chowk",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2521,19 +2521,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mg_road",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "huda_city_centre",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2554,14 +2554,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "yellow",
-        "dwell_time_seconds": 60
+        "name": "yellow",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "iffco_chowk",
-        "line_color": "yellow",
+        "line": "yellow",
         "travel_time_seconds": 120
       }
     ],
@@ -2582,14 +2582,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kaushambi",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2610,19 +2610,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "vaishali",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "anand_vihar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2643,33 +2643,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "ip_extension",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kaushambi",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "karkarduma",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "karkarduma",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -2683,7 +2683,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "pink",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -2697,33 +2697,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "karkarduma_court",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "anand_vihar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "anand_vihar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "preet_vihar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2737,7 +2737,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "pink",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -2751,19 +2751,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "karkarduma",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "nirman_vihar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2784,19 +2784,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "preet_vihar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "laxmi_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2817,19 +2817,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "nirman_vihar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "yamuna_bank",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2850,19 +2850,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec-34",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "golf_course",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2883,19 +2883,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_city_centre",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "botanical_garden",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2916,28 +2916,28 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "okhla_bird_sanctuary",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "golf_course",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sec_-18",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2951,7 +2951,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "magenta",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -2965,19 +2965,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "botanical_garden",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sec_-16",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -2998,19 +2998,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec_-18",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sec_-15",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3031,19 +3031,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec_-16",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "new_ashok_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3064,19 +3064,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec_-15",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mayur_vihar_ext",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3097,19 +3097,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "new_ashok_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mayur_vihar-i",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3130,33 +3130,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sarai_kale_khan_-_nizamuddin",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mayur_vihar_pocket_1",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mayur_vihar_ext",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "akshardham",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3170,7 +3170,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "pink",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -3184,19 +3184,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mayur_vihar-i",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "yamuna_bank",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3217,24 +3217,24 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "laxmi_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "akshardham",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "indraprastha",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3255,19 +3255,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "yamuna_bank",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "supreme_court",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3288,19 +3288,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "indraprastha",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mandi_house",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3321,33 +3321,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "ito",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "janpath",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "supreme_court",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "barakhamba",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3361,7 +3361,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "violet",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -3375,19 +3375,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rajiv_chowk",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mandi_house",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3408,19 +3408,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rajiv_chowk",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jhandewalan",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3441,19 +3441,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rk_ashram_marg",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "karol_bagh",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3474,19 +3474,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jhandewalan",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "rajendra_place",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3507,19 +3507,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "karol_bagh",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "patel_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3540,19 +3540,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rajendra_place",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shadipur",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3573,19 +3573,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kirti_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "patel_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3606,28 +3606,28 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "moti_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "satguru_ram_singh_marg",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shadipur",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3641,7 +3641,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "green",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -3655,19 +3655,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kirti_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "ramesh_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3688,19 +3688,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "moti_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "rajouri_garden",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3721,33 +3721,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "ramesh_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "tagore_garden",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "esi_basai_darapur",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mayapuri",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -3761,7 +3761,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "pink",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -3775,19 +3775,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rajouri_garden",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "subash_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3808,19 +3808,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "tagore_garden",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "tilak_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3841,19 +3841,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "subash_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "janak_puri_east",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3874,19 +3874,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "tilak_nagar",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "janak_puri_west",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3907,28 +3907,28 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "janak_puri_east",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "uttam_nagar_east",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dabri_mor_-_janakpuri_south",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -3942,7 +3942,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "magenta",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -3956,19 +3956,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "janak_puri_west",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "uttam_nagar_west",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -3989,19 +3989,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "uttam_nagar_east",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "nawada",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4022,19 +4022,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "uttam_nagar_west",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka_mor",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4055,19 +4055,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "nawada",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4088,28 +4088,28 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "gray",
-        "dwell_time_seconds": 60
+        "name": "gray",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_mor",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka_sector_-_14",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "nangli",
-        "line_color": "gray",
+        "line": "gray",
         "travel_time_seconds": 120
       }
     ],
@@ -4123,7 +4123,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "gray",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -4137,19 +4137,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka_sector_-_13",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4170,19 +4170,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_sector_-_14",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka_sector_-_12",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4203,19 +4203,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_sector_-_13",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka_sector_-_11",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4236,19 +4236,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_sector_-_12",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka_sector_-_10",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4269,19 +4269,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_sector_-_11",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka_sector_-_9",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4302,19 +4302,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_sector_-_10",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka_sector_-_8",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4335,19 +4335,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_sector_-_9",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dwarka_sector_-_21",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -4368,23 +4368,23 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "orange/airport",
-        "dwell_time_seconds": 60
+        "name": "orange/airport",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_sector_-_8",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "igi_airport",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       }
     ],
@@ -4398,7 +4398,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "orange/airport",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -4412,19 +4412,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "delhi_gate",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mandi_house",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4445,19 +4445,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "central_secretariat",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mandi_house",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4478,19 +4478,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jawahar_lal_nehru_stadium",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "central_secretariat",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4511,19 +4511,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "khan_market",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jangpura",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4544,19 +4544,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jawahar_lal_nehru_stadium",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "lajpat_nagar",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4577,33 +4577,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jangpura",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "moolchand",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "south_extension",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "vinobapuri",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -4617,7 +4617,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "violet",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -4631,19 +4631,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "lajpat_nagar",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kailash_colony",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4664,19 +4664,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "moolchand",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "nehru_place",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4697,19 +4697,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kailash_colony",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kalkaji_mandir",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4730,33 +4730,33 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       },
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "nehru_place",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "govind_puri",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "okhla_nsic",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "nehru_enclave",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -4770,7 +4770,7 @@ export const stations = [
         {
           "from_line": "magenta",
           "to_line": "violet",
-          "time_seconds": 180
+          "time_seconds": 240
         }
       ]
     }
@@ -4784,19 +4784,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kalkaji_mandir",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "harkesh_nagar_okhla",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4817,19 +4817,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "govind_puri",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jasola-apollo",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4850,19 +4850,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "harkesh_nagar_okhla",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sarita_vihar",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4883,19 +4883,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jasola-apollo",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mohan_estate",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4916,19 +4916,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sarita_vihar",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "tughlakabad_station",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4949,19 +4949,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mohan_estate",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "badarpur_border",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -4982,19 +4982,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "tughlakabad_station",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sarai",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5015,19 +5015,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "badarpur_border",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "nhpc_chowk",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5048,19 +5048,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sarai",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mewala_maharajpur",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5081,19 +5081,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "nhpc_chowk",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sector-28",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5114,19 +5114,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mewala_maharajpur",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "badkal_mor",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5147,19 +5147,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sector-28",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "old_faridabad",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5180,19 +5180,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "badkal_mor",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "neelam_chowk_ajronda",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5213,19 +5213,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "old_faridabad",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "bata_chowk",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5246,19 +5246,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "neelam_chowk_ajronda",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "escorts_mujesar",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5279,19 +5279,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "bata_chowk",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sant_surdas_(sihi)",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5312,19 +5312,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "phase_2_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sikanderpur",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -5345,19 +5345,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sikanderpur_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "belvedere_towers_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -5378,19 +5378,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "phase_2_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "cyber_city_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -5411,19 +5411,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "belvedere_towers_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "moulsari_avenue_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -5444,19 +5444,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "cyber_city_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "phase_3_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -5477,14 +5477,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "moulsari_avenue_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -5505,19 +5505,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "orange/airport",
-        "dwell_time_seconds": 60
+        "name": "orange/airport",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_sector_-_21",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "delhi_aerocity",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       }
     ],
@@ -5538,19 +5538,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "orange/airport",
-        "dwell_time_seconds": 60
+        "name": "orange/airport",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "igi_airport",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dhaula_kuan",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       }
     ],
@@ -5571,19 +5571,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "orange/airport",
-        "dwell_time_seconds": 60
+        "name": "orange/airport",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "delhi_aerocity",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shivaji_stadium",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       }
     ],
@@ -5604,19 +5604,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "orange/airport",
-        "dwell_time_seconds": 60
+        "name": "orange/airport",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dhaula_kuan",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "new_delhi",
-        "line_color": "orange/airport",
+        "line": "orange/airport",
         "travel_time_seconds": 120
       }
     ],
@@ -5637,19 +5637,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "ito",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jama_masjid",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5670,19 +5670,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "delhi_gate",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "lal_quila",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5703,19 +5703,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jama_masjid",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "kashmere_gate",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -5736,19 +5736,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kalindi_kunj",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "botanical_garden",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -5769,19 +5769,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "okhla_bird_sanctuary",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jasola_vihar_shaheen_bagh",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -5802,19 +5802,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kalindi_kunj",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "okhla_vihar",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -5835,19 +5835,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jasola_vihar_shaheen_bagh",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "jamia_millia_islamia",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -5868,19 +5868,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "okhla_vihar",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sukhdev_vihar",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -5901,19 +5901,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jamia_millia_islamia",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "okhla_nsic",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -5934,19 +5934,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kalkaji_mandir",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sukhdev_vihar",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -5967,19 +5967,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sector_42-43_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sikanderpur",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -6000,19 +6000,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "phase-i_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sector_53-54_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -6033,19 +6033,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sector_42-43_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sector_54_chowk_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -6066,19 +6066,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sector_53-54_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sector_55-56_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -6099,14 +6099,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "rapid",
-        "dwell_time_seconds": 60
+        "name": "rapid",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sector_54_chowk_(rapid_metro)",
-        "line_color": "rapid",
+        "line": "rapid",
         "travel_time_seconds": 120
       }
     ],
@@ -6127,14 +6127,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "azadpur",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -6155,19 +6155,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "netaji_subash_place",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "azadpur",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -6188,19 +6188,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "netaji_subash_place",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "punjabi_bagh_west",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -6221,19 +6221,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "shakurpur",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "esi_basai_darapur",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -6254,19 +6254,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rajouri_garden",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "punjabi_bagh_west",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -6287,19 +6287,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rajouri_garden",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "naraina_vihar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -6320,19 +6320,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mayapuri",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "delhi_cantt.",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -6353,19 +6353,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "naraina_vihar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "durgabai_deshmukh_south_campus",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -6386,19 +6386,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "delhi_cantt.",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sir_vishweshwaraiah_moti_bagh",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -6419,19 +6419,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "kalkaji_mandir",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "greater_kailash",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6452,19 +6452,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "nehru_enclave",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "chirag_delhi",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6485,19 +6485,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "greater_kailash",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "panchsheel_park",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6518,19 +6518,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "chirag_delhi",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "hauz_khas",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6551,19 +6551,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rk_puram",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "hauz_khas",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6584,19 +6584,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "iit",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "munirka",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6617,19 +6617,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "rk_puram",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "vasant_vihar",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6650,19 +6650,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "munirka",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shankar_vihar",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6683,19 +6683,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "vasant_vihar",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "terminal_1-_igi_airport",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6716,19 +6716,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "shankar_vihar",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sadar_bazar_contonment",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6749,19 +6749,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "terminal_1-_igi_airport",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "palam",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6782,19 +6782,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sadar_bazar_contonment",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dashrath_puri",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6815,19 +6815,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "palam",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dabri_mor_-_janakpuri_south",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6848,19 +6848,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "magenta",
-        "dwell_time_seconds": 60
+        "name": "magenta",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "janak_puri_west",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dashrath_puri",
-        "line_color": "magenta",
+        "line": "magenta",
         "travel_time_seconds": 120
       }
     ],
@@ -6881,19 +6881,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "ghevra_metro_station",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mundka",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -6914,19 +6914,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mundka_industrial_area_(m.i.a)",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "tikri_kalan",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -6947,19 +6947,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "ghevra_metro_station",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "tikri_border",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -6980,19 +6980,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "tikri_kalan",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "pandit_shree_ram_sharma",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -7013,19 +7013,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "tikri_border",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "bahadurgarh_city",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -7046,19 +7046,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "pandit_shree_ram_sharma",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "brigadier_hoshiyar_singh",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -7079,14 +7079,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "green",
-        "dwell_time_seconds": 60
+        "name": "green",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "bahadurgarh_city",
-        "line_color": "green",
+        "line": "green",
         "travel_time_seconds": 120
       }
     ],
@@ -7107,19 +7107,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "durgabai_deshmukh_south_campus",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "bhikaji_cama_place",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7140,19 +7140,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sir_vishweshwaraiah_moti_bagh",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sarojini_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7173,19 +7173,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "bhikaji_cama_place",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dilli_haat_-_ina",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7206,19 +7206,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "lajpat_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dilli_haat_-_ina",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7239,19 +7239,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "east_vinod_nagar_-_mayur_vihar-ii",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mayur_vihar_pocket_1",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7272,19 +7272,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "trilokpuri_sanjay_lake",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mandawali_-_west_vinod_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7305,19 +7305,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "east_vinod_nagar_-_mayur_vihar-ii",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "ip_extension",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7338,19 +7338,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mandawali_-_west_vinod_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "anand_vihar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7371,19 +7371,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "krishna_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "karkarduma",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7404,19 +7404,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "karkarduma_court",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "east_azad_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7437,19 +7437,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "krishna_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "welcome",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7470,19 +7470,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "maujpur_-_babarpur",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "welcome",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7503,19 +7503,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "jafrabad",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "gokulpuri",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7536,19 +7536,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "maujpur_-_babarpur",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "johri_enclave",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7569,19 +7569,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "gokulpuri",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shiv_vihar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7602,14 +7602,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "johri_enclave",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7630,19 +7630,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "escorts_mujesar",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "raja_nahar_singh",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -7663,14 +7663,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "violet",
-        "dwell_time_seconds": 60
+        "name": "violet",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "sant_surdas_(sihi)",
-        "line_color": "violet",
+        "line": "violet",
         "travel_time_seconds": 120
       }
     ],
@@ -7691,19 +7691,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "lajpat_nagar",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "ashram",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7724,19 +7724,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "vinobapuri",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "sarai_kale_khan_-_nizamuddin",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7757,19 +7757,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "ashram",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mayur_vihar-i",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7790,19 +7790,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "pink",
-        "dwell_time_seconds": 60
+        "name": "pink",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "trilokpuri_sanjay_lake",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mayur_vihar-i",
-        "line_color": "pink",
+        "line": "pink",
         "travel_time_seconds": 120
       }
     ],
@@ -7823,14 +7823,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "hindon_river",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -7851,19 +7851,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "shaheed_sthal_(new_bus_adda)",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "arthala",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -7884,19 +7884,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "hindon_river",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "mohan_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -7917,19 +7917,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "arthala",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shyam_park",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -7950,19 +7950,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "mohan_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "major_mohit_sharma_rajender_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -7983,19 +7983,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "shyam_park",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "raj_bagh",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -8016,19 +8016,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "major_mohit_sharma_rajender_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "shaheed_nagar",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -8049,19 +8049,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "red",
-        "dwell_time_seconds": 60
+        "name": "red",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dilshad_garden",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "raj_bagh",
-        "line_color": "red",
+        "line": "red",
         "travel_time_seconds": 120
       }
     ],
@@ -8082,19 +8082,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec-52",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_city_centre",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -8115,19 +8115,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec-34",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sec-61",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -8148,19 +8148,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec-52",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sec-59",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -8181,19 +8181,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec-61",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sec-62",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -8214,19 +8214,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec-59",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_electronic_city",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -8247,14 +8247,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "blue",
-        "dwell_time_seconds": 60
+        "name": "blue",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sec-62",
-        "line_color": "blue",
+        "line": "blue",
         "travel_time_seconds": 120
       }
     ],
@@ -8275,19 +8275,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "gray",
-        "dwell_time_seconds": 60
+        "name": "gray",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka",
-        "line_color": "gray",
+        "line": "gray",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "najafgarh",
-        "line_color": "gray",
+        "line": "gray",
         "travel_time_seconds": 120
       }
     ],
@@ -8308,19 +8308,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "gray",
-        "dwell_time_seconds": 60
+        "name": "gray",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "nangli",
-        "line_color": "gray",
+        "line": "gray",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "dhansa_bus_stand",
-        "line_color": "gray",
+        "line": "gray",
         "travel_time_seconds": 120
       }
     ],
@@ -8341,14 +8341,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "gray",
-        "dwell_time_seconds": 60
+        "name": "gray",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "najafgarh",
-        "line_color": "gray",
+        "line": "gray",
         "travel_time_seconds": 120
       }
     ],
@@ -8369,14 +8369,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_50",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8397,19 +8397,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_51",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_76",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8430,19 +8430,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_50",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_101",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8463,19 +8463,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_76",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_81",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8496,19 +8496,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_101",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "nsez",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8529,19 +8529,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_81",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_83",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8562,19 +8562,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "nsez",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_137",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8595,19 +8595,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_83",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_142",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8628,19 +8628,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_137",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_143",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8661,19 +8661,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_142",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_144",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8694,19 +8694,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_143",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_145",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8727,19 +8727,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_144",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_146",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8760,19 +8760,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_145",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_147",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8793,19 +8793,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_146",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "noida_sector_148",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8826,19 +8826,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_147",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "knowledge_park",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8859,19 +8859,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "noida_sector_148",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "pari_chowk",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8892,19 +8892,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "knowledge_park",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "alpha_1",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8925,19 +8925,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "pari_chowk",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "delta_1",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8958,19 +8958,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "alpha_1",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "gnida_office",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -8991,19 +8991,19 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "delta_1",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       },
       {
         "to_station_id": "depot_station",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
@@ -9024,14 +9024,14 @@ export const stations = [
     },
     "lines": [
       {
-        "color": "aqua",
-        "dwell_time_seconds": 60
+        "name": "aqua",
+        "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "gnida_office",
-        "line_color": "aqua",
+        "line": "aqua",
         "travel_time_seconds": 120
       }
     ],
