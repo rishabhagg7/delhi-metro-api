@@ -6,8 +6,8 @@ const getStationById = stations.reduce((map, station) => {
     return map
 }, {})
 
-const sourceStationId = "welcome"
-const destinationStationId = "huda_city_centre"
+const sourceStationId = "east_azad_nagar"
+const destinationStationId = "shalimar_bagh"
 
 let visited = new Map() 
 visited.set(sourceStationId, 0)
@@ -46,9 +46,14 @@ while(pq.size() > 0){
 
         if(!visited.has(nextStationId) || currTime + travelTimeSeconds + addedTime < visited.get(nextStationId)){
             visited.set(nextStationId , currTime + travelTimeSeconds + addedTime)
-            const interchangeInfo = {from_line: currLineName, to_line: nextLineName}
             const newRoute = Array.from(currRoute)
-            newRoute.push({stationId: nextStationId, line: nextLineName, isInterchange: isInterchange, interchange_info: interchangeInfo})
+            if(isInterchange && newRoute.length > 0){
+                let interchangedStation = newRoute[newRoute.length-1]
+                const interchangeInfo = {from_line: interchangedStation.line, to_line: nextLineName}
+                interchangedStation.isInterchange = true
+                interchangedStation.interchangeInfo = interchangeInfo
+            }
+            newRoute.push({stationId: nextStationId, line: nextLineName, isInterchange: false})
             pq.push(nextStationId, currTime + travelTimeSeconds + addedTime, nextLineName, newRoute)
         }
     }
