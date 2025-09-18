@@ -28,7 +28,10 @@ while(pq.size() > 0){
             const currStation = currRoute[index];   
             const nextStation = currRoute[index+1];
             if(currStation.line != nextStation.line){
-                currStation.interchange_info = {from_line: currStation.line, to_line: nextStation.line}
+                currRoute[index] = {
+                    ...currStation,
+                    interchange_info: {from_line: currStation.line, to_line: nextStation.line}
+                }
             }
         }
         console.log(currRoute);
