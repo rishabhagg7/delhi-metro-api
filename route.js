@@ -6,14 +6,14 @@ const getStationById = stations.reduce((map, station) => {
     return map
 }, {})
 
-const sourceStationId = "east_azad_nagar"
-const destinationStationId = "shalimar_bagh"
+const sourceStationId = "welcome"
+const destinationStationId = "huda_city_centre"
 
 let visited = new Map() 
 visited.set(sourceStationId, 0)
 let pq = new PriorityQueue()
 getStationById[sourceStationId].lines.forEach((line) => {
-    pq.push(sourceStationId, 0, line.name,[{stationId: sourceStationId, line:line.name, isInterchange: false}])    
+    pq.push(sourceStationId, 0, line.name,[{stationId: sourceStationId, line:line.name}])    
 })
 
 while(pq.size() > 0){
@@ -24,6 +24,16 @@ while(pq.size() > 0){
     pq.pop()    
     if(currStation.id == destinationStationId){
         console.log(`Total time that will be taken = ${Math.ceil(currTime/60)} minutes`);
+        for (let index = 0; index < currRoute.length - 1; index++) {
+            const currStation = currRoute[index];   
+            const nextStation = currRoute[index+1];
+            if(currStation.line != nextStation.line){
+                currRoute[index] = {
+                    ...currStation,
+                    interchange_info: {from_line: currStation.line, to_line: nextStation.line}
+                }
+            }
+        }
         console.log(currRoute);
         break
     }
@@ -47,13 +57,7 @@ while(pq.size() > 0){
         if(!visited.has(nextStationId) || currTime + travelTimeSeconds + addedTime < visited.get(nextStationId)){
             visited.set(nextStationId , currTime + travelTimeSeconds + addedTime)
             const newRoute = Array.from(currRoute)
-            if(isInterchange && newRoute.length > 0){
-                let interchangedStation = newRoute[newRoute.length-1]
-                const interchangeInfo = {from_line: interchangedStation.line, to_line: nextLineName}
-                interchangedStation.isInterchange = true
-                interchangedStation.interchangeInfo = interchangeInfo
-            }
-            newRoute.push({stationId: nextStationId, line: nextLineName, isInterchange: false})
+            newRoute.push({stationId: nextStationId, line: nextLineName})
             pq.push(nextStationId, currTime + travelTimeSeconds + addedTime, nextLineName, newRoute)
         }
     }

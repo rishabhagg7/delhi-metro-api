@@ -180,7 +180,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "red",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -310,17 +310,17 @@ export const stations = [
         {
           "from_line": "red",
           "to_line": "violet",
-          "time_seconds": 240
+          "time_seconds": 180
         },
         {
           "from_line": "red",
           "to_line": "yellow",
-          "time_seconds": 240
+          "time_seconds": 180
         },
         {
           "from_line": "violet",
           "to_line": "yellow",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -501,7 +501,7 @@ export const stations = [
         {
           "from_line": "green",
           "to_line": "red",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -621,7 +621,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "red",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -1462,7 +1462,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "yellow",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -1742,7 +1742,7 @@ export const stations = [
         {
           "from_line": "orange/airport",
           "to_line": "yellow",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -1796,7 +1796,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "yellow",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -1883,7 +1883,7 @@ export const stations = [
         {
           "from_line": "violet",
           "to_line": "yellow",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -2036,7 +2036,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "yellow",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -2156,7 +2156,7 @@ export const stations = [
         {
           "from_line": "magenta",
           "to_line": "yellow",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -2474,7 +2474,7 @@ export const stations = [
         {
           "from_line": "rapid",
           "to_line": "yellow",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -2683,7 +2683,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "pink",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -2737,7 +2737,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "pink",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -2951,7 +2951,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "magenta",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -3170,7 +3170,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "pink",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -3361,7 +3361,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "violet",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -3641,7 +3641,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "green",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -3761,7 +3761,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "pink",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -3942,7 +3942,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "magenta",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -4123,7 +4123,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "gray",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -4398,7 +4398,7 @@ export const stations = [
         {
           "from_line": "blue",
           "to_line": "orange/airport",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -4617,7 +4617,7 @@ export const stations = [
         {
           "from_line": "pink",
           "to_line": "violet",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
@@ -4770,7 +4770,7 @@ export const stations = [
         {
           "from_line": "magenta",
           "to_line": "violet",
-          "time_seconds": 240
+          "time_seconds": 180
         }
       ]
     }
