@@ -12,8 +12,11 @@ export class MetroRouteFinder {
         }, {});
     }
 
+    makeKey(stationId, line) {
+        return `${stationId}:${line}`;
+    }
+
     findShortestRoute(sourceId, destinationId) {
-        // Validate input
         if (!this.stationMap[sourceId] || !this.stationMap[destinationId]) {
             throw new Error('Invalid source or destination station ID');
         }
@@ -21,7 +24,6 @@ export class MetroRouteFinder {
         const visited = new Map();
         const pq = new PriorityQueue();
         
-        // Initialize source station
         this.initializeSource(sourceId, pq, visited);
 
         while (pq.size() > 0) {
@@ -29,7 +31,8 @@ export class MetroRouteFinder {
             pq.pop();
 
             // Skip if we've already found a better path to this station
-            if (visited.has(stationId) && currentTime > visited.get(stationId)) {
+            const stationLineKey = this.makeKey(stationId, currentLine)
+            if (visited.has(stationLineKey) && currentTime > visited.get(stationLineKey)) {
                 continue;
             }
 
@@ -43,17 +46,18 @@ export class MetroRouteFinder {
             const timeWithDwell = this.addDwellTime(currentTime, station, currentLine);
             
             // Explore connections
-            this.exploreConnections(station, timeWithDwell, currentLine, route, pq, visited, destinationId);
+            this.exploreConnections(station, timeWithDwell, currentLine, route, pq, visited);
         }
 
         return null; // No route found
     }
 
     initializeSource(sourceId, pq, visited) {
-        visited.set(sourceId, 0);
         const sourceStation = this.stationMap[sourceId];
         
         sourceStation.lines.forEach(line => {
+            const stationLineKey = this.makeKey(sourceId, line.name)
+            visited.set(stationLineKey, 0);
             const initialRoute = [{ stationId: sourceId, line: line.name, isInterchange: false, timeToReachInSeconds: 0 }];
             pq.push(sourceId, 0, line.name, initialRoute);
         });
@@ -78,7 +82,7 @@ export class MetroRouteFinder {
         return interchangeData ? interchangeData.time_seconds : 0;
     }
 
-    exploreConnections(station, currentTime, currentLine, currentRoute, pq, visited, destinationId) {
+    exploreConnections(station, currentTime, currentLine, currentRoute, pq, visited) {
         station.connections.forEach(connection => {
             const { to_station_id: nextStationId, line: nextLine, travel_time_seconds: travelTime } = connection;
 
@@ -90,8 +94,9 @@ export class MetroRouteFinder {
             const totalTime = currentTime + travelTime + interchangeTime;
 
             // Only proceed if this path is better
-            if (this.isBetterPath(nextStationId, totalTime, visited)) {
-                visited.set(nextStationId, totalTime);
+            if (this.isBetterPath(nextStationId, nextLine, totalTime, visited)) {
+                const stationLineKey = this.makeKey(nextStationId,nextLine)
+                visited.set(stationLineKey, totalTime);
                 
                 const newRoute = this.buildNewRoute(currentRoute, nextStationId, nextLine, currentLine, interchangeTime > 0, totalTime);
                 pq.push(nextStationId, totalTime, nextLine, newRoute);
@@ -103,8 +108,9 @@ export class MetroRouteFinder {
         return currentLine !== nextLine;
     }
 
-    isBetterPath(stationId, newTime, visited) {
-        return !visited.has(stationId) || newTime < visited.get(stationId);
+    isBetterPath(stationId, line, newTime, visited) {
+        const stationLineKey = this.makeKey(stationId, line)
+        return !visited.has(stationLineKey) || newTime < visited.get(stationLineKey);
     }
 
     buildNewRoute(currentRoute, nextStationId, nextLine, currentLine, hasInterchange, totalTime) {
