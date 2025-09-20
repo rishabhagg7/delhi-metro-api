@@ -132,32 +132,13 @@ class MetroRouteFinder {
     }
 
     formatResult(totalTime, route) {
-        // Add interchange info for the final route formatting
-        const formattedRoute = this.addInterchangeInfo(route);
-        
         return {
             totalTimeMinutes: Math.ceil(totalTime / 60),
             totalTimeSeconds: totalTime,
-            route: formattedRoute,
+            route: route,
             stationIds: route.map(r => r.stationId),
             lines: route.map(r => r.line)
         };
-    }
-
-    addInterchangeInfo(route) {
-        return route.map((station, index) => {
-            if (index < route.length - 1) {
-                const nextStation = route[index + 1];
-                if (station.line !== nextStation.line) {
-                    return {
-                        ...station,
-                        isInterchange: true,
-                        interchange_info: { from_line: station.line, to_line: nextStation.line }
-                    };
-                }
-            }
-            return station;
-        });
     }
 
     printRoute(result) {
