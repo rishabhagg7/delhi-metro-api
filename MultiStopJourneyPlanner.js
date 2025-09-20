@@ -138,11 +138,4 @@ export class MultiStopJourneyPlanner {
         // Detailed route
         this.routeFinder.printDetailedRoute(journey);
     }
-
-    formatStationName(stationId) {
-        return stationId
-            .split('_')
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
-    }
 }
