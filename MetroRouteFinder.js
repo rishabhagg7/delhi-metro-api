@@ -16,7 +16,7 @@ export class MetroRouteFinder {
         return `${stationId}:${line}`;
     }
 
-    findShortestRoute(sourceId, destinationId) {
+    findShortestRoute(sourceId, destinationId, initialTimeSeconds) {
         if (!this.stationMap[sourceId] || !this.stationMap[destinationId]) {
             throw new Error('Invalid source or destination station ID');
         }
@@ -24,7 +24,7 @@ export class MetroRouteFinder {
         const visited = new Map();
         const pq = new PriorityQueue();
         
-        this.initializeSource(sourceId, pq, visited);
+        this.initializeSource(sourceId, pq, visited, initialTimeSeconds);
 
         while (pq.size() > 0) {
             const { stationId, priority: currentTime, line: currentLine, route } = pq.top();
@@ -52,14 +52,14 @@ export class MetroRouteFinder {
         return null; // No route found
     }
 
-    initializeSource(sourceId, pq, visited) {
+    initializeSource(sourceId, pq, visited, initialTimeSeconds) {
         const sourceStation = this.stationMap[sourceId];
         
         sourceStation.lines.forEach(line => {
             const stationLineKey = this.makeKey(sourceId, line.name)
-            visited.set(stationLineKey, 0);
-            const initialRoute = [{ stationId: sourceId, line: line.name, isInterchange: false, timeToReachInSeconds: 0 }];
-            pq.push(sourceId, 0, line.name, initialRoute);
+            visited.set(stationLineKey, initialTimeSeconds);
+            const initialRoute = [{ stationId: sourceId, line: line.name, isInterchange: false, timeToReachInSeconds: initialTimeSeconds }];
+            pq.push(sourceId, initialTimeSeconds, line.name, initialRoute);
         });
     }
 

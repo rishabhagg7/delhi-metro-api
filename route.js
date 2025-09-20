@@ -1,12 +1,18 @@
 import { stations } from './data.js'
-import { MetroRouteFinder } from './MetroRouteFinder.js';
+import { MultiStopJourneyPlanner } from './MultiStopJourneyPlanner.js';
 
-const routeFinder = new MetroRouteFinder(stations);
+const journeyPlanner = new MultiStopJourneyPlanner(stations);
 
 try {
-    const result = routeFinder.findShortestRoute("east_azad_nagar", "shalimar_bagh");
-    routeFinder.printRoute(result);
-    routeFinder.printDetailedRoute(result);
+    const stops = ["east_azad_nagar", "rithala", "huda_city_centre"];
+    
+    const journey = journeyPlanner.planJourney(stops, {
+        includeWaitTime: true,
+        waitTimeMinutes: 3
+    });
+    
+    journeyPlanner.printJourney(journey);
+    
 } catch (error) {
-    console.error('Error finding route:', error.message);
+    console.error('Journey planning failed:', error.message);
 }
