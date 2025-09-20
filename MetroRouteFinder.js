@@ -25,8 +25,8 @@ export class MetroRouteFinder {
         this.initializeSource(sourceId, pq, visited);
 
         while (pq.size() > 0) {
-            const current = pq.pop();
-            const { stationId, priority: currentTime, line: currentLine, route } = current;
+            const { stationId, priority: currentTime, line: currentLine, route } = pq.top();
+            pq.pop();
 
             // Skip if we've already found a better path to this station
             if (visited.has(stationId) && currentTime > visited.get(stationId)) {
