@@ -48,7 +48,7 @@ export class MultiStopJourneyPlanner {
     planSegment(fromStop, toStop, currentTime, segmentIndex, waitTime) {        
         const startTime = segmentIndex === 0 ? currentTime : currentTime + waitTime;
         
-        const result = this.routeFinder.findShortestRoute(fromStop, toStop, startTime);
+        const result = this.routeFinder.findShortestRouteByTime(fromStop, toStop, startTime);
         
         if (result) {
             result.segmentInfo = {
