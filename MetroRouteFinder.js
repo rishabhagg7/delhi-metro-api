@@ -103,7 +103,7 @@ export class MetroRouteFinder {
 
     addDwellTime(currentTime, station, lineName) {
         const line = station.lines.find(l => l.name === lineName);
-        const dwellTime = line?.dwell_time_seconds || 0;
+        const dwellTime = line?.dwell_time_seconds ?? 0;
         return currentTime + dwellTime;
     }
 
@@ -117,7 +117,7 @@ export class MetroRouteFinder {
             (data.from_line === toLine && data.to_line === fromLine)
         );
 
-        return interchangeData?.time_seconds || 0;
+        return interchangeData?.time_seconds ?? 0;
     }
 
     exploreConnections(station, currentTime, currentLine, currentRoute, pq, visited, optimizeBy, current) {
