@@ -1,5 +1,4 @@
 import { PriorityQueue } from "./PriorityQueue.js";
-import { stations } from './data.js'
 
 export class MetroRouteFinder {
     constructor(stations) {
