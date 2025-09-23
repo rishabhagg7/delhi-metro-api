@@ -40,6 +40,7 @@ export class MetroRouteFinder {
             const { stationId, line: currentLine, route } = current;
             const currentValue = current.priority1;
             const currentTime = optimizeBy === 'time' ? current.priority1 : current.priority2;
+            const currentInterchanges = optimizeBy === 'interchanges' ? current.priority1 : current.priority2;
 
             // Skip if we've already found a better path to this station
             const stationLineKey = this.makeKey(stationId, currentLine);
@@ -57,7 +58,7 @@ export class MetroRouteFinder {
             const timeWithDwell = this.addDwellTime(currentTime, station, currentLine);
             
             // Explore connections
-            this.exploreConnections(station, timeWithDwell, currentLine, route, pq, visited, optimizeBy, current);
+            this.exploreConnections(station, timeWithDwell, currentLine, route, pq, visited, optimizeBy, currentInterchanges);
         }
 
         return null; // No route found
@@ -120,7 +121,7 @@ export class MetroRouteFinder {
         return interchangeData?.time_seconds ?? 0;
     }
 
-    exploreConnections(station, currentTime, currentLine, currentRoute, pq, visited, optimizeBy, current) {
+    exploreConnections(station, currentTime, currentLine, currentRoute, pq, visited, optimizeBy, currentInterchanges) {
         station.connections.forEach(connection => {
             const { to_station_id: nextStationId, line: nextLine, travel_time_seconds: travelTime } = connection;
 
@@ -128,17 +129,16 @@ export class MetroRouteFinder {
             const hasInterchange = this.shouldCalculateInterchange(currentLine, nextLine);
             const interchangeTime = hasInterchange ? this.getInterchangeTime(station, currentLine, nextLine) : 0;
             const totalTime = currentTime + travelTime + interchangeTime;
+            const totalInterchanges = currentInterchanges + (hasInterchange ? 1 : 0);
 
             // Calculate values based on optimization strategy
             let primaryValue, secondaryValue, visitedValue;
             
             if (optimizeBy === 'time') {
                 primaryValue = totalTime;
-                secondaryValue = undefined;
+                secondaryValue = totalInterchanges;
                 visitedValue = totalTime;
             } else {
-                const currentInterchanges = current.priority1;
-                const totalInterchanges = currentInterchanges + (hasInterchange ? 1 : 0);
                 primaryValue = totalInterchanges;
                 secondaryValue = totalTime;
                 visitedValue = totalInterchanges;
