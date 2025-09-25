@@ -8,20 +8,20 @@ class PQ{
         const leftChildIndex = 2*parentIndex+1
         const rightChildIndex = 2*parentIndex+2
         let minimumIndex = parentIndex
-        let minimumValue = parent.priority
+        let minimumNode = parent
 
         if(rightChildIndex < this.values.length){
             const rightChild = this.values[rightChildIndex]
-            if(minimumValue > rightChild.priority){
-                minimumValue = rightChild.priority
+            if(this.compare(minimumNode, rightChild) > 0){
+                minimumNode = rightChild
                 minimumIndex = rightChildIndex
             }
         }
 
         if(leftChildIndex < this.values.length){
             const leftChild = this.values[leftChildIndex]
-            if(minimumValue > leftChild.priority){
-                minimumValue = leftChild.priority
+            if(this.compare(minimumNode, leftChild) > 0){
+                minimumNode = leftChild
                 minimumIndex = leftChildIndex
             }
         }
@@ -47,8 +47,8 @@ class PQ{
         }
     }
 
-    push(stationId, line, route, priority){
-        this.values.push({stationId,line,route,priority});
+    push(stationId, line, route, priority1, priority2){
+        this.values.push({stationId,line,route,priority1,priority2});
         this.heapifyUp()
     }
 
@@ -72,4 +72,26 @@ class PQ{
         [arr[idx1],arr[idx2]] = [arr[idx2],arr[idx1]];
         return arr
     }
+
+    compare(a, b) {
+        if (a.priority1 < b.priority1) return -1;
+        if (a.priority1 > b.priority1) return 1;
+        
+        if (a.priority2 < b.priority2) return -1;
+        if (a.priority2 > b.priority2) return 1;
+        
+        return 0; 
+    }
+}
+
+
+const pq = new PQ()
+pq.push("ok","ok","ok",0,4)
+pq.push("ok","ok","ok",0,3)
+pq.push("ok","ok","ok",0,2)
+pq.push("ok","ok","ok",0,1)
+pq.push("ok","ok","ok",1,0)
+pq.push("ok","ok","ok",2,9)
+while(pq.size() > 0){
+    console.log(pq.pop());
 }
