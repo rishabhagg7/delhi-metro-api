@@ -95,9 +95,9 @@ export class MetroRouteFinder {
             }];
 
             if (optimizeBy === 'time') {
-                pq.push(sourceId, initialTimeSeconds, line.name, initialRoute);
+                pq.push(sourceId, line.name, initialRoute, initialTimeSeconds);
             } else {
-                pq.push(sourceId, initialInterchanges, line.name, initialRoute, initialTimeSeconds);
+                pq.push(sourceId, line.name, initialRoute, initialInterchanges,initialTimeSeconds);
             }
         });
     }
@@ -152,9 +152,9 @@ export class MetroRouteFinder {
                 const newRoute = this.buildNewRoute(currentRoute, nextStationId, nextLine, currentLine, hasInterchange, totalTime);
                 
                 if (optimizeBy === 'time') {
-                    pq.push(nextStationId, primaryValue, nextLine, newRoute);
+                    pq.push(nextStationId, nextLine, newRoute, primaryValue);
                 } else {
-                    pq.push(nextStationId, primaryValue, nextLine, newRoute, secondaryValue);
+                    pq.push(nextStationId, nextLine, newRoute, primaryValue, secondaryValue);
                 }
             }
         });
