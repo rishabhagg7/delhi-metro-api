@@ -1,8 +1,9 @@
 import { MetroRouteFinder } from './MetroRouteFinder.js';
 
 export class MultiStopJourneyPlanner {
-    constructor(stations) {
+    constructor(stations, optimizeBy = "time") {
         this.routeFinder = new MetroRouteFinder(stations);
+        this.optimizeBy = optimizeBy
     }
 
     planJourney(stops, options = {}) {
@@ -16,6 +17,7 @@ export class MultiStopJourneyPlanner {
         let totalJourney = {
             totalTimeMinutes: 0,
             totalTimeSeconds: 0,
+            totalInterchanges: 0,
             route: [],
             stationIds: [],
             lines: []
@@ -27,6 +29,7 @@ export class MultiStopJourneyPlanner {
                     stops[i], 
                     stops[i + 1], 
                     totalJourney.totalTimeSeconds,
+                    totalJourney.totalInterchanges,
                     i,
                     includeWaitTime ? waitTimeMinutes * 60 : 0
                 );
@@ -45,10 +48,10 @@ export class MultiStopJourneyPlanner {
         }
     }
 
-    planSegment(fromStop, toStop, currentTime, segmentIndex, waitTime) {        
+    planSegment(fromStop, toStop, currentTime, currentInterchanges, segmentIndex, waitTime) {        
         const startTime = segmentIndex === 0 ? currentTime : currentTime + waitTime;
         
-        const result = this.routeFinder.findShortestRouteByTime(fromStop, toStop, startTime);
+        const result = this.optimizeBy === 'time' ? this.routeFinder.findShortestRouteByTime(fromStop, toStop, startTime) : this.routeFinder.findShortestRouteByInterchange(fromStop,toStop,startTime,currentInterchanges);
         
         if (result) {
             result.segmentInfo = {
@@ -63,10 +66,11 @@ export class MultiStopJourneyPlanner {
     }
 
     mergeSegment(totalJourney, segment, isFirstSegment) {
-        const { totalTimeMinutes, totalTimeSeconds, route, stationIds, lines, segmentInfo } = segment;
+        const { totalTimeMinutes, totalTimeSeconds, route, stationIds, lines, totalInterchanges } = segment;
     
         totalJourney.totalTimeMinutes += totalTimeMinutes;
         totalJourney.totalTimeSeconds += totalTimeSeconds;
+        totalJourney.totalInterchanges += totalInterchanges;
         
         if (isFirstSegment) {
             totalJourney.route = [...route];
@@ -93,6 +97,7 @@ export class MultiStopJourneyPlanner {
                         to_line: firstStationOfNewSegment.line
                     }
                 };
+                totalJourney.totalInterchanges += 1;
             }
             
             totalJourney.route = [...totalJourney.route, ...routeToAdd];
