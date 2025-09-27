@@ -1,10 +1,10 @@
 import { stations } from './data.js'
 import { MultiStopJourneyPlanner } from './MultiStopJourneyPlanner.js';
 
-const journeyPlanner = new MultiStopJourneyPlanner(stations);
+const journeyPlanner = new MultiStopJourneyPlanner(stations, 'time');
 
 try {
-    const stops = ["east_azad_nagar", "rithala", "huda_city_centre"];
+    const stops = ["east_azad_nagar", "krishna_nagar","shalimar_bagh"];
     
     const journey = journeyPlanner.planJourney(stops, {
         includeWaitTime: true,

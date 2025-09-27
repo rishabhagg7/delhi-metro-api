@@ -200,7 +200,7 @@ export class MetroRouteFinder {
             route: route,
             stationIds: route.map(r => r.stationId),
             lines: route.map(r => r.line),
-            interchanges: route.filter(r => r.isInterchange).length
+            totalInterchanges: route.filter(r => r.isInterchange).length
         };
     }
 
@@ -232,7 +232,7 @@ export class MetroRouteFinder {
         console.log('='.repeat(70));
         console.log(`⏱️  Total Journey Time: ${result.totalTimeMinutes} minutes (${result.totalTimeSeconds} seconds)`);
         console.log(`🚉 Total Stations: ${result.route.length}`);
-        console.log(`🔄 Interchanges: ${result.interchanges}`);
+        console.log(`🔄 Interchanges: ${result.totalInterchanges}`);
         console.log(`🚇 Lines Used: ${[...new Set(result.lines)].join(', ').toUpperCase()}`);
         console.log('='.repeat(70));
     }
