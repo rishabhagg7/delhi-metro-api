@@ -3,7 +3,16 @@ export class PriorityQueue {
         this.values = []
     }
 
-    heapify(parentIndex){
+    heapifyUp(child){
+        if(child === 0) return
+        const parent = Math.floor((child-1)/2);
+        if(parent >= 0 && this.compare(this.values[parent], this.values[child]) > 0){
+            this.swap(this.values, parent, child)
+            this.heapifyUp(parent)
+        }
+    }
+
+    heapifyDown(parentIndex){
         const parent = this.values[parentIndex];
         const leftChildIndex = 2*parentIndex+1
         const rightChildIndex = 2*parentIndex+2
@@ -26,37 +35,24 @@ export class PriorityQueue {
             }
         }
 
-        this.swap(this.values, parentIndex, minimumIndex)
-
-        return minimumIndex !== parentIndex
-    }
-
-    heapifyUp(){
-        for (let parentIndex = (Math.floor(this.values.length/2)-1); parentIndex >= 0; parentIndex--) {
-            if(!this.heapify(parentIndex)){
-                break;
-            }
-        }
-    }
-
-    heapifyDown(){
-        for (let parentIndex = 0; parentIndex < Math.floor((this.values.length/2)); parentIndex++) {
-            if(!this.heapify(parentIndex)){
-                break;
-            }
+        if(minimumIndex !== parentIndex){
+            this.swap(this.values, parentIndex, minimumIndex)
+            this.heapifyDown(minimumIndex)
         }
     }
 
     push(stationId, line, route, priority1, priority2 = Infinity){
         this.values.push({stationId,line,route,priority1,priority2});
-        this.heapifyUp()
+        this.heapifyUp(this.values.length-1)
     }
 
     pop(){
+        if (this.values.length === 0) return undefined;
+        if (this.values.length === 1) return this.values.pop();
         const val = this.values[0]
         this.swap(this.values, 0, this.values.length-1)
         this.values.pop()
-        this.heapifyDown()
+        this.heapifyDown(0)
         return val
     }
 
