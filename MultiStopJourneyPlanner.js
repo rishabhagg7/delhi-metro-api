@@ -1,8 +1,9 @@
 import { MetroRouteFinder } from './MetroRouteFinder.js';
 
 export class MultiStopJourneyPlanner {
-    constructor(stations) {
+    constructor(stations, optimizeBy = "time") {
         this.routeFinder = new MetroRouteFinder(stations);
+        this.optimizeBy = optimizeBy
         this.stationMap = this.buildStationMap(stations);
     }
 
@@ -24,6 +25,7 @@ export class MultiStopJourneyPlanner {
         let totalJourney = {
             totalTimeMinutes: 0,
             totalTimeSeconds: 0,
+            totalInterchanges: 0,
             route: [],
             stationIds: [],
             lines: []
@@ -35,6 +37,7 @@ export class MultiStopJourneyPlanner {
                     stops[i], 
                     stops[i + 1], 
                     totalJourney.totalTimeSeconds,
+                    totalJourney.totalInterchanges,
                     i,
                     includeWaitTime ? waitTimeMinutes * 60 : 0
                 );
@@ -53,10 +56,10 @@ export class MultiStopJourneyPlanner {
         }
     }
 
-    planSegment(fromStop, toStop, currentTime, segmentIndex, waitTime) {        
+    planSegment(fromStop, toStop, currentTime, currentInterchanges, segmentIndex, waitTime) {
         const startTime = segmentIndex === 0 ? currentTime : currentTime + waitTime;
         
-        const result = this.routeFinder.findShortestRouteByTime(fromStop, toStop, startTime);
+        const result = this.optimizeBy === 'time' ? this.routeFinder.findShortestRouteByTime(fromStop, toStop, startTime) : this.routeFinder.findShortestRouteByInterchange(fromStop,toStop,startTime,currentInterchanges);
         
         if (result) {
             result.segmentInfo = {
@@ -71,11 +74,12 @@ export class MultiStopJourneyPlanner {
     }
 
     mergeSegment(totalJourney, segment, isFirstSegment) {
-        const { totalTimeMinutes, totalTimeSeconds, route, stationIds, lines } = segment;
+        const { totalTimeMinutes, totalTimeSeconds, route, stationIds, lines, totalInterchanges } = segment;
     
         totalJourney.totalTimeMinutes += totalTimeMinutes;
         totalJourney.totalTimeSeconds += totalTimeSeconds;
-        
+        totalJourney.totalInterchanges += totalInterchanges;
+
         if (isFirstSegment) {
             totalJourney.route = [...route];
             totalJourney.stationIds = [...stationIds];
@@ -91,7 +95,7 @@ export class MultiStopJourneyPlanner {
             const linesToAdd = lines.slice(1);
             const firstStationOfNewSegment = route[0];
             const secondStationOfNewSegment = route[1];
-            
+
             if (lastStation.line !== firstStationOfNewSegment.line) {
                 const terminalStationId = this.stationMap[lastStation.stationId].interchange_info.walking_time_between_lines.find((interchangeInfo) => interchangeInfo.from_line === lastStation.line && interchangeInfo.to_line === firstStationOfNewSegment.line)?.direction_options?.find((option) => option.to_station_id === secondStationOfNewSegment.stationId)?.terminal_station_id ?? null;
                 totalJourney.route[totalJourney.route.length - 1] = {
@@ -104,6 +108,7 @@ export class MultiStopJourneyPlanner {
                         terminal_station: terminalStationId
                     }
                 };
+                totalJourney.totalInterchanges += 1;
             }
             
             totalJourney.route = [...totalJourney.route, ...routeToAdd];
