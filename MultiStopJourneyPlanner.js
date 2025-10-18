@@ -3,6 +3,14 @@ import { MetroRouteFinder } from './MetroRouteFinder.js';
 export class MultiStopJourneyPlanner {
     constructor(stations) {
         this.routeFinder = new MetroRouteFinder(stations);
+        this.stationMap = this.buildStationMap(stations);
+    }
+
+    buildStationMap(stations) {
+        return stations.reduce((map, station) => {
+            map[station.id] = station;
+            return map;
+        }, {});
     }
 
     planJourney(stops, options = {}) {
@@ -63,7 +71,7 @@ export class MultiStopJourneyPlanner {
     }
 
     mergeSegment(totalJourney, segment, isFirstSegment) {
-        const { totalTimeMinutes, totalTimeSeconds, route, stationIds, lines, segmentInfo } = segment;
+        const { totalTimeMinutes, totalTimeSeconds, route, stationIds, lines } = segment;
     
         totalJourney.totalTimeMinutes += totalTimeMinutes;
         totalJourney.totalTimeSeconds += totalTimeSeconds;
@@ -77,20 +85,23 @@ export class MultiStopJourneyPlanner {
             totalJourney.route[totalJourney.route.length - 1] = {
                 ...lastStation,
                 isConnectionPoint: true
-            };        
+            };
             const routeToAdd = route.slice(1);
             const stationIdsToAdd = stationIds.slice(1);
             const linesToAdd = lines.slice(1);
             const firstStationOfNewSegment = route[0];
+            const secondStationOfNewSegment = route[1];
             
             if (lastStation.line !== firstStationOfNewSegment.line) {
+                const terminalStationId = this.stationMap[lastStation.stationId].interchange_info.walking_time_between_lines.find((interchangeInfo) => interchangeInfo.from_line === lastStation.line && interchangeInfo.to_line === firstStationOfNewSegment.line)?.direction_options?.find((option) => option.to_station_id === secondStationOfNewSegment.stationId)?.terminal_station_id ?? null;
                 totalJourney.route[totalJourney.route.length - 1] = {
                     ...lastStation,
                     isConnectionPoint: true,
                     isInterchange: true,
                     interchange_info: {
                         from_line: lastStation.line,
-                        to_line: firstStationOfNewSegment.line
+                        to_line: firstStationOfNewSegment.line,
+                        terminal_station: terminalStationId
                     }
                 };
             }
