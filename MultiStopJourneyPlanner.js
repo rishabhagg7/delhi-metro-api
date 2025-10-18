@@ -4,6 +4,14 @@ export class MultiStopJourneyPlanner {
     constructor(stations, optimizeBy = "time") {
         this.routeFinder = new MetroRouteFinder(stations);
         this.optimizeBy = optimizeBy
+        this.stationMap = this.buildStationMap(stations);
+    }
+
+    buildStationMap(stations) {
+        return stations.reduce((map, station) => {
+            map[station.id] = station;
+            return map;
+        }, {});
     }
 
     planJourney(stops, options = {}) {
@@ -48,7 +56,7 @@ export class MultiStopJourneyPlanner {
         }
     }
 
-    planSegment(fromStop, toStop, currentTime, currentInterchanges, segmentIndex, waitTime) {        
+    planSegment(fromStop, toStop, currentTime, currentInterchanges, segmentIndex, waitTime) {
         const startTime = segmentIndex === 0 ? currentTime : currentTime + waitTime;
         
         const result = this.optimizeBy === 'time' ? this.routeFinder.findShortestRouteByTime(fromStop, toStop, startTime) : this.routeFinder.findShortestRouteByInterchange(fromStop,toStop,startTime,currentInterchanges);
@@ -71,7 +79,7 @@ export class MultiStopJourneyPlanner {
         totalJourney.totalTimeMinutes += totalTimeMinutes;
         totalJourney.totalTimeSeconds += totalTimeSeconds;
         totalJourney.totalInterchanges += totalInterchanges;
-        
+
         if (isFirstSegment) {
             totalJourney.route = [...route];
             totalJourney.stationIds = [...stationIds];
@@ -81,20 +89,23 @@ export class MultiStopJourneyPlanner {
             totalJourney.route[totalJourney.route.length - 1] = {
                 ...lastStation,
                 isConnectionPoint: true
-            };        
+            };
             const routeToAdd = route.slice(1);
             const stationIdsToAdd = stationIds.slice(1);
             const linesToAdd = lines.slice(1);
             const firstStationOfNewSegment = route[0];
-            
+            const secondStationOfNewSegment = route[1];
+
             if (lastStation.line !== firstStationOfNewSegment.line) {
+                const terminalStationId = this.stationMap[lastStation.stationId].interchange_info.walking_time_between_lines.find((interchangeInfo) => interchangeInfo.from_line === lastStation.line && interchangeInfo.to_line === firstStationOfNewSegment.line)?.direction_options?.find((option) => option.to_station_id === secondStationOfNewSegment.stationId)?.terminal_station_id ?? null;
                 totalJourney.route[totalJourney.route.length - 1] = {
                     ...lastStation,
                     isConnectionPoint: true,
                     isInterchange: true,
                     interchange_info: {
                         from_line: lastStation.line,
-                        to_line: firstStationOfNewSegment.line
+                        to_line: firstStationOfNewSegment.line,
+                        terminal_station: terminalStationId
                     }
                 };
                 totalJourney.totalInterchanges += 1;

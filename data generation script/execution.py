@@ -97,13 +97,51 @@ for sid, data in stops.items():
 
     # Build walking times
     walks = []
-    for i in range(len(line_colors)):
-        for j in range(i + 1, len(line_colors)):
-            walks.append({
-                'from_line': line_colors[i],
-                'to_line': line_colors[j],
-                'time_seconds': DEFAULT_WALK
-            })
+    if is_interchange:
+        for from_line in line_colors:
+            for to_line in line_colors:
+                if from_line == to_line:
+                    continue
+
+                # Find adjacent stations for each line
+                from_neighbors = [
+                    nbr_id for nbr_id, clr, _ in data['connections']
+                    if clr == to_line
+                ]
+
+                direction_options = []
+                for nbr in from_neighbors:
+                    best_terminal = None
+                    longest_trip_len = 0
+                    for tid, seq in trip_stops.items():
+                        rid = trip_to_route.get(tid)
+                        clr = route_color.get(rid)
+                        if clr != to_line:
+                            continue
+                        stop_ids = [s for _, s in sorted(seq)]
+                        if sid in stop_ids and nbr in stop_ids:
+                            sid_idx = stop_ids.index(sid)
+                            nbr_idx = stop_ids.index(nbr)
+                            trip_len = len(stop_ids)
+                            if trip_len > longest_trip_len:
+                                longest_trip_len = trip_len
+                                if sid_idx < nbr_idx:
+                                    terminal_id = stop_ids[-1]
+                                else:
+                                    terminal_id = stop_ids[0]
+                                best_terminal = stops[terminal_id]['id']
+                    if best_terminal:
+                        direction_options.append({
+                            'to_station_id': stops[nbr]['id'],
+                            'terminal_station_id': best_terminal
+                        })
+
+                walks.append({
+                    'from_line': from_line,
+                    'to_line': to_line,
+                    'time_seconds': DEFAULT_WALK,
+                    'direction_options': direction_options
+                })
 
     station_obj = {
         'id': data['id'],
