@@ -1,4 +1,5 @@
 import { MetroRouteFinder } from './MetroRouteFinder.js';
+import { findTerminalStationId } from "./utils/stationDataUtils.js";
 
 export class MultiStopJourneyPlanner {
     constructor(stations, optimizeBy = "time") {
@@ -97,7 +98,13 @@ export class MultiStopJourneyPlanner {
             const secondStationOfNewSegment = route[1];
 
             if (lastStation.line !== firstStationOfNewSegment.line) {
-                const terminalStationId = this.stationMap[lastStation.stationId].interchange_info.walking_time_between_lines.find((interchangeInfo) => interchangeInfo.from_line === lastStation.line && interchangeInfo.to_line === firstStationOfNewSegment.line)?.direction_options?.find((option) => option.to_station_id === secondStationOfNewSegment.stationId)?.terminal_station_id ?? null;
+                const terminalStationId = findTerminalStationId(
+                    this.stationMap,
+                    lastStation.stationId,
+                    lastStation.line,
+                    firstStationOfNewSegment.line,
+                    secondStationOfNewSegment.stationId
+                )
                 totalJourney.route[totalJourney.route.length - 1] = {
                     ...lastStation,
                     isConnectionPoint: true,

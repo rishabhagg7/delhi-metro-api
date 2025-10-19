@@ -1,4 +1,5 @@
 import { PriorityQueue } from "./PriorityQueue.js";
+import { findTerminalStationId } from "./utils/stationDataUtils.js";
 
 export class MetroRouteFinder {
     constructor(stations) {
@@ -174,7 +175,13 @@ export class MetroRouteFinder {
         // Mark interchange on the previous station if line change occurs
         if (hasInterchange && newRoute.length > 0) {
             const lastStation = newRoute[newRoute.length - 1];
-            const terminalStationId = this.stationMap[lastStation.stationId].interchange_info.walking_time_between_lines.find((interchange) => interchange.from_line === currentLine && interchange.to_line === nextLine)?.direction_options?.find((option) => option.to_station_id === nextStationId)?.terminal_station_id ?? null;
+            const terminalStationId = findTerminalStationId(
+                this.stationMap,
+                lastStation.stationId,
+                currentLine,
+                nextLine,
+                nextStationId
+            );
             newRoute[newRoute.length - 1] = {
                 ...lastStation,
                 isInterchange: true,
