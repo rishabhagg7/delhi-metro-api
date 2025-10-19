@@ -1,4 +1,5 @@
 import { PriorityQueue } from "./PriorityQueue.js";
+import { findTerminalStationId } from "./utils/stationDataUtils.js";
 
 export class MetroRouteFinder {
     constructor(stations) {
@@ -114,8 +115,7 @@ export class MetroRouteFinder {
         }
 
         const interchangeData = station.interchange_info.walking_time_between_lines.find(data => 
-            (data.from_line === fromLine && data.to_line === toLine) ||
-            (data.from_line === toLine && data.to_line === fromLine)
+            (data.from_line === fromLine && data.to_line === toLine)
         );
 
         return interchangeData?.time_seconds ?? 0;
@@ -175,10 +175,21 @@ export class MetroRouteFinder {
         // Mark interchange on the previous station if line change occurs
         if (hasInterchange && newRoute.length > 0) {
             const lastStation = newRoute[newRoute.length - 1];
+            const terminalStationId = findTerminalStationId(
+                this.stationMap,
+                lastStation.stationId,
+                currentLine,
+                nextLine,
+                nextStationId
+            );
             newRoute[newRoute.length - 1] = {
                 ...lastStation,
                 isInterchange: true,
-                interchange_info: { from_line: currentLine, to_line: nextLine }
+                interchange_info: { 
+                    from_line: currentLine, 
+                    to_line: nextLine,
+                    terminal_station: terminalStationId
+                }
             };
         }
 
@@ -211,7 +222,7 @@ export class MetroRouteFinder {
         }
 
         console.log(`⏱️  Total time: ${result.totalTimeMinutes} minutes`);
-        console.log(`🔄 Interchanges: ${result.interchanges}`);
+        console.log(`🔄 Interchanges: ${result.totalInterchanges}`);
         console.log(`🚉 Stations: ${result.stationIds.length}`);
         console.log(`🚇 Route: ${result.stationIds.map(this.formatStationName).join(' → ')}`);
     }
@@ -254,6 +265,10 @@ export class MetroRouteFinder {
             
             if (station.isInterchange) {
                 console.log(`    🔄 INTERCHANGE: ${station.interchange_info.from_line.toUpperCase()} → ${station.interchange_info.to_line.toUpperCase()}`);
+                if (station.interchange_info.terminal_station) {
+                    const terminalStationName = this.formatStationName(station.interchange_info.terminal_station);
+                    console.log(`    🧭 DIRECTION: TOWARDS ${terminalStationName}`);
+                }
                 console.log('    ' + '─'.repeat(50));
             }
             
