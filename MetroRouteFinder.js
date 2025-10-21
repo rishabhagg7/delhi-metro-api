@@ -171,11 +171,12 @@ export class MetroRouteFinder {
 
     buildNewRoute(currentRoute, nextStationId, nextLine, currentLine, hasInterchange, totalTime) {
         const newRoute = [...currentRoute];
+        const lastStation = newRoute[newRoute.length - 1];
+        const terminalStationId = this.stationMap[lastStation.stationId]?.connections.find((connection) => connection.to_station_id === nextStationId)?.terminal_station_id ?? null
         
         // Mark interchange on the previous station if line change occurs
         if (hasInterchange && newRoute.length > 0) {
-            const lastStation = newRoute[newRoute.length - 1];
-            const terminalStationId = findTerminalStationId(
+            const interchangeTerminalStationId = findTerminalStationId(
                 this.stationMap,
                 lastStation.stationId,
                 currentLine,
@@ -185,12 +186,19 @@ export class MetroRouteFinder {
             newRoute[newRoute.length - 1] = {
                 ...lastStation,
                 isInterchange: true,
+                terminalStation: terminalStationId,
                 interchange_info: { 
                     from_line: currentLine, 
                     to_line: nextLine,
-                    terminal_station: terminalStationId
+                    terminal_station: interchangeTerminalStationId
                 }
             };
+        }else if(newRoute.length > 0){
+            newRoute[newRoute.length - 1] = {
+                ...lastStation,
+                isInterchange: false,
+                terminalStation: terminalStationId
+            }
         }
 
         // Add the next station
@@ -198,7 +206,8 @@ export class MetroRouteFinder {
             stationId: nextStationId,
             line: nextLine,
             isInterchange: false,
-            timeToReachInSeconds: totalTime
+            timeToReachInSeconds: totalTime,
+            terminalStation: terminalStationId
         });
 
         return newRoute;
