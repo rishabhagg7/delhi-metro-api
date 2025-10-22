@@ -110,7 +110,10 @@ export class MetroRouteFinder {
     }
 
     getInterchangeTime(station, fromLine, toLine) {
-        if (fromLine === toLine || !station.interchange_info?.walking_time_between_lines) {
+        if (fromLine === toLine) {
+            return 60;
+        }
+        if (!station.interchange_info?.walking_time_between_lines) {
             return 0;
         }
 
@@ -122,11 +125,12 @@ export class MetroRouteFinder {
     }
 
     exploreConnections(station, currentTime, currentLine, currentRoute, pq, visited, optimizeBy, currentInterchanges) {
+        const currentTerminalStationId = currentRoute[currentRoute.length-1]?.terminalStation ?? null
         station.connections.forEach(connection => {
-            const { to_station_id: nextStationId, line: nextLine, travel_time_seconds: travelTime } = connection;
+            const { to_station_id: nextStationId, line: nextLine, travel_time_seconds: travelTime, terminal_station_id: nextTerminalStationId } = connection;
 
             // Calculate interchange penalties
-            const hasInterchange = this.shouldCalculateInterchange(currentLine, nextLine);
+            const hasInterchange = this.shouldCalculateInterchange(currentLine, nextLine, currentTerminalStationId, nextTerminalStationId);
             const interchangeTime = hasInterchange ? this.getInterchangeTime(station, currentLine, nextLine) : 0;
             const totalTime = currentTime + travelTime + interchangeTime;
             const totalInterchanges = currentInterchanges + (hasInterchange ? 1 : 0);
@@ -160,8 +164,8 @@ export class MetroRouteFinder {
         });
     }
 
-    shouldCalculateInterchange(currentLine, nextLine) {
-        return currentLine !== nextLine;
+    shouldCalculateInterchange(currentLine, nextLine, currentTerminalStationId, nextTerminalStationId) {
+        return currentLine !== nextLine || (currentLine === nextLine && currentTerminalStationId !== null && nextTerminalStationId !== null && currentTerminalStationId !== nextTerminalStationId);
     }
 
     isBetterPath(stationId, line, newValue, visited) {
