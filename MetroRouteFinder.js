@@ -164,7 +164,13 @@ export class MetroRouteFinder {
     }
 
     shouldCalculateInterchange(currentLine, nextLine, currentTerminalStationId, nextTerminalStationId) {
-        return currentLine !== nextLine || (currentLine === nextLine && currentTerminalStationId !== null && nextTerminalStationId !== null && currentTerminalStationId !== nextTerminalStationId);
+        const isSwitchingLines = currentLine !== nextLine;
+        const isChangingDirectionOnSameLine =
+            currentLine === nextLine &&
+            currentTerminalStationId !== null &&
+            nextTerminalStationId !== null &&
+            currentTerminalStationId !== nextTerminalStationId;
+        return isSwitchingLines || isChangingDirectionOnSameLine;
     }
 
     isBetterPath(stationId, line, newValue, visited) {
