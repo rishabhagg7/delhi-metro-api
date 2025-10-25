@@ -1,5 +1,4 @@
 import { MetroRouteFinder } from './MetroRouteFinder.js';
-import { findTerminalStationId } from "./utils/stationDataUtils.js";
 
 export class MultiStopJourneyPlanner {
     constructor(stations, optimizeBy = "time") {
@@ -91,45 +90,37 @@ export class MultiStopJourneyPlanner {
             const stationIdsToAdd = stationIds.slice(1);
             const linesToAdd = lines.slice(1);
             const firstStationOfNewSegment = route[0];
-            const secondStationOfNewSegment = route[1];
-            const terminalStationId = this.stationMap[lastStation.stationId]?.connections?.find((connection) => connection.to_station_id === secondStationOfNewSegment.stationId)?.terminal_station_id ?? null 
+            const newTerminalStationId = firstStationOfNewSegment.terminalStation ?? null
             totalJourney.route[totalJourney.route.length - 1] = {
                 ...lastStation,
-                terminalStation: terminalStationId,
+                terminalStation: newTerminalStationId,
                 isConnectionPoint: true,
                 isInterchange: false
             };
 
             if (lastStation.line !== firstStationOfNewSegment.line) {
-                const interchangeTerminalStationId = findTerminalStationId(
-                    this.stationMap,
-                    lastStation.stationId,
-                    lastStation.line,
-                    firstStationOfNewSegment.line,
-                    secondStationOfNewSegment.stationId
-                )
                 totalJourney.route[totalJourney.route.length - 1] = {
                     ...lastStation,
-                    terminalStation: terminalStationId,
+                    terminalStation: newTerminalStationId,
                     isConnectionPoint: true,
                     isInterchange: true,
                     interchange_info: {
                         from_line: lastStation.line,
                         to_line: firstStationOfNewSegment.line,
-                        terminal_station: interchangeTerminalStationId
+                        terminal_station: newTerminalStationId
                     }
                 };
                 totalJourney.totalInterchanges += 1;
             } else if(lastStation.terminalStation !== firstStationOfNewSegment.terminalStation){
                 totalJourney.route[totalJourney.route.length - 1] = {
                     ...lastStation,
-                    terminalStation: terminalStationId,
+                    terminalStation: newTerminalStationId,
                     isConnectionPoint: true,
                     isInterchange: true,
                     interchange_info: {
                         from_line: lastStation.line,
                         to_line: firstStationOfNewSegment.line,
-                        terminal_station: terminalStationId
+                        terminal_station: newTerminalStationId
                     }
                 };
                 totalJourney.totalInterchanges += 1;

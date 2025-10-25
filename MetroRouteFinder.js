@@ -1,5 +1,4 @@
 import { PriorityQueue } from "./PriorityQueue.js";
-import { findTerminalStationId } from "./utils/stationDataUtils.js";
 
 export class MetroRouteFinder {
     constructor(stations) {
@@ -153,7 +152,7 @@ export class MetroRouteFinder {
                 const stationLineKey = this.makeKey(nextStationId, nextLine);
                 visited.set(stationLineKey, visitedValue);
                 
-                const newRoute = this.buildNewRoute(currentRoute, nextStationId, nextLine, currentLine, hasInterchange, totalTime);
+                const newRoute = this.buildNewRoute(currentRoute, nextStationId, nextLine, currentLine, hasInterchange, totalTime, nextTerminalStationId);
                 
                 if (optimizeBy === 'time') {
                     pq.push(nextStationId, nextLine, newRoute, primaryValue);
@@ -173,20 +172,12 @@ export class MetroRouteFinder {
         return !visited.has(stationLineKey) || newValue < visited.get(stationLineKey);
     }
 
-    buildNewRoute(currentRoute, nextStationId, nextLine, currentLine, hasInterchange, totalTime) {
+    buildNewRoute(currentRoute, nextStationId, nextLine, currentLine, hasInterchange, totalTime, terminalStationId) {
         const newRoute = [...currentRoute];
         const lastStation = newRoute[newRoute.length - 1];
-        const terminalStationId = this.stationMap[lastStation.stationId]?.connections.find((connection) => connection.to_station_id === nextStationId)?.terminal_station_id ?? null
         
         // Mark interchange on the previous station if line change occurs
         if (hasInterchange && newRoute.length > 0) {
-            const interchangeTerminalStationId = findTerminalStationId(
-                this.stationMap,
-                lastStation.stationId,
-                currentLine,
-                nextLine,
-                nextStationId
-            );
             newRoute[newRoute.length - 1] = {
                 ...lastStation,
                 isInterchange: true,
@@ -194,7 +185,7 @@ export class MetroRouteFinder {
                 interchange_info: { 
                     from_line: currentLine, 
                     to_line: nextLine,
-                    terminal_station: interchangeTerminalStationId
+                    terminal_station: terminalStationId
                 }
             };
         }else if(newRoute.length > 0){
