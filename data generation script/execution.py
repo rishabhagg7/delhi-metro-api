@@ -89,11 +89,30 @@ for sid, data in stops.items():
     # Build connections list
     conn_list = []
     for nbr_id, clr, travel_time in sorted(data['connections']):
-        conn_list.append({
+        best_terminal = None
+        longest_trip_len = 0
+        for tid, seq in trip_stops.items():
+            rid = trip_to_route.get(tid)
+            trip_color = route_color.get(rid)
+            if trip_color != clr:
+                continue
+            stop_ids = [s for _, s in sorted(seq)]
+            if sid in stop_ids and nbr_id in stop_ids:
+                sid_idx = stop_ids.index(sid)
+                nbr_idx = stop_ids.index(nbr_id)
+                trip_len = len(stop_ids)
+                if trip_len > longest_trip_len:
+                    longest_trip_len = trip_len
+                    terminal_id = stop_ids[-1] if sid_idx < nbr_idx else stop_ids[0]
+                    best_terminal = stops[terminal_id]['id']
+        conn_obj = {
             'to_station_id': stops[nbr_id]['id'],
             'line': clr,
             'travel_time_seconds': travel_time
-        })
+        }
+        if best_terminal:
+            conn_obj['terminal_station_id'] = best_terminal
+        conn_list.append(conn_obj)
 
     # Build walking times
     walks = []
