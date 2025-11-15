@@ -40,6 +40,9 @@ with open('routes.txt', newline='', encoding='utf-8') as f:
             col = row['route_long_name'].split('_', 1)[0].strip().lower()
         if col in ('grey',):
             col = 'gray'
+        # Normalize: take only first token before "/" if present
+        if "/" in col:
+            col = col.split("/")[0].strip()
         route_color[rid] = col or None
 
 # Map trip_id to route_id
