@@ -195,12 +195,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "seelam_pur",
-              "terminal_station_id": "rithala"
-            },
-            {
               "to_station_id": "shahdara",
               "terminal_station_id": "shaheed_sthal_(new_bus_adda)"
+            },
+            {
+              "to_station_id": "seelam_pur",
+              "terminal_station_id": "rithala"
             }
           ]
         },
@@ -210,12 +210,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "jafrabad",
-              "terminal_station_id": "shiv_vihar"
-            },
-            {
               "to_station_id": "east_azad_nagar",
               "terminal_station_id": "majlis_park"
+            },
+            {
+              "to_station_id": "jafrabad",
+              "terminal_station_id": "shiv_vihar"
             }
           ]
         }
@@ -370,12 +370,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "chandni_chowk",
-              "terminal_station_id": "huda_city_centre"
-            },
-            {
               "to_station_id": "civil_lines",
               "terminal_station_id": "samaypur_badli"
+            },
+            {
+              "to_station_id": "chandni_chowk",
+              "terminal_station_id": "huda_city_centre"
             }
           ]
         },
@@ -400,12 +400,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "chandni_chowk",
-              "terminal_station_id": "huda_city_centre"
-            },
-            {
               "to_station_id": "civil_lines",
               "terminal_station_id": "samaypur_badli"
+            },
+            {
+              "to_station_id": "chandni_chowk",
+              "terminal_station_id": "huda_city_centre"
             }
           ]
         },
@@ -628,12 +628,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "shastri_nagar",
-              "terminal_station_id": "shaheed_sthal_(new_bus_adda)"
-            },
-            {
               "to_station_id": "kanhaiya_nagar",
               "terminal_station_id": "rithala"
+            },
+            {
+              "to_station_id": "shastri_nagar",
+              "terminal_station_id": "shaheed_sthal_(new_bus_adda)"
             }
           ]
         },
@@ -792,12 +792,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "shakurpur",
-              "terminal_station_id": "shiv_vihar"
-            },
-            {
               "to_station_id": "shalimar_bagh",
               "terminal_station_id": "majlis_park"
+            },
+            {
+              "to_station_id": "shakurpur",
+              "terminal_station_id": "shiv_vihar"
             }
           ]
         }
@@ -1975,7 +1975,7 @@ export const stations = [
     },
     "lines": [
       {
-        "name": "orange/airport",
+        "name": "orange",
         "dwell_time_seconds": 45
       },
       {
@@ -1986,7 +1986,7 @@ export const stations = [
     "connections": [
       {
         "to_station_id": "shivaji_stadium",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "dwarka_sector_-_21"
       },
@@ -2006,12 +2006,12 @@ export const stations = [
     "interchange_info": {
       "is_interchange": true,
       "interchange_lines": [
-        "orange/airport",
+        "orange",
         "yellow"
       ],
       "walking_time_between_lines": [
         {
-          "from_line": "orange/airport",
+          "from_line": "orange",
           "to_line": "yellow",
           "time_seconds": 180,
           "direction_options": [
@@ -2027,7 +2027,7 @@ export const stations = [
         },
         {
           "from_line": "yellow",
-          "to_line": "orange/airport",
+          "to_line": "orange",
           "time_seconds": 180,
           "direction_options": [
             {
@@ -2401,12 +2401,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "aiims",
-              "terminal_station_id": "huda_city_centre"
-            },
-            {
               "to_station_id": "jorbagh",
               "terminal_station_id": "samaypur_badli"
+            },
+            {
+              "to_station_id": "aiims",
+              "terminal_station_id": "huda_city_centre"
             }
           ]
         },
@@ -2416,12 +2416,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "sarojini_nagar",
-              "terminal_station_id": "majlis_park"
-            },
-            {
               "to_station_id": "south_extension",
               "terminal_station_id": "shiv_vihar"
+            },
+            {
+              "to_station_id": "sarojini_nagar",
+              "terminal_station_id": "majlis_park"
             }
           ]
         }
@@ -2554,12 +2554,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "malviya_nagar",
-              "terminal_station_id": "huda_city_centre"
-            },
-            {
               "to_station_id": "green_park",
               "terminal_station_id": "samaypur_badli"
+            },
+            {
+              "to_station_id": "malviya_nagar",
+              "terminal_station_id": "huda_city_centre"
             }
           ]
         },
@@ -2917,12 +2917,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "gurudronacharya",
-              "terminal_station_id": "samaypur_badli"
-            },
-            {
               "to_station_id": "mg_road",
               "terminal_station_id": "huda_city_centre"
+            },
+            {
+              "to_station_id": "gurudronacharya",
+              "terminal_station_id": "samaypur_badli"
             }
           ]
         },
@@ -2932,12 +2932,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "phase-i_(rapid_metro)",
-              "terminal_station_id": "sector_55-56_(rapid_metro)"
-            },
-            {
               "to_station_id": "sikanderpur_(rapid_metro)",
               "terminal_station_id": "phase_3_(rapid_metro)"
+            },
+            {
+              "to_station_id": "phase-i_(rapid_metro)",
+              "terminal_station_id": "sector_55-56_(rapid_metro)"
             }
           ]
         }
@@ -3163,12 +3163,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "ip_extension",
-              "terminal_station_id": "majlis_park"
-            },
-            {
               "to_station_id": "karkarduma",
               "terminal_station_id": "shiv_vihar"
+            },
+            {
+              "to_station_id": "ip_extension",
+              "terminal_station_id": "majlis_park"
             }
           ]
         },
@@ -3178,12 +3178,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "kaushambi",
-              "terminal_station_id": "vaishali"
-            },
-            {
               "to_station_id": "karkarduma",
               "terminal_station_id": "dwarka_sector_-_21"
+            },
+            {
+              "to_station_id": "kaushambi",
+              "terminal_station_id": "vaishali"
             }
           ]
         }
@@ -3261,12 +3261,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "anand_vihar",
-              "terminal_station_id": "vaishali"
-            },
-            {
               "to_station_id": "preet_vihar",
               "terminal_station_id": "dwarka_sector_-_21"
+            },
+            {
+              "to_station_id": "anand_vihar",
+              "terminal_station_id": "vaishali"
             }
           ]
         }
@@ -3767,12 +3767,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "mayur_vihar_ext",
-              "terminal_station_id": "noida_electronic_city"
-            },
-            {
               "to_station_id": "akshardham",
               "terminal_station_id": "dwarka_sector_-_21"
+            },
+            {
+              "to_station_id": "mayur_vihar_ext",
+              "terminal_station_id": "noida_electronic_city"
             }
           ]
         }
@@ -3996,12 +3996,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "supreme_court",
-              "terminal_station_id": "noida_electronic_city"
-            },
-            {
               "to_station_id": "barakhamba",
               "terminal_station_id": "dwarka_sector_-_21"
+            },
+            {
+              "to_station_id": "supreme_court",
+              "terminal_station_id": "noida_electronic_city"
             }
           ]
         }
@@ -4452,12 +4452,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "mayapuri",
-              "terminal_station_id": "shiv_vihar"
-            },
-            {
               "to_station_id": "esi_basai_darapur",
               "terminal_station_id": "majlis_park"
+            },
+            {
+              "to_station_id": "mayapuri",
+              "terminal_station_id": "shiv_vihar"
             }
           ]
         },
@@ -5163,7 +5163,7 @@ export const stations = [
         "dwell_time_seconds": 45
       },
       {
-        "name": "orange/airport",
+        "name": "orange",
         "dwell_time_seconds": 45
       }
     ],
@@ -5176,7 +5176,7 @@ export const stations = [
       },
       {
         "to_station_id": "igi_airport",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "new_delhi"
       }
@@ -5185,12 +5185,12 @@ export const stations = [
       "is_interchange": true,
       "interchange_lines": [
         "blue",
-        "orange/airport"
+        "orange"
       ],
       "walking_time_between_lines": [
         {
           "from_line": "blue",
-          "to_line": "orange/airport",
+          "to_line": "orange",
           "time_seconds": 180,
           "direction_options": [
             {
@@ -5200,7 +5200,7 @@ export const stations = [
           ]
         },
         {
-          "from_line": "orange/airport",
+          "from_line": "orange",
           "to_line": "blue",
           "time_seconds": 180,
           "direction_options": [
@@ -5444,12 +5444,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "jangpura",
-              "terminal_station_id": "kashmere_gate"
-            },
-            {
               "to_station_id": "moolchand",
               "terminal_station_id": "raja_nahar_singh"
+            },
+            {
+              "to_station_id": "jangpura",
+              "terminal_station_id": "kashmere_gate"
             }
           ]
         },
@@ -5632,12 +5632,12 @@ export const stations = [
           "time_seconds": 180,
           "direction_options": [
             {
-              "to_station_id": "nehru_place",
-              "terminal_station_id": "kashmere_gate"
-            },
-            {
               "to_station_id": "govind_puri",
               "terminal_station_id": "raja_nahar_singh"
+            },
+            {
+              "to_station_id": "nehru_place",
+              "terminal_station_id": "kashmere_gate"
             }
           ]
         },
@@ -6432,20 +6432,20 @@ export const stations = [
     },
     "lines": [
       {
-        "name": "orange/airport",
+        "name": "orange",
         "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dwarka_sector_-_21",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "dwarka_sector_-_21"
       },
       {
         "to_station_id": "delhi_aerocity",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "new_delhi"
       }
@@ -6453,7 +6453,7 @@ export const stations = [
     "interchange_info": {
       "is_interchange": false,
       "interchange_lines": [
-        "orange/airport"
+        "orange"
       ],
       "walking_time_between_lines": []
     }
@@ -6467,20 +6467,20 @@ export const stations = [
     },
     "lines": [
       {
-        "name": "orange/airport",
+        "name": "orange",
         "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "igi_airport",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "dwarka_sector_-_21"
       },
       {
         "to_station_id": "dhaula_kuan",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "new_delhi"
       }
@@ -6488,7 +6488,7 @@ export const stations = [
     "interchange_info": {
       "is_interchange": false,
       "interchange_lines": [
-        "orange/airport"
+        "orange"
       ],
       "walking_time_between_lines": []
     }
@@ -6502,20 +6502,20 @@ export const stations = [
     },
     "lines": [
       {
-        "name": "orange/airport",
+        "name": "orange",
         "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "delhi_aerocity",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "dwarka_sector_-_21"
       },
       {
         "to_station_id": "shivaji_stadium",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "new_delhi"
       }
@@ -6523,7 +6523,7 @@ export const stations = [
     "interchange_info": {
       "is_interchange": false,
       "interchange_lines": [
-        "orange/airport"
+        "orange"
       ],
       "walking_time_between_lines": []
     }
@@ -6537,20 +6537,20 @@ export const stations = [
     },
     "lines": [
       {
-        "name": "orange/airport",
+        "name": "orange",
         "dwell_time_seconds": 45
       }
     ],
     "connections": [
       {
         "to_station_id": "dhaula_kuan",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "dwarka_sector_-_21"
       },
       {
         "to_station_id": "new_delhi",
-        "line": "orange/airport",
+        "line": "orange",
         "travel_time_seconds": 120,
         "terminal_station_id": "new_delhi"
       }
@@ -6558,7 +6558,7 @@ export const stations = [
     "interchange_info": {
       "is_interchange": false,
       "interchange_lines": [
-        "orange/airport"
+        "orange"
       ],
       "walking_time_between_lines": []
     }
