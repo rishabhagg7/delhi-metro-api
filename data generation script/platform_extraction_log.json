@@ -1,0 +1,6307 @@
+{
+  "summary": {
+    "total_processed": 262,
+    "success": 246,
+    "partial": 15,
+    "failed": 1,
+    "missing_terminal_count": 71,
+    "missing_next_station_count": 79
+  },
+  "success": [
+    {
+      "station_id": "dilshad_garden",
+      "url": "https://en.wikipedia.org/wiki/Dilshad_Garden_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "shaheed_nagar",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "jhilmil",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jhilmil",
+      "url": "https://en.wikipedia.org/wiki/Jhilmil_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "dilshad_garden",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "mansrover_park",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mansrover_park",
+      "url": "https://en.wikipedia.org/wiki/Mansarovar_Park_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "jhilmil",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "shahdara",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shahdara",
+      "url": "https://en.wikipedia.org/wiki/Shahdara_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "mansrover_park",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "welcome",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "welcome",
+      "url": "https://en.wikipedia.org/wiki/Welcome_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "shahdara",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "seelam_pur",
+          "bound": "west"
+        },
+        "3": {
+          "terminal": null,
+          "next_station": "jafrabad",
+          "bound": "anticlockwise"
+        },
+        "4": {
+          "terminal": null,
+          "next_station": "east_azad_nagar",
+          "bound": "clockwise"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "seelam_pur",
+      "url": "https://en.wikipedia.org/wiki/Seelampur_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "welcome",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "shastri_park",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shastri_park",
+      "url": "https://en.wikipedia.org/wiki/Shastri_Park_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "seelam_pur",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "kashmere_gate",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "kashmere_gate",
+      "url": "https://en.wikipedia.org/wiki/Kashmere_Gate_metro_station",
+      "platforms": {
+        "3": {
+          "terminal": "rithala",
+          "next_station": "tis_hazari",
+          "bound": "west"
+        },
+        "4": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "shastri_park",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "chandni_chowk",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "civil_lines",
+          "bound": "north"
+        },
+        "5": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "lal_quila",
+          "bound": "south"
+        },
+        "6": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "tis_hazari",
+      "url": "https://en.wikipedia.org/wiki/Tis_Hazari_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "kashmere_gate",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "pul_bangash",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "pul_bangash",
+      "url": "https://en.wikipedia.org/wiki/Pul_Bangash_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "tis_hazari",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "pratap_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "pratap_nagar",
+      "url": "https://en.wikipedia.org/wiki/Pratap_Nagar_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "pul_bangash",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "shastri_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shastri_nagar",
+      "url": "https://en.wikipedia.org/wiki/Shastri_Nagar_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "pratap_nagar",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "inderlok",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "inderlok",
+      "url": "https://en.wikipedia.org/wiki/Inderlok_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "shastri_nagar",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "kanhaiya_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "kanhaiya_nagar",
+      "url": "https://en.wikipedia.org/wiki/Kanhaiya_Nagar_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "inderlok",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "keshav_puram",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "keshav_puram",
+      "url": "https://en.wikipedia.org/wiki/Keshav_Puram_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "kanhaiya_nagar",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "netaji_subash_place",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "netaji_subash_place",
+      "url": "https://en.wikipedia.org/wiki/Netaji_Subhash_Place_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "keshav_puram",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "kohat_enclave",
+          "bound": "west"
+        },
+        "3": {
+          "terminal": "shiv_vihar",
+          "next_station": "shakurpur",
+          "bound": "south"
+        },
+        "4": {
+          "terminal": "majlis_park",
+          "next_station": "shalimar_bagh",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "kohat_enclave",
+      "url": "https://en.wikipedia.org/wiki/Kohat_Enclave_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "netaji_subash_place",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "pitampura",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "pitampura",
+      "url": "https://en.wikipedia.org/wiki/Pitampura_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "kohat_enclave",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "rohini_east",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rohini_east",
+      "url": "https://en.wikipedia.org/wiki/Rohini_East_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "pitampura",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "rohini_west",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rohini_west",
+      "url": "https://en.wikipedia.org/wiki/Rohini_West_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "rohini_east",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rithala",
+      "url": "https://en.wikipedia.org/wiki/Rithala_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "rohini_west",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mundka",
+      "url": "https://en.wikipedia.org/wiki/Mundka_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "rajdhani_park",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "mundka_industrial_area_(m.i.a)",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rajdhani_park",
+      "url": "https://en.wikipedia.org/wiki/Rajdhani_Park_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "nangloi_railway_station",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "mundka",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "nangloi_railway_station",
+      "url": "https://en.wikipedia.org/wiki/Nangloi_Railway_Station_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "nangloi",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "rajdhani_park",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "nangloi",
+      "url": "https://en.wikipedia.org/wiki/Nangloi_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "maharaja_surajmal_stadium",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "nangloi_railway_station",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "maharaja_surajmal_stadium",
+      "url": "https://en.wikipedia.org/wiki/Maharaja_Surajmal_Stadium_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "udyog_nagar",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "nangloi",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "udyog_nagar",
+      "url": "https://en.wikipedia.org/wiki/Udyog_Nagar_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "peera_garhi",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "maharaja_surajmal_stadium",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "peera_garhi",
+      "url": "https://en.wikipedia.org/wiki/Peera_Garhi_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "paschim_vihar_(west)",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "udyog_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "paschim_vihar_(west)",
+      "url": "https://en.wikipedia.org/wiki/Paschim_Vihar_West_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "paschim_vihar_(east)",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "peera_garhi",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "paschim_vihar_(east)",
+      "url": "https://en.wikipedia.org/wiki/Paschim_Vihar_East_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "madipur",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "paschim_vihar_(west)",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "madipur",
+      "url": "https://en.wikipedia.org/wiki/Madipur_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "shivaji_park",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "paschim_vihar_(east)",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shivaji_park",
+      "url": "https://en.wikipedia.org/wiki/Shivaji_Park_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "punjabi_bagh_west",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "madipur",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "punjabi_bagh",
+      "url": "https://en.wikipedia.org/wiki/Punjabi_Bagh_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "ashok_park_main",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "punjabi_bagh_west",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "ashok_park_main",
+      "url": "https://en.wikipedia.org/wiki/Ashok_Park_Main_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": null,
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "punjabi_bagh",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "satguru_ram_singh_marg",
+      "url": "https://en.wikipedia.org/wiki/Satguru_Ram_Singh_Marg_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "kirti_nagar",
+          "next_station": null,
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "ashok_park_main",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "samaypur_badli",
+      "url": "https://en.wikipedia.org/wiki/Samaypur_Badli_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "rohini_sector_18-19",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rohini_sector_18-19",
+      "url": "https://en.wikipedia.org/wiki/Rohini_Sector_18,_19_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "haiderpur_badli_mor",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": null,
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "haiderpur_badli_mor",
+      "url": "https://en.wikipedia.org/wiki/Haiderpur_Badli_Mor_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "jahangirpuri",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "rohini_sector_18-19",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jahangirpuri",
+      "url": "https://en.wikipedia.org/wiki/Jahangirpuri_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "adarsh_nagar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "haiderpur_badli_mor",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "adarsh_nagar",
+      "url": "https://en.wikipedia.org/wiki/Adarsh_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "azadpur",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "jahangirpuri",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "azadpur",
+      "url": "https://en.wikipedia.org/wiki/Azadpur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "model_town",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "adarsh_nagar",
+          "bound": "north"
+        },
+        "3": {
+          "terminal": "shiv_vihar",
+          "next_station": "shalimar_bagh",
+          "bound": "east"
+        },
+        "4": {
+          "terminal": "majlis_park",
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "model_town",
+      "url": "https://en.wikipedia.org/wiki/Model_Town_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "moti_nagar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "azadpur",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "guru_tegh_bahadur_nagar",
+      "url": "https://en.wikipedia.org/wiki/Guru_Tegh_Bahadur_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "vishwavidyalaya",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "model_town",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "vishwavidyalaya",
+      "url": "https://en.wikipedia.org/wiki/Vishwavidyalaya_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "vidhan_sabha",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "moti_nagar",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "vidhan_sabha",
+      "url": "https://en.wikipedia.org/wiki/Vidhan_Sabha_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "civil_lines",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "vishwavidyalaya",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "civil_lines",
+      "url": "https://en.wikipedia.org/wiki/Civil_Lines_%28Delhi_Metro%29",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "kashmere_gate",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "vidhan_sabha",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "chandni_chowk",
+      "url": "https://en.wikipedia.org/wiki/Chandni_Chowk_%28Delhi_Metro%29",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "chawri_bazar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "kashmere_gate",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "chawri_bazar",
+      "url": "https://en.wikipedia.org/wiki/Chawri_Bazar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "new_delhi",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "chandni_chowk",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "new_delhi",
+      "url": "https://en.wikipedia.org/wiki/New_Delhi_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "rajiv_chowk",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "chawri_bazar",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rajiv_chowk",
+      "url": "https://en.wikipedia.org/wiki/Rajiv_Chowk_metro_station",
+      "platforms": {
+        "3": {
+          "terminal": "noida_electronic_city",
+          "next_station": "rk_ashram_marg",
+          "bound": "east"
+        },
+        "4": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "barakhamba",
+          "bound": "west"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "new_delhi",
+          "bound": "north"
+        },
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "patel_chowk",
+          "bound": "south"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "patel_chowk",
+      "url": "https://en.wikipedia.org/wiki/Patel_Chowk_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "central_secretariat",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "rajiv_chowk",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "udyog_bhawan",
+      "url": "https://en.wikipedia.org/wiki/Udyog_Bhawan_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "lok_kalyan_marg",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "central_secretariat",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "lok_kalyan_marg",
+      "url": "https://en.wikipedia.org/wiki/Lok_Kalyan_Marg_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "jorbagh",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "udyog_bhawan",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jorbagh",
+      "url": "https://en.wikipedia.org/wiki/Jor_Bagh_%28Delhi_Metro%29",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "dilli_haat_-_ina",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "lok_kalyan_marg",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dilli_haat_-_ina",
+      "url": "https://en.wikipedia.org/wiki/Dilli_Haat_-_INA_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "aiims",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "jorbagh",
+          "bound": "north"
+        },
+        "3": {
+          "terminal": "shiv_vihar",
+          "next_station": "south_extension",
+          "bound": "northeast"
+        },
+        "4": {
+          "terminal": "majlis_park",
+          "next_station": "sarojini_nagar",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "aiims",
+      "url": "https://en.wikipedia.org/wiki/AIIMS_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "green_park",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "dilli_haat_-_ina",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "green_park",
+      "url": "https://en.wikipedia.org/wiki/Green_Park_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "hauz_khas",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "aiims",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "hauz_khas",
+      "url": "https://en.wikipedia.org/wiki/Hauz_Khas_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "malviya_nagar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "green_park",
+          "bound": "north"
+        },
+        "3": {
+          "terminal": "botanical_garden",
+          "next_station": "panchsheel_park",
+          "bound": "east"
+        },
+        "4": {
+          "terminal": "janak_puri_west",
+          "next_station": "iit",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "malviya_nagar",
+      "url": "https://en.wikipedia.org/wiki/Malviya_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "saket",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "hauz_khas",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "saket",
+      "url": "https://en.wikipedia.org/wiki/Saket_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "qutab_minar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "malviya_nagar",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "qutab_minar",
+      "url": "https://en.wikipedia.org/wiki/Qutab_Minar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "chhattarpur",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "saket",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "chhattarpur",
+      "url": "https://en.wikipedia.org/wiki/Chhattarpur_%28Delhi_Metro%29",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "sultanpur",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "qutab_minar",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sultanpur",
+      "url": "https://en.wikipedia.org/wiki/Sultanpur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "ghitorni",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "chhattarpur",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "ghitorni",
+      "url": "https://en.wikipedia.org/wiki/Ghitorni_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "arjan_garh",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "sultanpur",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "arjan_garh",
+      "url": "https://en.wikipedia.org/wiki/Arjan_Garh_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "gurudronacharya",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "ghitorni",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "gurudronacharya",
+      "url": "https://en.wikipedia.org/wiki/Guru_Dronacharya_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "sikanderpur",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "arjan_garh",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mg_road",
+      "url": "https://en.wikipedia.org/wiki/MG_Road_metro_station_(Gurgaon)",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": "iffco_chowk",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "sikanderpur",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "iffco_chowk",
+      "url": "https://en.wikipedia.org/wiki/IFFCO_Chowk_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": null,
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "mg_road",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "huda_city_centre",
+      "url": "https://en.wikipedia.org/wiki/HUDA_City_Centre_%28Delhi_Metro%29",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": "iffco_chowk",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "vaishali",
+      "url": "https://en.wikipedia.org/wiki/Vaishali_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "kaushambi",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "kaushambi",
+      "url": "https://en.wikipedia.org/wiki/Kaushambi_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "vaishali",
+          "next_station": null,
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "anand_vihar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "anand_vihar",
+      "url": "https://en.wikipedia.org/wiki/Anand_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "vaishali",
+          "next_station": "kaushambi",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "karkarduma",
+          "bound": "west"
+        },
+        "3": {
+          "terminal": "shiv_vihar",
+          "next_station": "karkarduma",
+          "bound": "northeast"
+        },
+        "4": {
+          "terminal": "majlis_park",
+          "next_station": "ip_extension",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "preet_vihar",
+      "url": "https://en.wikipedia.org/wiki/Preet_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "vaishali",
+          "next_station": "karkarduma",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "nirman_vihar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "nirman_vihar",
+      "url": "https://en.wikipedia.org/wiki/Nirman_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "vaishali",
+          "next_station": "preet_vihar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "laxmi_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "laxmi_nagar",
+      "url": "https://en.wikipedia.org/wiki/Laxmi_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "vaishali",
+          "next_station": "nirman_vihar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "yamuna_bank",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_city_centre",
+      "url": "https://en.wikipedia.org/wiki/Noida_City_Centre_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "noida_sector_83",
+          "bound": "north"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "golf_course",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "golf_course",
+      "url": "https://en.wikipedia.org/wiki/Golf_Course_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "noida_city_centre",
+          "bound": "south_east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "botanical_garden",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "botanical_garden",
+      "url": "https://en.wikipedia.org/wiki/Botanical_Garden_metro_station",
+      "platforms": {
+        "3": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "east"
+        },
+        "4": {
+          "terminal": "ip_extension",
+          "next_station": "okhla_bird_sanctuary",
+          "bound": "west"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "noida_sector_148",
+          "bound": "west"
+        },
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "golf_course",
+          "bound": "east"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sec_-18",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_18_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "botanical_garden",
+          "bound": "south_east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "noida_sector_146",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sec_-16",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_16_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "noida_sector_148",
+          "bound": "south_east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "noida_sector_145",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sec_-15",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_15_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "noida_sector_146",
+          "bound": "south_east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "new_ashok_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "new_ashok_nagar",
+      "url": "https://en.wikipedia.org/wiki/New_Ashok_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "noida_sector_145",
+          "bound": "south_east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "mayur_vihar_ext",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mayur_vihar_ext",
+      "url": "https://en.wikipedia.org/wiki/Mayur_Vihar_Extension_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "new_ashok_nagar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "mayur_vihar-i",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mayur_vihar-i",
+      "url": "https://en.wikipedia.org/wiki/Mayur_Vihar-I_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "mayur_vihar_ext",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "akshardham",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "akshardham",
+      "url": "https://en.wikipedia.org/wiki/Akshardham_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "mayur_vihar-i",
+          "bound": "south_east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "yamuna_bank",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "yamuna_bank",
+      "url": "https://en.wikipedia.org/wiki/Yamuna_Bank_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "akshardham",
+          "bound": "south_east"
+        },
+        "3": {
+          "terminal": "vaishali",
+          "next_station": "laxmi_nagar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "indraprastha",
+          "bound": "west"
+        },
+        "4": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "indraprastha",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "indraprastha",
+      "url": "https://en.wikipedia.org/wiki/Indraprastha_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "yamuna_bank",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "supreme_court",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "supreme_court",
+      "url": "https://en.wikipedia.org/wiki/Supreme_Court_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "indraprastha",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "mandi_house",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "barakhamba",
+      "url": "https://en.wikipedia.org/wiki/Barakhamba_Road_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "mandi_house",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "rajiv_chowk",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rk_ashram_marg",
+      "url": "https://en.wikipedia.org/wiki/Ramakrishna_Ashram_Marg_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "rajiv_chowk",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "jhandewalan",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jhandewalan",
+      "url": "https://en.wikipedia.org/wiki/Jhandewalan_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "rk_ashram_marg",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "karol_bagh",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "karol_bagh",
+      "url": "https://en.wikipedia.org/wiki/Karol_Bagh_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "jhandewalan",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "rajendra_place",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rajendra_place",
+      "url": "https://en.wikipedia.org/wiki/Rajendra_Place_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "karol_bagh",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "patel_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "patel_nagar",
+      "url": "https://en.wikipedia.org/wiki/Patel_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "rajendra_place",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "shadipur",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shadipur",
+      "url": "https://en.wikipedia.org/wiki/Shadipur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "patel_nagar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "kirti_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "kirti_nagar",
+      "url": "https://en.wikipedia.org/wiki/Kirti_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "shadipur",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "moti_nagar",
+          "bound": "west"
+        },
+        "4": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "east"
+        },
+        "3": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "satguru_ram_singh_marg",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "moti_nagar",
+      "url": "https://en.wikipedia.org/wiki/Moti_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "kirti_nagar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "ramesh_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "ramesh_nagar",
+      "url": "https://en.wikipedia.org/wiki/Ramesh_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "moti_nagar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "rajouri_garden",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rajouri_garden",
+      "url": "https://en.wikipedia.org/wiki/Rajouri_Garden_metro_station",
+      "platforms": {
+        "3": {
+          "terminal": "shiv_vihar",
+          "next_station": "mayapuri",
+          "bound": "northeast"
+        },
+        "4": {
+          "terminal": "majlis_park",
+          "next_station": "esi_basai_darapur",
+          "bound": "northwest"
+        },
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "ramesh_nagar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "tagore_garden",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "tagore_garden",
+      "url": "https://en.wikipedia.org/wiki/Tagore_Garden_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "rajouri_garden",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "subash_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "subash_nagar",
+      "url": "https://en.wikipedia.org/wiki/Subhash_Nagar_metro_station_(Delhi)",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "tagore_garden",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "tilak_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "tilak_nagar",
+      "url": "https://en.wikipedia.org/wiki/Tilak_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "subash_nagar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "janak_puri_east",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "janak_puri_east",
+      "url": "https://en.wikipedia.org/wiki/Janakpuri_East_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "tilak_nagar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "janak_puri_west",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "janak_puri_west",
+      "url": "https://en.wikipedia.org/wiki/Janakpuri_West_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "janak_puri_east",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "uttam_nagar_east",
+          "bound": "west"
+        },
+        "3": {
+          "terminal": "botanical_garden",
+          "next_station": "dabri_mor_-_janakpuri_south",
+          "bound": "east"
+        },
+        "4": {
+          "terminal": "ip_extension",
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "uttam_nagar_east",
+      "url": "https://en.wikipedia.org/wiki/Uttam_Nagar_East_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "janak_puri_west",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "uttam_nagar_west",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "uttam_nagar_west",
+      "url": "https://en.wikipedia.org/wiki/Uttam_Nagar_West_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "uttam_nagar_east",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "nawada",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "nawada",
+      "url": "https://en.wikipedia.org/wiki/Nawada_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "uttam_nagar_west",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "dwarka_mor",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka_mor",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_Mor_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "nawada",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_metro_station",
+      "platforms": {
+        "4": {
+          "terminal": "dhansa_bus_stand",
+          "next_station": "nangli",
+          "bound": "east"
+        },
+        "5": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "west"
+        },
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "dwarka_mor",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "dwarka_sector_-_14",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka_sector_-_14",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_Sector_14_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "dwarka",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "dwarka_sector_-_13",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka_sector_-_13",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_Sector_13_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "dwarka_sector_-_14",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "dwarka_sector_-_12",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka_sector_-_12",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_Sector_12_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "dwarka_sector_-_13",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "dwarka_sector_-_11",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka_sector_-_11",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_Sector_11_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "dwarka_sector_-_12",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "dwarka_sector_-_10",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka_sector_-_10",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_Sector_10_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "dwarka_sector_-_11",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "dwarka_sector_-_9",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka_sector_-_9",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_Sector_9_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "dwarka_sector_-_10",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "dwarka_sector_-_8",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka_sector_-_8",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_Sector_8_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "dwarka_sector_-_9",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dwarka_sector_-_21",
+      "url": "https://en.wikipedia.org/wiki/Dwarka_Sector_21_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "noida_electronic_city",
+          "next_station": "dwarka_sector_-_8",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "west"
+        },
+        "3": {
+          "terminal": "new_delhi",
+          "next_station": "igi_airport",
+          "bound": "south"
+        },
+        "4": {
+          "terminal": "dwarka_sector_-_12",
+          "next_station": null,
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "ito",
+      "url": "https://en.wikipedia.org/wiki/ITO_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "mandi_house",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "delhi_gate",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "janpath",
+      "url": "https://en.wikipedia.org/wiki/Janpath_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "central_secretariat",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "mandi_house",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "khan_market",
+      "url": "https://en.wikipedia.org/wiki/Khan_Market_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "jawahar_lal_nehru_stadium",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "central_secretariat",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jawahar_lal_nehru_stadium",
+      "url": "https://en.wikipedia.org/wiki/Jawaharlal_Nehru_Stadium,_Delhi_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "jangpura",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "khan_market",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jangpura",
+      "url": "https://en.wikipedia.org/wiki/Jangpura_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "lajpat_nagar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "jawahar_lal_nehru_stadium",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "lajpat_nagar",
+      "url": "https://en.wikipedia.org/wiki/Lajpat_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "moolchand",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "jangpura",
+          "bound": "north"
+        },
+        "3": {
+          "terminal": "shiv_vihar",
+          "next_station": "vinobapuri",
+          "bound": "south"
+        },
+        "4": {
+          "terminal": "majlis_park",
+          "next_station": "south_extension",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "moolchand",
+      "url": "https://en.wikipedia.org/wiki/Moolchand_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "kailash_colony",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "lajpat_nagar",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "kailash_colony",
+      "url": "https://en.wikipedia.org/wiki/Kailash_Colony_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "nehru_place",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "moolchand",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "nehru_place",
+      "url": "https://en.wikipedia.org/wiki/Nehru_Place_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "kalkaji_mandir",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "kailash_colony",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "kalkaji_mandir",
+      "url": "https://en.wikipedia.org/wiki/Kalkaji_Mandir_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "govind_puri",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "nehru_place",
+          "bound": "north"
+        },
+        "3": {
+          "terminal": "botanical_garden",
+          "next_station": "okhla_nsic",
+          "bound": "east"
+        },
+        "4": {
+          "terminal": "janak_puri_west",
+          "next_station": "nehru_enclave",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "govind_puri",
+      "url": "https://en.wikipedia.org/wiki/Govind_Puri_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "harkesh_nagar_okhla",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "kalkaji_mandir",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "harkesh_nagar_okhla",
+      "url": "https://en.wikipedia.org/wiki/Harkesh_Nagar_Okhla_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "jasola-apollo",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "govind_puri",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jasola-apollo",
+      "url": "https://en.wikipedia.org/wiki/Jasola_Apollo_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "sarita_vihar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "harkesh_nagar_okhla",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sarita_vihar",
+      "url": "https://en.wikipedia.org/wiki/Sarita_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "mohan_estate",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "jasola-apollo",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mohan_estate",
+      "url": "https://en.wikipedia.org/wiki/Mohan_Estate_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "tughlakabad_station",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "sarita_vihar",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "tughlakabad_station",
+      "url": "https://en.wikipedia.org/wiki/Tughlakabad_Station_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "badarpur_border",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "mohan_estate",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "badarpur_border",
+      "url": "https://en.wikipedia.org/wiki/Badarpur_Border_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "sarai",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "tughlakabad_station",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sarai",
+      "url": "https://en.wikipedia.org/wiki/Sarai_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "nhpc_chowk",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "badarpur_border",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "nhpc_chowk",
+      "url": "https://en.wikipedia.org/wiki/NHPC_Chowk_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "mewala_maharajpur",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "sarai",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mewala_maharajpur",
+      "url": "https://en.wikipedia.org/wiki/Mewala_Maharajpur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "sector-28",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "nhpc_chowk",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sector-28",
+      "url": "https://en.wikipedia.org/wiki/Sector_28_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "badkal_mor",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "mewala_maharajpur",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "badkal_mor",
+      "url": "https://en.wikipedia.org/wiki/Badkhal_Mor_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "old_faridabad",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "sector-28",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "old_faridabad",
+      "url": "https://en.wikipedia.org/wiki/Old_Faridabad_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "neelam_chowk_ajronda",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "badkal_mor",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "neelam_chowk_ajronda",
+      "url": "https://en.wikipedia.org/wiki/Neelam_Chowk_Ajronda_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "bata_chowk",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "old_faridabad",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "bata_chowk",
+      "url": "https://en.wikipedia.org/wiki/Bata_Chowk_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "escorts_mujesar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "neelam_chowk_ajronda",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "escorts_mujesar",
+      "url": "https://en.wikipedia.org/wiki/Escorts_Mujesar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "sant_surdas_(sihi)",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "bata_chowk",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "igi_airport",
+      "url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "new_delhi",
+          "next_station": "delhi_aerocity",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "delhi_aerocity",
+      "url": "https://en.wikipedia.org/wiki/Delhi_Aerocity_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "new_delhi",
+          "next_station": "dhaula_kuan",
+          "bound": "south_west"
+        },
+        "1": {
+          "terminal": "dwarka_sector_-_12",
+          "next_station": "igi_airport",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dhaula_kuan",
+      "url": "https://en.wikipedia.org/wiki/Dhaula_Kuan_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "new_delhi",
+          "next_station": "shivaji_stadium",
+          "bound": "north"
+        },
+        "1": {
+          "terminal": "dwarka_sector_-_12",
+          "next_station": "delhi_aerocity",
+          "bound": "south_west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shivaji_stadium",
+      "url": "https://en.wikipedia.org/wiki/Shivaji_Stadium_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "new_delhi",
+          "next_station": null,
+          "bound": "north"
+        },
+        "1": {
+          "terminal": "dwarka_sector_-_12",
+          "next_station": "dhaula_kuan",
+          "bound": "southwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "delhi_gate",
+      "url": "https://en.wikipedia.org/wiki/Delhi_Gate_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "ito",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "jama_masjid",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "lal_quila",
+      "url": "https://en.wikipedia.org/wiki/Lal_Quila_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "jama_masjid",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": null,
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "okhla_bird_sanctuary",
+      "url": "https://en.wikipedia.org/wiki/Okhla_Bird_Sanctuary_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": null,
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "kalindi_kunj",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "kalindi_kunj",
+      "url": "https://en.wikipedia.org/wiki/Kalindi_Kunj_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "okhla_bird_sanctuary",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "jasola_vihar_shaheen_bagh",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jasola_vihar_shaheen_bagh",
+      "url": "https://en.wikipedia.org/wiki/Jasola_Vihar_Shaheen_Bagh_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "kalindi_kunj",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "okhla_vihar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "okhla_vihar",
+      "url": "https://en.wikipedia.org/wiki/Okhla_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "jasola_vihar_shaheen_bagh",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "jamia_millia_islamia",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jamia_millia_islamia",
+      "url": "https://en.wikipedia.org/wiki/Jamia_Millia_Islamia_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "okhla_vihar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "sukhdev_vihar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sukhdev_vihar",
+      "url": "https://en.wikipedia.org/wiki/Sukhdev_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "jamia_millia_islamia",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "okhla_nsic",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "okhla_nsic",
+      "url": "https://en.wikipedia.org/wiki/Okhla_NSIC_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "sukhdev_vihar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "kalkaji_mandir",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "majlis_park",
+      "url": "https://en.wikipedia.org/wiki/Majlis_Park_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "anticlockwise"
+        },
+        "2": {
+          "terminal": "maujpur_-_babarpur",
+          "next_station": null,
+          "bound": "clockwise"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shalimar_bagh",
+      "url": "https://en.wikipedia.org/wiki/Shalimar_Bagh_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "netaji_subash_place",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "azadpur",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shakurpur",
+      "url": "https://en.wikipedia.org/wiki/Shakurpur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "punjabi_bagh_west",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "netaji_subash_place",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "punjabi_bagh_west",
+      "url": "https://en.wikipedia.org/wiki/Punjabi_Bagh_West_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "punjabi_bagh",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "shivaji_park",
+          "bound": "west"
+        },
+        "3": {
+          "terminal": "shiv_vihar",
+          "next_station": "esi_basai_darapur",
+          "bound": "northeast"
+        },
+        "4": {
+          "terminal": "majlis_park",
+          "next_station": "shakurpur",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "esi_basai_darapur",
+      "url": "https://en.wikipedia.org/wiki/ESI_-_Basaidarapur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "rajouri_garden",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "punjabi_bagh_west",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mayapuri",
+      "url": "https://en.wikipedia.org/wiki/Mayapuri_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "naraina_vihar",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "rajouri_garden",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "naraina_vihar",
+      "url": "https://en.wikipedia.org/wiki/Naraina_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "delhi_cantt.",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "mayapuri",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "delhi_cantt.",
+      "url": "https://en.wikipedia.org/wiki/Delhi_Cantonment_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "durgabai_deshmukh_south_campus",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "naraina_vihar",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "durgabai_deshmukh_south_campus",
+      "url": "https://en.wikipedia.org/wiki/Durgabai_Deshmukh_South_Campus_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "sir_vishweshwaraiah_moti_bagh",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "delhi_cantt.",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "nehru_enclave",
+      "url": "https://en.wikipedia.org/wiki/Nehru_Enclave_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "kalkaji_mandir",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "greater_kailash",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "greater_kailash",
+      "url": "https://en.wikipedia.org/wiki/Greater_Kailash_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "nehru_enclave",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "chirag_delhi",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "chirag_delhi",
+      "url": "https://en.wikipedia.org/wiki/Chirag_Delhi_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "greater_kailash",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "panchsheel_park",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "panchsheel_park",
+      "url": "https://en.wikipedia.org/wiki/Panchsheel_Park_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "chirag_delhi",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "hauz_khas",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "iit",
+      "url": "https://en.wikipedia.org/wiki/IIT_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "hauz_khas",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "rk_puram",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "rk_puram",
+      "url": "https://en.wikipedia.org/wiki/R._K._Puram_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "iit",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "munirka",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "munirka",
+      "url": "https://en.wikipedia.org/wiki/Munirka_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "rk_puram",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "vasant_vihar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "vasant_vihar",
+      "url": "https://en.wikipedia.org/wiki/Vasant_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "munirka",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "shankar_vihar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shankar_vihar",
+      "url": "https://en.wikipedia.org/wiki/Shankar_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "vasant_vihar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "igi_airport",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "terminal_1-_igi_airport",
+      "url": "https://en.wikipedia.org/wiki/Terminal_1_IGI_Airport_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "shankar_vihar",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "sadar_bazar_contonment",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sadar_bazar_contonment",
+      "url": "https://en.wikipedia.org/wiki/Sadar_Bazaar_Cantonment_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "terminal_1-_igi_airport",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "palam",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "palam",
+      "url": "https://en.wikipedia.org/wiki/Palam_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "sadar_bazar_contonment",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "dashrath_puri",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dashrath_puri",
+      "url": "https://en.wikipedia.org/wiki/Dashrath_Puri_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "palam",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": "dabri_mor_-_janakpuri_south",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dabri_mor_-_janakpuri_south",
+      "url": "https://en.wikipedia.org/wiki/Dabri_Mor_-_Janakpuri_South_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "botanical_garden",
+          "next_station": "dashrath_puri",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "janak_puri_west",
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mundka_industrial_area_(m.i.a)",
+      "url": "https://en.wikipedia.org/wiki/Mundka_Industrial_Area_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "mundka",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "ghevra_metro_station",
+      "url": "https://en.wikipedia.org/wiki/Ghevra_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "mundka_industrial_area_(m.i.a)",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "tikri_kalan",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "tikri_kalan",
+      "url": "https://en.wikipedia.org/wiki/Tikri_Kalan_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": null,
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "tikri_border",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "tikri_border",
+      "url": "https://en.wikipedia.org/wiki/Tikri_Border_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "tikri_kalan",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "pandit_shree_ram_sharma",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "pandit_shree_ram_sharma",
+      "url": "https://en.wikipedia.org/wiki/Pandit_Shree_Ram_Sharma_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "tikri_border",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": "bahadurgarh_city",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "bahadurgarh_city",
+      "url": "https://en.wikipedia.org/wiki/Bahadurgarh_City_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "pandit_shree_ram_sharma",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "brigadier_hoshiyar_singh",
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "brigadier_hoshiyar_singh",
+      "url": "https://en.wikipedia.org/wiki/Brigadier_Hoshiyar_Singh_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "inderlok",
+          "next_station": "bahadurgarh_city",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sir_vishweshwaraiah_moti_bagh",
+      "url": "https://en.wikipedia.org/wiki/Sir_Vishweshwaraiah_Moti_Bagh_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "bhikaji_cama_place",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "durgabai_deshmukh_south_campus",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "bhikaji_cama_place",
+      "url": "https://en.wikipedia.org/wiki/Bhikaji_Cama_Place_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "sarojini_nagar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "sir_vishweshwaraiah_moti_bagh",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sarojini_nagar",
+      "url": "https://en.wikipedia.org/wiki/Sarojini_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "dilli_haat_-_ina",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "bhikaji_cama_place",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "south_extension",
+      "url": "https://en.wikipedia.org/wiki/South_Extension_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "lajpat_nagar",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "dilli_haat_-_ina",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "trilokpuri_sanjay_lake",
+      "url": "https://en.wikipedia.org/wiki/Trilokpuri_Sanjay_Lake_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "east_vinod_nagar_-_mayur_vihar-ii",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "mayur_vihar_pocket_1",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "east_vinod_nagar_-_mayur_vihar-ii",
+      "url": "https://en.wikipedia.org/wiki/East_Vinod_Nagar_-_Mayur_Vihar-II_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "mandawali_-_west_vinod_nagar",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "trilokpuri_sanjay_lake",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mandawali_-_west_vinod_nagar",
+      "url": "https://en.wikipedia.org/wiki/Mandawali_-_West_Vinod_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "ip_extension",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "east_vinod_nagar_-_mayur_vihar-ii",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "ip_extension",
+      "url": "https://en.wikipedia.org/wiki/IP_Extension_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "anand_vihar",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "mandawali_-_west_vinod_nagar",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "karkarduma_court",
+      "url": "https://en.wikipedia.org/wiki/Karkarduma_Court_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "krishna_nagar",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "karkarduma",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "krishna_nagar",
+      "url": "https://en.wikipedia.org/wiki/Krishna_Nagar_%28Delhi_Metro%29",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "east_azad_nagar",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "karkarduma_court",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "east_azad_nagar",
+      "url": "https://en.wikipedia.org/wiki/East_Azad_Nagar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "welcome",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "krishna_nagar",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "jafrabad",
+      "url": "https://en.wikipedia.org/wiki/Jaffrabad_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "maujpur_-_babarpur",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "welcome",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "maujpur_-_babarpur",
+      "url": "https://en.wikipedia.org/wiki/Maujpur_-_Babarpur_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "anand_vihar",
+          "bound": "anticlockwise"
+        },
+        "1": {
+          "terminal": null,
+          "next_station": "jafrabad",
+          "bound": "clockwise"
+        },
+        "3": {
+          "terminal": "shiv_vihar",
+          "next_station": "gokulpuri",
+          "bound": "north"
+        },
+        "4": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "south"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "gokulpuri",
+      "url": "https://en.wikipedia.org/wiki/Gokulpuri_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "johri_enclave",
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "maujpur_-_babarpur",
+          "next_station": null,
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "johri_enclave",
+      "url": "https://en.wikipedia.org/wiki/Johri_Enclave_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": null,
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "gokulpuri",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shiv_vihar",
+      "url": "https://en.wikipedia.org/wiki/Shiv_Vihar_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "northeast"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "johri_enclave",
+          "bound": "northwest"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sant_surdas_(sihi)",
+      "url": "https://en.wikipedia.org/wiki/Sant_Surdas_%28Sihi%29_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": null,
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "escorts_mujesar",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "raja_nahar_singh",
+      "url": "https://en.wikipedia.org/wiki/Raja_Nahar_Singh_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "sant_surdas_(sihi)",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "vinobapuri",
+      "url": "https://en.wikipedia.org/wiki/Vinobapuri_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "ashram",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "lajpat_nagar",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "ashram",
+      "url": "https://en.wikipedia.org/wiki/Ashram_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "sarai_kale_khan_-_nizamuddin",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "vinobapuri",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sarai_kale_khan_-_nizamuddin",
+      "url": "https://en.wikipedia.org/wiki/Sarai_Kale_Khan_-_Nizamuddin_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "mayur_vihar-i",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "ashram",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mayur_vihar_pocket_1",
+      "url": "https://en.wikipedia.org/wiki/Mayur_Vihar_Pocket_I_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "shiv_vihar",
+          "next_station": "trilokpuri_sanjay_lake",
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "majlis_park",
+          "next_station": "mayur_vihar-i",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shaheed_sthal_(new_bus_adda)",
+      "url": "https://en.wikipedia.org/wiki/Shaheed_Sthal_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "hindon_river",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "hindon_river",
+      "url": "https://en.wikipedia.org/wiki/Hindon_River_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": null,
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "arthala",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "arthala",
+      "url": "https://en.wikipedia.org/wiki/Arthala_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "hindon_river",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "mohan_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mohan_nagar",
+      "url": "https://en.wikipedia.org/wiki/Mohan_Nagar_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "arthala",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "shyam_park",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shyam_park",
+      "url": "https://en.wikipedia.org/wiki/Shyam_Park_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "mohan_nagar",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "major_mohit_sharma_rajender_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "major_mohit_sharma_rajender_nagar",
+      "url": "https://en.wikipedia.org/wiki/Major_Mohit_Sharma_Rajendra_Nagar_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "shyam_park",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "raj_bagh",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "raj_bagh",
+      "url": "https://en.wikipedia.org/wiki/Raj_Bagh_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "major_mohit_sharma_rajender_nagar",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "shaheed_nagar",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "shaheed_nagar",
+      "url": "https://en.wikipedia.org/wiki/Shaheed_Nagar_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "shaheed_sthal_(new_bus_adda)",
+          "next_station": "raj_bagh",
+          "bound": "east"
+        },
+        "1": {
+          "terminal": "rithala",
+          "next_station": "dilshad_garden",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sec-34",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_34_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "noida_sector_51",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "noida_city_centre",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sec-52",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_52_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "noida_sector_51",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "noida_sector_83",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sec-61",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_61_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "noida_sector_51",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "noida_sector_51",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sec-59",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_59_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": "noida_sector_76",
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "noida_sector_51",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sec-62",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_62_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": null,
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "noida_sector_51",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_electronic_city",
+      "url": "https://en.wikipedia.org/wiki/Noida_Electronic_City_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "east"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": "noida_sector_76",
+          "bound": "west"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "nangli",
+      "url": "https://en.wikipedia.org/wiki/Nangli_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "dhansa_bus_stand",
+          "next_station": "najafgarh",
+          "bound": "west"
+        },
+        "2": {
+          "terminal": "dwarka",
+          "next_station": null,
+          "bound": "east"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "najafgarh",
+      "url": "https://en.wikipedia.org/wiki/Najafgarh_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "dhansa_bus_stand",
+          "next_station": null,
+          "bound": "west"
+        },
+        "2": {
+          "terminal": "dwarka",
+          "next_station": "nangli",
+          "bound": "east"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "dhansa_bus_stand",
+      "url": "https://en.wikipedia.org/wiki/Dhansa_Bus_Stand_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "west"
+        },
+        "2": {
+          "terminal": "dwarka",
+          "next_station": "najafgarh",
+          "bound": "east"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_51",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_51_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "south"
+        },
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_50",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_50_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_76",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": null,
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_76",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_76_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_101",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": null,
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_101",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_101_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_81",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_76",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_81",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_81_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "nsez",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_101",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "nsez",
+      "url": "https://en.wikipedia.org/wiki/NSEZ_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_83",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_81",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_83",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_83_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_137",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "nsez",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_137",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_137_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_142",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_83",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_142",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_142_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_143",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_137",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_143",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_143_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_144",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_142",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_144",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_144_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_145",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_143",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_145",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_145_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_146",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_144",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_146",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_146_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_147",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_145",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_147",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_147_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "noida_sector_148",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_146",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "noida_sector_148",
+      "url": "https://en.wikipedia.org/wiki/Noida_Sector_148_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "knowledge_park",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_147",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "knowledge_park",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_Park_II_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "noida_sector_148",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "pari_chowk",
+      "url": "https://en.wikipedia.org/wiki/Pari_Chowk_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "alpha_1",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "knowledge_park",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "alpha_1",
+      "url": "https://en.wikipedia.org/wiki/ALPHA_1_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "delta_1",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": null,
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "delta_1",
+      "url": "https://en.wikipedia.org/wiki/DELTA_1_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": "gnida_office",
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "alpha_1",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "gnida_office",
+      "url": "https://en.wikipedia.org/wiki/GNIDA_Office_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "south"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "delta_1",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "depot_station",
+      "url": "https://en.wikipedia.org/wiki/Depot_Station_metro_station_(Noida)",
+      "platforms": {
+        "3": {
+          "terminal": null,
+          "next_station": null,
+          "bound": "south"
+        },
+        "2": {
+          "terminal": "noida_sector_51",
+          "next_station": "gnida_office",
+          "bound": "north"
+        },
+        "1": {
+          "terminal": "noida_sector_51",
+          "next_station": "gnida_office",
+          "bound": "north"
+        }
+      },
+      "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    }
+  ],
+  "partial": [
+    {
+      "station_id": "central_secretariat",
+      "url": "https://en.wikipedia.org/wiki/Central_Secretariat_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": [
+            "Yellow Line",
+            "Violet Line",
+            "Magenta Line"
+          ]
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": [
+            "Yellow Line",
+            "Violet Line",
+            "Magenta Line"
+          ]
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "sikanderpur",
+      "url": "https://en.wikipedia.org/wiki/Sikanderpur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": [
+            "Yellow Line",
+            "Rapid Metro"
+          ]
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "karkarduma",
+      "url": "https://en.wikipedia.org/wiki/Karkarduma_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": [
+            "Blue Line",
+            "Pink Line"
+          ]
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": [
+            "Blue Line",
+            "Pink Line"
+          ]
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "mandi_house",
+      "url": "https://en.wikipedia.org/wiki/Mandi_House_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": [
+            "Blue Line",
+            "Violet Line"
+          ]
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": [
+            "Blue Line",
+            "Violet Line"
+          ]
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "sikanderpur_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sikanderpur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": [
+            "Yellow Line",
+            "Rapid Metro"
+          ]
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "phase_2_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Phase_2_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "belvedere_towers_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Belvedere_Towers_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "cyber_city_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Cyber_City_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "moulsari_avenue_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Moulsari_Avenue_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "phase_3_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_53-54_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "phase-i_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Phase_1_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "sector_42-43_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_42-43_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "sector_53-54_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_53-54_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "sector_54_chowk_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_54_Chowk_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    },
+    {
+      "station_id": "sector_55-56_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_55–56_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        },
+        "2": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_fallback",
+          "lines": []
+        }
+      },
+      "extraction_method": "infobox_fallback",
+      "status": "partial",
+      "error": null
+    }
+  ],
+  "failed": [
+    {
+      "station_id": "jama_masjid",
+      "url": "https://en.wikipedia.org/wiki/Jama_Masjid_metro_station",
+      "platforms": null,
+      "extraction_method": null,
+      "status": "no_data",
+      "error": "No platform layout or infobox data found"
+    }
+  ],
+  "missing_data": [
+    {
+      "station_id": "welcome",
+      "station_name": "Welcome",
+      "platform": "3",
+      "missing": "terminal",
+      "bound": "anticlockwise"
+    },
+    {
+      "station_id": "welcome",
+      "station_name": "Welcome",
+      "platform": "4",
+      "missing": "terminal",
+      "bound": "clockwise"
+    },
+    {
+      "station_id": "kashmere_gate",
+      "station_name": "Kashmere Gate",
+      "platform": "6",
+      "missing": "terminal",
+      "bound": "north"
+    },
+    {
+      "station_id": "kashmere_gate",
+      "station_name": "Kashmere Gate",
+      "platform": "6",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "rohini_west",
+      "station_name": "Rohini West",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "rithala",
+      "station_name": "Rithala",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "west"
+    },
+    {
+      "station_id": "rithala",
+      "station_name": "Rithala",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "ashok_park_main",
+      "station_name": "Ashok Park Main",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "satguru_ram_singh_marg",
+      "station_name": "Satguru Ram Singh Marg",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "samaypur_badli",
+      "station_name": "Samaypur Badli",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "north"
+    },
+    {
+      "station_id": "samaypur_badli",
+      "station_name": "Samaypur Badli",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "rohini_sector_18-19",
+      "station_name": "Rohini Sector 18-19",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "azadpur",
+      "station_name": "Azadpur",
+      "platform": "4",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "central_secretariat",
+      "station_name": "Central Secretariat",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "central_secretariat",
+      "station_name": "Central Secretariat",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "central_secretariat",
+      "station_name": "Central Secretariat",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "central_secretariat",
+      "station_name": "Central Secretariat",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sikanderpur",
+      "station_name": "Sikanderpur",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sikanderpur",
+      "station_name": "Sikanderpur",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "iffco_chowk",
+      "station_name": "IFFCO Chowk",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "south"
+    },
+    {
+      "station_id": "huda_city_centre",
+      "station_name": "Huda City Centre",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "huda_city_centre",
+      "station_name": "Huda City Centre",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "south"
+    },
+    {
+      "station_id": "vaishali",
+      "station_name": "Vaishali",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "east"
+    },
+    {
+      "station_id": "vaishali",
+      "station_name": "Vaishali",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "kaushambi",
+      "station_name": "Kaushambi",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "karkarduma",
+      "station_name": "Karkarduma",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "karkarduma",
+      "station_name": "Karkarduma",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "karkarduma",
+      "station_name": "Karkarduma",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "karkarduma",
+      "station_name": "Karkarduma",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "botanical_garden",
+      "station_name": "Botanical Garden",
+      "platform": "3",
+      "missing": "terminal",
+      "bound": "east"
+    },
+    {
+      "station_id": "botanical_garden",
+      "station_name": "Botanical Garden",
+      "platform": "3",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "mandi_house",
+      "station_name": "Mandi House",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "mandi_house",
+      "station_name": "Mandi House",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "mandi_house",
+      "station_name": "Mandi House",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "mandi_house",
+      "station_name": "Mandi House",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "kirti_nagar",
+      "station_name": "Kirti Nagar",
+      "platform": "4",
+      "missing": "terminal",
+      "bound": "east"
+    },
+    {
+      "station_id": "kirti_nagar",
+      "station_name": "Kirti Nagar",
+      "platform": "4",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "janak_puri_west",
+      "station_name": "Janak Puri West",
+      "platform": "4",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "dwarka_mor",
+      "station_name": "Dwarka Mor",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "dwarka",
+      "station_name": "Dwarka",
+      "platform": "5",
+      "missing": "terminal",
+      "bound": "west"
+    },
+    {
+      "station_id": "dwarka",
+      "station_name": "Dwarka",
+      "platform": "5",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "dwarka_sector_-_8",
+      "station_name": "Dwarka Sector - 8",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "dwarka_sector_-_21",
+      "station_name": "Dwarka Sector - 21",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "west"
+    },
+    {
+      "station_id": "dwarka_sector_-_21",
+      "station_name": "Dwarka Sector - 21",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "dwarka_sector_-_21",
+      "station_name": "Dwarka Sector - 21",
+      "platform": "4",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "sikanderpur_(rapid_metro)",
+      "station_name": "Sikanderpur (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sikanderpur_(rapid_metro)",
+      "station_name": "Sikanderpur (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "phase_2_(rapid_metro)",
+      "station_name": "Phase 2 (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "phase_2_(rapid_metro)",
+      "station_name": "Phase 2 (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "phase_2_(rapid_metro)",
+      "station_name": "Phase 2 (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "phase_2_(rapid_metro)",
+      "station_name": "Phase 2 (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "belvedere_towers_(rapid_metro)",
+      "station_name": "Belvedere Towers (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "belvedere_towers_(rapid_metro)",
+      "station_name": "Belvedere Towers (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "belvedere_towers_(rapid_metro)",
+      "station_name": "Belvedere Towers (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "belvedere_towers_(rapid_metro)",
+      "station_name": "Belvedere Towers (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "cyber_city_(rapid_metro)",
+      "station_name": "Cyber City (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "cyber_city_(rapid_metro)",
+      "station_name": "Cyber City (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "cyber_city_(rapid_metro)",
+      "station_name": "Cyber City (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "cyber_city_(rapid_metro)",
+      "station_name": "Cyber City (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "moulsari_avenue_(rapid_metro)",
+      "station_name": "Moulsari Avenue (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "moulsari_avenue_(rapid_metro)",
+      "station_name": "Moulsari Avenue (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "moulsari_avenue_(rapid_metro)",
+      "station_name": "Moulsari Avenue (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "moulsari_avenue_(rapid_metro)",
+      "station_name": "Moulsari Avenue (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "phase_3_(rapid_metro)",
+      "station_name": "Phase 3 (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "phase_3_(rapid_metro)",
+      "station_name": "Phase 3 (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "phase_3_(rapid_metro)",
+      "station_name": "Phase 3 (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "phase_3_(rapid_metro)",
+      "station_name": "Phase 3 (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "shivaji_stadium",
+      "station_name": "Shivaji Stadium",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "lal_quila",
+      "station_name": "Lal Quila",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "okhla_bird_sanctuary",
+      "station_name": "Okhla Bird Sanctuary",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "phase-i_(rapid_metro)",
+      "station_name": "Phase-I (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "phase-i_(rapid_metro)",
+      "station_name": "Phase-I (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "phase-i_(rapid_metro)",
+      "station_name": "Phase-I (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "phase-i_(rapid_metro)",
+      "station_name": "Phase-I (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sector_42-43_(rapid_metro)",
+      "station_name": "Sector 42-43 (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sector_42-43_(rapid_metro)",
+      "station_name": "Sector 42-43 (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sector_42-43_(rapid_metro)",
+      "station_name": "Sector 42-43 (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sector_42-43_(rapid_metro)",
+      "station_name": "Sector 42-43 (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sector_53-54_(rapid_metro)",
+      "station_name": "Sector 53-54 (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sector_53-54_(rapid_metro)",
+      "station_name": "Sector 53-54 (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sector_53-54_(rapid_metro)",
+      "station_name": "Sector 53-54 (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sector_53-54_(rapid_metro)",
+      "station_name": "Sector 53-54 (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sector_54_chowk_(rapid_metro)",
+      "station_name": "Sector 54 Chowk (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sector_54_chowk_(rapid_metro)",
+      "station_name": "Sector 54 Chowk (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sector_54_chowk_(rapid_metro)",
+      "station_name": "Sector 54 Chowk (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sector_54_chowk_(rapid_metro)",
+      "station_name": "Sector 54 Chowk (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sector_55-56_(rapid_metro)",
+      "station_name": "Sector 55-56 (Rapid Metro)",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sector_55-56_(rapid_metro)",
+      "station_name": "Sector 55-56 (Rapid Metro)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sector_55-56_(rapid_metro)",
+      "station_name": "Sector 55-56 (Rapid Metro)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": null
+    },
+    {
+      "station_id": "sector_55-56_(rapid_metro)",
+      "station_name": "Sector 55-56 (Rapid Metro)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "majlis_park",
+      "station_name": "Majlis Park",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "anticlockwise"
+    },
+    {
+      "station_id": "majlis_park",
+      "station_name": "Majlis Park",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "anticlockwise"
+    },
+    {
+      "station_id": "majlis_park",
+      "station_name": "Majlis Park",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "clockwise"
+    },
+    {
+      "station_id": "dabri_mor_-_janakpuri_south",
+      "station_name": "Dabri Mor - Janakpuri South",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "mundka_industrial_area_(m.i.a)",
+      "station_name": "Mundka Industrial Area (M.I.A)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "tikri_kalan",
+      "station_name": "Tikri Kalan",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "bahadurgarh_city",
+      "station_name": "Bahadurgarh City",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "brigadier_hoshiyar_singh",
+      "station_name": "Brigadier Hoshiyar Singh",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "west"
+    },
+    {
+      "station_id": "brigadier_hoshiyar_singh",
+      "station_name": "Brigadier Hoshiyar Singh",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "maujpur_-_babarpur",
+      "station_name": "Maujpur - Babarpur",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "anticlockwise"
+    },
+    {
+      "station_id": "maujpur_-_babarpur",
+      "station_name": "Maujpur - Babarpur",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "clockwise"
+    },
+    {
+      "station_id": "maujpur_-_babarpur",
+      "station_name": "Maujpur - Babarpur",
+      "platform": "4",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "maujpur_-_babarpur",
+      "station_name": "Maujpur - Babarpur",
+      "platform": "4",
+      "missing": "next_station",
+      "bound": "south"
+    },
+    {
+      "station_id": "gokulpuri",
+      "station_name": "Gokulpuri",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "northwest"
+    },
+    {
+      "station_id": "johri_enclave",
+      "station_name": "Johri Enclave",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "northeast"
+    },
+    {
+      "station_id": "shiv_vihar",
+      "station_name": "Shiv Vihar",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "northeast"
+    },
+    {
+      "station_id": "shiv_vihar",
+      "station_name": "Shiv Vihar",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "northeast"
+    },
+    {
+      "station_id": "sant_surdas_(sihi)",
+      "station_name": "Sant Surdas (Sihi)",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "south"
+    },
+    {
+      "station_id": "raja_nahar_singh",
+      "station_name": "Raja Nahar Singh",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "raja_nahar_singh",
+      "station_name": "Raja Nahar Singh",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "south"
+    },
+    {
+      "station_id": "shaheed_sthal_(new_bus_adda)",
+      "station_name": "Shaheed Sthal (New Bus Adda)",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "east"
+    },
+    {
+      "station_id": "shaheed_sthal_(new_bus_adda)",
+      "station_name": "Shaheed Sthal (New Bus Adda)",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "hindon_river",
+      "station_name": "Hindon River",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "noida_sec-62",
+      "station_name": "Noida Sec-62",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "noida_electronic_city",
+      "station_name": "Noida Electronic City",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "east"
+    },
+    {
+      "station_id": "noida_electronic_city",
+      "station_name": "Noida Electronic City",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "nangli",
+      "station_name": "Nangli",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "east"
+    },
+    {
+      "station_id": "najafgarh",
+      "station_name": "Najafgarh",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "dhansa_bus_stand",
+      "station_name": "Dhansa Bus Stand",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "west"
+    },
+    {
+      "station_id": "dhansa_bus_stand",
+      "station_name": "Dhansa Bus Stand",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "west"
+    },
+    {
+      "station_id": "noida_sector_51",
+      "station_name": "Noida Sector 51",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_51",
+      "station_name": "Noida Sector 51",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_51",
+      "station_name": "Noida Sector 51",
+      "platform": "1",
+      "missing": "terminal",
+      "bound": "north"
+    },
+    {
+      "station_id": "noida_sector_51",
+      "station_name": "Noida Sector 51",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "noida_sector_50",
+      "station_name": "Noida Sector 50",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_50",
+      "station_name": "Noida Sector 50",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "noida_sector_76",
+      "station_name": "Noida Sector 76",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_76",
+      "station_name": "Noida Sector 76",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "noida_sector_101",
+      "station_name": "Noida Sector 101",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_81",
+      "station_name": "Noida Sector 81",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "nsez",
+      "station_name": "NSEZ",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_83",
+      "station_name": "Noida Sector 83",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_137",
+      "station_name": "Noida Sector 137",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_142",
+      "station_name": "Noida Sector 142",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_143",
+      "station_name": "Noida Sector 143",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_144",
+      "station_name": "Noida Sector 144",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_145",
+      "station_name": "Noida Sector 145",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_146",
+      "station_name": "Noida Sector 146",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_147",
+      "station_name": "Noida Sector 147",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "noida_sector_148",
+      "station_name": "Noida Sector 148",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "knowledge_park",
+      "station_name": "Knowledge Park",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "knowledge_park",
+      "station_name": "Knowledge Park",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "south"
+    },
+    {
+      "station_id": "pari_chowk",
+      "station_name": "Pari Chowk",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "alpha_1",
+      "station_name": "Alpha 1",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "alpha_1",
+      "station_name": "Alpha 1",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "north"
+    },
+    {
+      "station_id": "delta_1",
+      "station_name": "Delta 1",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "gnida_office",
+      "station_name": "GNIDA Office",
+      "platform": "2",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "gnida_office",
+      "station_name": "GNIDA Office",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "south"
+    },
+    {
+      "station_id": "depot_station",
+      "station_name": "Depot Station",
+      "platform": "3",
+      "missing": "terminal",
+      "bound": "south"
+    },
+    {
+      "station_id": "depot_station",
+      "station_name": "Depot Station",
+      "platform": "3",
+      "missing": "next_station",
+      "bound": "south"
+    }
+  ]
+}
