@@ -4,8 +4,8 @@
     "success": 261,
     "partial": 0,
     "failed": 1,
-    "missing_terminal_count": 44,
-    "missing_next_station_count": 64
+    "missing_terminal_count": 24,
+    "missing_next_station_count": 59
   },
   "success": [
     {
@@ -4816,8 +4816,8 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_51_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
-          "next_station": null,
+          "terminal": "depot_station",
+          "next_station": "noida_sector_50",
           "bound": "south"
         },
         "1": {
@@ -4835,7 +4835,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_50_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_76",
           "bound": "south"
         },
@@ -4854,13 +4854,13 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_76_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_101",
           "bound": "south"
         },
         "1": {
           "terminal": "noida_sector_51",
-          "next_station": null,
+          "next_station": "noida_sector_50",
           "bound": "north"
         }
       },
@@ -4873,7 +4873,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_101_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_81",
           "bound": "south"
         },
@@ -4892,7 +4892,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_81_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "nsez",
           "bound": "south"
         },
@@ -4911,7 +4911,7 @@
       "url": "https://en.wikipedia.org/wiki/NSEZ_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_83",
           "bound": "south"
         },
@@ -4930,7 +4930,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_83_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_137",
           "bound": "south"
         },
@@ -4949,7 +4949,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_137_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_142",
           "bound": "south"
         },
@@ -4968,7 +4968,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_142_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_143",
           "bound": "south"
         },
@@ -4987,7 +4987,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_143_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_144",
           "bound": "south"
         },
@@ -5006,7 +5006,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_144_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_145",
           "bound": "south"
         },
@@ -5025,7 +5025,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_145_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_146",
           "bound": "south"
         },
@@ -5044,7 +5044,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_146_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_147",
           "bound": "south"
         },
@@ -5063,7 +5063,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_147_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "noida_sector_148",
           "bound": "south"
         },
@@ -5082,7 +5082,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_148_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "knowledge_park",
           "bound": "south"
         },
@@ -5101,8 +5101,8 @@
       "url": "https://en.wikipedia.org/wiki/Knowledge_Park_II_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
-          "next_station": null,
+          "terminal": "depot_station",
+          "next_station": "pari_chowk",
           "bound": "south"
         },
         "1": {
@@ -5120,7 +5120,7 @@
       "url": "https://en.wikipedia.org/wiki/Pari_Chowk_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "alpha_1",
           "bound": "south"
         },
@@ -5139,13 +5139,13 @@
       "url": "https://en.wikipedia.org/wiki/ALPHA_1_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "delta_1",
           "bound": "south"
         },
         "1": {
           "terminal": "noida_sector_51",
-          "next_station": null,
+          "next_station": "pari_chowk",
           "bound": "north"
         }
       },
@@ -5158,7 +5158,7 @@
       "url": "https://en.wikipedia.org/wiki/DELTA_1_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "depot_station",
           "next_station": "gnida_office",
           "bound": "south"
         },
@@ -5177,8 +5177,8 @@
       "url": "https://en.wikipedia.org/wiki/GNIDA_Office_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
-          "next_station": null,
+          "terminal": "depot_station",
+          "next_station": "depot_station",
           "bound": "south"
         },
         "1": {
@@ -5777,20 +5777,6 @@
     {
       "station_id": "noida_sector_51",
       "station_name": "Noida Sector 51",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_51",
-      "station_name": "Noida Sector 51",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_51",
-      "station_name": "Noida Sector 51",
       "platform": "1",
       "missing": "terminal",
       "bound": "north"
@@ -5801,167 +5787,6 @@
       "platform": "1",
       "missing": "next_station",
       "bound": "north"
-    },
-    {
-      "station_id": "noida_sector_50",
-      "station_name": "Noida Sector 50",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_76",
-      "station_name": "Noida Sector 76",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_76",
-      "station_name": "Noida Sector 76",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "north"
-    },
-    {
-      "station_id": "noida_sector_101",
-      "station_name": "Noida Sector 101",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_81",
-      "station_name": "Noida Sector 81",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "nsez",
-      "station_name": "NSEZ",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_83",
-      "station_name": "Noida Sector 83",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_137",
-      "station_name": "Noida Sector 137",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_142",
-      "station_name": "Noida Sector 142",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_143",
-      "station_name": "Noida Sector 143",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_144",
-      "station_name": "Noida Sector 144",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_145",
-      "station_name": "Noida Sector 145",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_146",
-      "station_name": "Noida Sector 146",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_147",
-      "station_name": "Noida Sector 147",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_148",
-      "station_name": "Noida Sector 148",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "knowledge_park",
-      "station_name": "Knowledge Park",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "knowledge_park",
-      "station_name": "Knowledge Park",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "south"
-    },
-    {
-      "station_id": "pari_chowk",
-      "station_name": "Pari Chowk",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "alpha_1",
-      "station_name": "Alpha 1",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "alpha_1",
-      "station_name": "Alpha 1",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "north"
-    },
-    {
-      "station_id": "delta_1",
-      "station_name": "Delta 1",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "gnida_office",
-      "station_name": "GNIDA Office",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "gnida_office",
-      "station_name": "GNIDA Office",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "south"
     },
     {
       "station_id": "depot_station",

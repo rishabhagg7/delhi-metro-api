@@ -3124,8 +3124,8 @@
   },
   "noida_sector_51": {
     "2": {
-      "terminal": null,
-      "next_station": null,
+      "terminal": "depot_station",
+      "next_station": "noida_sector_50",
       "bound": "south"
     },
     "1": {
@@ -3136,7 +3136,7 @@
   },
   "noida_sector_50": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_76",
       "bound": "south"
     },
@@ -3148,19 +3148,19 @@
   },
   "noida_sector_76": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_101",
       "bound": "south"
     },
     "1": {
       "terminal": "noida_sector_51",
-      "next_station": null,
+      "next_station": "noida_sector_50",
       "bound": "north"
     }
   },
   "noida_sector_101": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_81",
       "bound": "south"
     },
@@ -3172,7 +3172,7 @@
   },
   "noida_sector_81": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "nsez",
       "bound": "south"
     },
@@ -3184,7 +3184,7 @@
   },
   "nsez": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_83",
       "bound": "south"
     },
@@ -3196,7 +3196,7 @@
   },
   "noida_sector_83": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_137",
       "bound": "south"
     },
@@ -3208,7 +3208,7 @@
   },
   "noida_sector_137": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_142",
       "bound": "south"
     },
@@ -3220,7 +3220,7 @@
   },
   "noida_sector_142": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_143",
       "bound": "south"
     },
@@ -3232,7 +3232,7 @@
   },
   "noida_sector_143": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_144",
       "bound": "south"
     },
@@ -3244,7 +3244,7 @@
   },
   "noida_sector_144": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_145",
       "bound": "south"
     },
@@ -3256,7 +3256,7 @@
   },
   "noida_sector_145": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_146",
       "bound": "south"
     },
@@ -3268,7 +3268,7 @@
   },
   "noida_sector_146": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_147",
       "bound": "south"
     },
@@ -3280,7 +3280,7 @@
   },
   "noida_sector_147": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "noida_sector_148",
       "bound": "south"
     },
@@ -3292,7 +3292,7 @@
   },
   "noida_sector_148": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "knowledge_park",
       "bound": "south"
     },
@@ -3304,8 +3304,8 @@
   },
   "knowledge_park": {
     "2": {
-      "terminal": null,
-      "next_station": null,
+      "terminal": "depot_station",
+      "next_station": "pari_chowk",
       "bound": "south"
     },
     "1": {
@@ -3316,7 +3316,7 @@
   },
   "pari_chowk": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "alpha_1",
       "bound": "south"
     },
@@ -3328,19 +3328,19 @@
   },
   "alpha_1": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "delta_1",
       "bound": "south"
     },
     "1": {
       "terminal": "noida_sector_51",
-      "next_station": null,
+      "next_station": "pari_chowk",
       "bound": "north"
     }
   },
   "delta_1": {
     "2": {
-      "terminal": null,
+      "terminal": "depot_station",
       "next_station": "gnida_office",
       "bound": "south"
     },
@@ -3352,8 +3352,8 @@
   },
   "gnida_office": {
     "2": {
-      "terminal": null,
-      "next_station": null,
+      "terminal": "depot_station",
+      "next_station": "depot_station",
       "bound": "south"
     },
     "1": {

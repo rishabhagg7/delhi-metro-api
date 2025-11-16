@@ -80,11 +80,19 @@ class IntelligentPlatformScraper:
         clean_name = re.sub(r'\(.*?\)', '', clean_name)  # Remove parentheses
         clean_name = re.sub(r'\s+', ' ', clean_name).strip()
         
+        # Remove "Jaypee Greens" prefix specifically (used in some station names on Wikipedia)
+        clean_name = re.sub(r'\bjaypee\s+greens?\b', '', clean_name, flags=re.IGNORECASE)
+        clean_name = re.sub(r'\s+', ' ', clean_name).strip()
+        
         # Handle special cases - renamed stations
         # "Millennium City Centre Gurugram" is the new name for "Huda City Centre"
         if 'millennium city centre' in clean_name or 'millennium city center' in clean_name:
             clean_name = re.sub(r'millennium city cent(re|er)', 'huda city centre', clean_name)
             clean_name = re.sub(r'\s+(gurugram|gurgaon)$', '', clean_name).strip()
+        
+        # "Rainbow" is the new name for "Noida Sector 50"
+        if 'rainbow' in clean_name and 'garden' not in clean_name:
+            return 'noida_sector_50'
         
         # Handle special cases
         terminal_keywords = ['terminal', 'depot', 'yard']
@@ -92,7 +100,7 @@ class IntelligentPlatformScraper:
             # Look for stations with similar names
             for station_id, station in self.stations_by_id.items():
                 if any(kw in station['name'].lower() for kw in terminal_keywords):
-                    if self.similarity(clean_name, station['name']) > 0.6:
+                    if self.similarity(clean_name, station['name']) > 0.55:
                         return station_id
         
         # Direct lookup with variations
@@ -122,7 +130,11 @@ class IntelligentPlatformScraper:
         
         # Fuzzy matching - find best match
         best_match = None
-        best_score = 0.6  # Lowered threshold from 0.7 to handle variations
+        best_score = 0.6  # Default threshold - prevents false positives
+        
+        # Lower threshold for specific patterns we know are problematic
+        if any(kw in clean_name for kw in ['depot', 'pari', 'chowk']):
+            best_score = 0.55  # Allow slightly lower threshold for these cases
         
         for station_id, station in self.stations_by_id.items():
             station_name = station['name'].lower()
