@@ -676,33 +676,25 @@
       "terminal": "huda_city_centre",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": [
-        "Yellow Line",
-        "Violet Line",
-        "Magenta Line"
-      ]
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "samaypur_badli",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": [
-        "Yellow Line",
-        "Violet Line",
-        "Magenta Line"
-      ]
+      "source": "infobox_intelligent"
     },
     "3": {
       "terminal": "raja_nahar_singh",
       "next_station": null,
-      "bound": null
+      "bound": null,
+      "source": "infobox_intelligent"
     },
     "4": {
       "terminal": "kashmere_gate",
       "next_station": null,
-      "bound": null
+      "bound": null,
+      "source": "infobox_intelligent"
     }
   },
   "udyog_bhawan": {
@@ -910,16 +902,13 @@
       "terminal": "sector_55-56_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": [
-        "Yellow Line",
-        "Rapid Metro"
-      ]
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
-      "bound": null
+      "bound": null,
+      "source": "infobox_intelligent"
     }
   },
   "mg_road": {
@@ -1009,31 +998,25 @@
       "terminal": "vaishali",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": [
-        "Blue Line",
-        "Pink Line"
-      ]
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": [
-        "Blue Line",
-        "Pink Line"
-      ]
+      "source": "infobox_intelligent"
     },
     "3": {
       "terminal": "shiv_vihar",
       "next_station": null,
-      "bound": null
+      "bound": null,
+      "source": "infobox_intelligent"
     },
     "4": {
       "terminal": "majlis_park",
       "next_station": null,
-      "bound": null
+      "bound": null,
+      "source": "infobox_intelligent"
     }
   },
   "preet_vihar": {
@@ -1253,31 +1236,25 @@
       "terminal": "noida_electronic_city",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": [
-        "Blue Line",
-        "Violet Line"
-      ]
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": [
-        "Blue Line",
-        "Violet Line"
-      ]
+      "source": "infobox_intelligent"
     },
     "3": {
       "terminal": "raja_nahar_singh",
       "next_station": null,
-      "bound": null
+      "bound": null,
+      "source": "infobox_intelligent"
     },
     "4": {
       "terminal": "kashmere_gate",
       "next_station": null,
-      "bound": null
+      "bound": null,
+      "source": "infobox_intelligent"
     }
   },
   "barakhamba": {
@@ -2015,16 +1992,13 @@
       "terminal": "sector_55-56_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": [
-        "Yellow Line",
-        "Rapid Metro"
-      ]
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
-      "bound": null
+      "bound": null,
+      "source": "infobox_intelligent"
     }
   },
   "phase_2_(rapid_metro)": {
@@ -2032,15 +2006,13 @@
       "terminal": "sector_55-56_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "belvedere_towers_(rapid_metro)": {
@@ -2048,15 +2020,7 @@
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
-    },
-    "2": {
-      "terminal": null,
-      "next_station": null,
-      "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "cyber_city_(rapid_metro)": {
@@ -2064,15 +2028,7 @@
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
-    },
-    "2": {
-      "terminal": null,
-      "next_station": null,
-      "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "moulsari_avenue_(rapid_metro)": {
@@ -2080,15 +2036,7 @@
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
-    },
-    "2": {
-      "terminal": null,
-      "next_station": null,
-      "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "phase_3_(rapid_metro)": {
@@ -2096,15 +2044,13 @@
       "terminal": "sector_55-56_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "igi_airport": {
@@ -2263,15 +2209,13 @@
       "terminal": "sector_55-56_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "sector_42-43_(rapid_metro)": {
@@ -2279,15 +2223,13 @@
       "terminal": "sector_55-56_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "sector_53-54_(rapid_metro)": {
@@ -2295,15 +2237,13 @@
       "terminal": "sector_55-56_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "sector_54_chowk_(rapid_metro)": {
@@ -2311,15 +2251,13 @@
       "terminal": "sector_55-56_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "sector_55-56_(rapid_metro)": {
@@ -2327,15 +2265,13 @@
       "terminal": null,
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
       "bound": null,
-      "source": "infobox_fallback",
-      "lines": []
+      "source": "infobox_intelligent"
     }
   },
   "majlis_park": {

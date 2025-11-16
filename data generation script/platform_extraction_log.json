@@ -1,11 +1,11 @@
 {
   "summary": {
     "total_processed": 262,
-    "success": 246,
-    "partial": 15,
+    "success": 261,
+    "partial": 0,
     "failed": 1,
-    "missing_terminal_count": 71,
-    "missing_next_station_count": 79
+    "missing_terminal_count": 44,
+    "missing_next_station_count": 84
   },
   "success": [
     {
@@ -1038,6 +1038,39 @@
       "error": null
     },
     {
+      "station_id": "central_secretariat",
+      "url": "https://en.wikipedia.org/wiki/Central_Secretariat_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "huda_city_centre",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "samaypur_badli",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "3": {
+          "terminal": "raja_nahar_singh",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "4": {
+          "terminal": "kashmere_gate",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
       "station_id": "udyog_bhawan",
       "url": "https://en.wikipedia.org/wiki/Udyog_Bhawan_metro_station",
       "platforms": {
@@ -1343,6 +1376,27 @@
       "error": null
     },
     {
+      "station_id": "sikanderpur",
+      "url": "https://en.wikipedia.org/wiki/Sikanderpur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "sector_55-56_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
       "station_id": "mg_road",
       "url": "https://en.wikipedia.org/wiki/MG_Road_metro_station_(Gurgaon)",
       "platforms": {
@@ -1463,6 +1517,39 @@
         }
       },
       "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "karkarduma",
+      "url": "https://en.wikipedia.org/wiki/Karkarduma_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "vaishali",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "3": {
+          "terminal": "shiv_vihar",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "4": {
+          "terminal": "majlis_park",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
       "status": "success",
       "error": null
     },
@@ -1787,6 +1874,39 @@
         }
       },
       "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "mandi_house",
+      "url": "https://en.wikipedia.org/wiki/Mandi_House_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "noida_electronic_city",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "dwarka_sector_-_21",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "3": {
+          "terminal": "raja_nahar_singh",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "4": {
+          "terminal": "kashmere_gate",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
       "status": "success",
       "error": null
     },
@@ -2906,6 +3026,114 @@
       "error": null
     },
     {
+      "station_id": "sikanderpur_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sikanderpur_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "sector_55-56_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "phase_2_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Phase_2_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "sector_55-56_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "belvedere_towers_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Belvedere_Towers_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "cyber_city_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Cyber_City_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "moulsari_avenue_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Moulsari_Avenue_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "phase_3_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_53-54_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "sector_55-56_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
       "station_id": "igi_airport",
       "url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport_metro_station",
       "platforms": {
@@ -3144,6 +3372,111 @@
         }
       },
       "extraction_method": "layout_table",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "phase-i_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Phase_1_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "sector_55-56_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sector_42-43_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_42-43_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "sector_55-56_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sector_53-54_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_53-54_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "sector_55-56_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sector_54_chowk_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_54_Chowk_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": "sector_55-56_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
+      "status": "success",
+      "error": null
+    },
+    {
+      "station_id": "sector_55-56_(rapid_metro)",
+      "url": "https://en.wikipedia.org/wiki/Sector_55–56_metro_station",
+      "platforms": {
+        "1": {
+          "terminal": null,
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        },
+        "2": {
+          "terminal": "phase_3_(rapid_metro)",
+          "next_station": null,
+          "bound": null,
+          "source": "infobox_intelligent"
+        }
+      },
+      "extraction_method": "infobox_intelligent",
       "status": "success",
       "error": null
     },
@@ -4883,365 +5216,7 @@
       "error": null
     }
   ],
-  "partial": [
-    {
-      "station_id": "central_secretariat",
-      "url": "https://en.wikipedia.org/wiki/Central_Secretariat_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": [
-            "Yellow Line",
-            "Violet Line",
-            "Magenta Line"
-          ]
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": [
-            "Yellow Line",
-            "Violet Line",
-            "Magenta Line"
-          ]
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "sikanderpur",
-      "url": "https://en.wikipedia.org/wiki/Sikanderpur_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": [
-            "Yellow Line",
-            "Rapid Metro"
-          ]
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "karkarduma",
-      "url": "https://en.wikipedia.org/wiki/Karkarduma_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": [
-            "Blue Line",
-            "Pink Line"
-          ]
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": [
-            "Blue Line",
-            "Pink Line"
-          ]
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "mandi_house",
-      "url": "https://en.wikipedia.org/wiki/Mandi_House_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": [
-            "Blue Line",
-            "Violet Line"
-          ]
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": [
-            "Blue Line",
-            "Violet Line"
-          ]
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "sikanderpur_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Sikanderpur_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": [
-            "Yellow Line",
-            "Rapid Metro"
-          ]
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "phase_2_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Phase_2_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "belvedere_towers_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Belvedere_Towers_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "cyber_city_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Cyber_City_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "moulsari_avenue_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Moulsari_Avenue_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "phase_3_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Sector_53-54_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "phase-i_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Phase_1_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "sector_42-43_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Sector_42-43_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "sector_53-54_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Sector_53-54_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "sector_54_chowk_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Sector_54_Chowk_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    },
-    {
-      "station_id": "sector_55-56_(rapid_metro)",
-      "url": "https://en.wikipedia.org/wiki/Sector_55–56_metro_station",
-      "platforms": {
-        "1": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        },
-        "2": {
-          "terminal": null,
-          "next_station": null,
-          "bound": null,
-          "source": "infobox_fallback",
-          "lines": []
-        }
-      },
-      "extraction_method": "infobox_fallback",
-      "status": "partial",
-      "error": null
-    }
-  ],
+  "partial": [],
   "failed": [
     {
       "station_id": "jama_masjid",
@@ -5348,21 +5323,7 @@
       "station_id": "central_secretariat",
       "station_name": "Central Secretariat",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "central_secretariat",
-      "station_name": "Central Secretariat",
-      "platform": "1",
       "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "central_secretariat",
-      "station_name": "Central Secretariat",
-      "platform": "2",
-      "missing": "terminal",
       "bound": null
     },
     {
@@ -5373,16 +5334,30 @@
       "bound": null
     },
     {
-      "station_id": "sikanderpur",
-      "station_name": "Sikanderpur",
-      "platform": "1",
-      "missing": "terminal",
+      "station_id": "central_secretariat",
+      "station_name": "Central Secretariat",
+      "platform": "3",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "central_secretariat",
+      "station_name": "Central Secretariat",
+      "platform": "4",
+      "missing": "next_station",
       "bound": null
     },
     {
       "station_id": "sikanderpur",
       "station_name": "Sikanderpur",
       "platform": "1",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "sikanderpur",
+      "station_name": "Sikanderpur",
+      "platform": "2",
       "missing": "next_station",
       "bound": null
     },
@@ -5432,13 +5407,6 @@
       "station_id": "karkarduma",
       "station_name": "Karkarduma",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "karkarduma",
-      "station_name": "Karkarduma",
-      "platform": "1",
       "missing": "next_station",
       "bound": null
     },
@@ -5446,13 +5414,20 @@
       "station_id": "karkarduma",
       "station_name": "Karkarduma",
       "platform": "2",
-      "missing": "terminal",
+      "missing": "next_station",
       "bound": null
     },
     {
       "station_id": "karkarduma",
       "station_name": "Karkarduma",
-      "platform": "2",
+      "platform": "3",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "karkarduma",
+      "station_name": "Karkarduma",
+      "platform": "4",
       "missing": "next_station",
       "bound": null
     },
@@ -5474,13 +5449,6 @@
       "station_id": "mandi_house",
       "station_name": "Mandi House",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "mandi_house",
-      "station_name": "Mandi House",
-      "platform": "1",
       "missing": "next_station",
       "bound": null
     },
@@ -5488,13 +5456,20 @@
       "station_id": "mandi_house",
       "station_name": "Mandi House",
       "platform": "2",
-      "missing": "terminal",
+      "missing": "next_station",
       "bound": null
     },
     {
       "station_id": "mandi_house",
       "station_name": "Mandi House",
-      "platform": "2",
+      "platform": "3",
+      "missing": "next_station",
+      "bound": null
+    },
+    {
+      "station_id": "mandi_house",
+      "station_name": "Mandi House",
+      "platform": "4",
       "missing": "next_station",
       "bound": null
     },
@@ -5572,21 +5547,14 @@
       "station_id": "sikanderpur_(rapid_metro)",
       "station_name": "Sikanderpur (Rapid Metro)",
       "platform": "1",
-      "missing": "terminal",
+      "missing": "next_station",
       "bound": null
     },
     {
       "station_id": "sikanderpur_(rapid_metro)",
       "station_name": "Sikanderpur (Rapid Metro)",
-      "platform": "1",
+      "platform": "2",
       "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "phase_2_(rapid_metro)",
-      "station_name": "Phase 2 (Rapid Metro)",
-      "platform": "1",
-      "missing": "terminal",
       "bound": null
     },
     {
@@ -5600,13 +5568,6 @@
       "station_id": "phase_2_(rapid_metro)",
       "station_name": "Phase 2 (Rapid Metro)",
       "platform": "2",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "phase_2_(rapid_metro)",
-      "station_name": "Phase 2 (Rapid Metro)",
-      "platform": "2",
       "missing": "next_station",
       "bound": null
     },
@@ -5614,35 +5575,7 @@
       "station_id": "belvedere_towers_(rapid_metro)",
       "station_name": "Belvedere Towers (Rapid Metro)",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "belvedere_towers_(rapid_metro)",
-      "station_name": "Belvedere Towers (Rapid Metro)",
-      "platform": "1",
       "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "belvedere_towers_(rapid_metro)",
-      "station_name": "Belvedere Towers (Rapid Metro)",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "belvedere_towers_(rapid_metro)",
-      "station_name": "Belvedere Towers (Rapid Metro)",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "cyber_city_(rapid_metro)",
-      "station_name": "Cyber City (Rapid Metro)",
-      "platform": "1",
-      "missing": "terminal",
       "bound": null
     },
     {
@@ -5653,44 +5586,9 @@
       "bound": null
     },
     {
-      "station_id": "cyber_city_(rapid_metro)",
-      "station_name": "Cyber City (Rapid Metro)",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "cyber_city_(rapid_metro)",
-      "station_name": "Cyber City (Rapid Metro)",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": null
-    },
-    {
       "station_id": "moulsari_avenue_(rapid_metro)",
       "station_name": "Moulsari Avenue (Rapid Metro)",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "moulsari_avenue_(rapid_metro)",
-      "station_name": "Moulsari Avenue (Rapid Metro)",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "moulsari_avenue_(rapid_metro)",
-      "station_name": "Moulsari Avenue (Rapid Metro)",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "moulsari_avenue_(rapid_metro)",
-      "station_name": "Moulsari Avenue (Rapid Metro)",
-      "platform": "2",
       "missing": "next_station",
       "bound": null
     },
@@ -5698,21 +5596,7 @@
       "station_id": "phase_3_(rapid_metro)",
       "station_name": "Phase 3 (Rapid Metro)",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "phase_3_(rapid_metro)",
-      "station_name": "Phase 3 (Rapid Metro)",
-      "platform": "1",
       "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "phase_3_(rapid_metro)",
-      "station_name": "Phase 3 (Rapid Metro)",
-      "platform": "2",
-      "missing": "terminal",
       "bound": null
     },
     {
@@ -5747,21 +5631,7 @@
       "station_id": "phase-i_(rapid_metro)",
       "station_name": "Phase-I (Rapid Metro)",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "phase-i_(rapid_metro)",
-      "station_name": "Phase-I (Rapid Metro)",
-      "platform": "1",
       "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "phase-i_(rapid_metro)",
-      "station_name": "Phase-I (Rapid Metro)",
-      "platform": "2",
-      "missing": "terminal",
       "bound": null
     },
     {
@@ -5775,21 +5645,7 @@
       "station_id": "sector_42-43_(rapid_metro)",
       "station_name": "Sector 42-43 (Rapid Metro)",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "sector_42-43_(rapid_metro)",
-      "station_name": "Sector 42-43 (Rapid Metro)",
-      "platform": "1",
       "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "sector_42-43_(rapid_metro)",
-      "station_name": "Sector 42-43 (Rapid Metro)",
-      "platform": "2",
-      "missing": "terminal",
       "bound": null
     },
     {
@@ -5803,21 +5659,7 @@
       "station_id": "sector_53-54_(rapid_metro)",
       "station_name": "Sector 53-54 (Rapid Metro)",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "sector_53-54_(rapid_metro)",
-      "station_name": "Sector 53-54 (Rapid Metro)",
-      "platform": "1",
       "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "sector_53-54_(rapid_metro)",
-      "station_name": "Sector 53-54 (Rapid Metro)",
-      "platform": "2",
-      "missing": "terminal",
       "bound": null
     },
     {
@@ -5831,21 +5673,7 @@
       "station_id": "sector_54_chowk_(rapid_metro)",
       "station_name": "Sector 54 Chowk (Rapid Metro)",
       "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "sector_54_chowk_(rapid_metro)",
-      "station_name": "Sector 54 Chowk (Rapid Metro)",
-      "platform": "1",
       "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "sector_54_chowk_(rapid_metro)",
-      "station_name": "Sector 54 Chowk (Rapid Metro)",
-      "platform": "2",
-      "missing": "terminal",
       "bound": null
     },
     {
@@ -5867,13 +5695,6 @@
       "station_name": "Sector 55-56 (Rapid Metro)",
       "platform": "1",
       "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "sector_55-56_(rapid_metro)",
-      "station_name": "Sector 55-56 (Rapid Metro)",
-      "platform": "2",
-      "missing": "terminal",
       "bound": null
     },
     {

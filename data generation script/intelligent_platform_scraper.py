@@ -352,7 +352,16 @@ class IntelligentPlatformScraper:
                 self.success_log.append(result)
                 return result
             
-            # Strategy 2: Try infobox (fallback)
+            # Strategy 2: Try intelligent infobox parsing (fallback)
+            platforms = self.extract_platform_from_infobox_intelligent(soup, station_id)
+            if platforms:
+                result["platforms"] = platforms
+                result["extraction_method"] = "infobox_intelligent"
+                result["status"] = "success"  # Changed from partial since intelligent method extracts terminals
+                self.success_log.append(result)
+                return result
+            
+            # Strategy 3: Try basic infobox (last resort - just counts)
             platforms = self.extract_platform_from_infobox(soup, station_id)
             if platforms:
                 result["platforms"] = platforms
@@ -486,6 +495,171 @@ class IntelligentPlatformScraper:
         
         with open(log_file, 'w', encoding='utf-8') as f:
             json.dump(log, f, indent=2, ensure_ascii=False)
+
+    # ----- Additional fixer utilities (merged from standalone fixer) -----
+    def extract_platform_from_infobox_intelligent(self, soup: BeautifulSoup, station_id: str) -> Optional[Dict]:
+        """
+        Intelligently extract platform data from infobox.
+        Parses concatenated platform text like:
+        "Platform-1 →Terminal1Platform-2 →Terminal2..."
+        """
+        platforms = {}
+
+        # Find infobox
+        infobox = soup.find('table', class_=lambda x: x and 'infobox' in x)
+        if not infobox:
+            return None
+
+        rows = infobox.find_all('tr')
+
+        for row in rows:
+            header = row.find('th')
+            value = row.find('td')
+
+            if not header or not value:
+                continue
+
+            header_text = header.get_text(strip=True).lower()
+            value_text = value.get_text(strip=True)
+
+            # Extract detailed platform information from "Platforms" row
+            # Format: "Side platformPlatform-1 →Terminal1Platform-2 →Terminal2..."
+            if 'platform' in header_text and 'Platform-' in value_text:
+                # Split by "Platform-" to get individual platform entries
+                platform_entries = re.split(r'Platform-(\d+)', value_text)
+
+                # Process pairs: [prefix, num, data, num, data, ...]
+                for i in range(1, len(platform_entries), 2):
+                    if i + 1 < len(platform_entries):
+                        platform_num = platform_entries[i]
+                        platform_data = platform_entries[i + 1]
+
+                        terminal_id = None
+                        bound = None
+
+                        # Look for terminal after → or ←
+                        # The data after arrow goes until the next Platform- marker or end
+                        terminal_match = re.search(r'[→←]\s*(.+?)(?=Platform-|$)', platform_data)
+                        if terminal_match:
+                            terminal_name = terminal_match.group(1).strip()
+                            # Clean up the terminal name
+                            terminal_name = re.sub(r'\s+', ' ', terminal_name)
+                            terminal_id = self.find_station_id(terminal_name, station_id)
+
+                        # Infer direction
+                        platform_data_lower = platform_data.lower()
+                        if 'northbound' in platform_data_lower or 'north bound' in platform_data_lower:
+                            bound = 'north'
+                        elif 'southbound' in platform_data_lower or 'south bound' in platform_data_lower:
+                            bound = 'south'
+                        elif 'eastbound' in platform_data_lower or 'east bound' in platform_data_lower:
+                            bound = 'east'
+                        elif 'westbound' in platform_data_lower or 'west bound' in platform_data_lower:
+                            bound = 'west'
+                        elif 'clockwise' in platform_data_lower:
+                            bound = 'clockwise'
+                        elif 'anticlockwise' in platform_data_lower:
+                            bound = 'anticlockwise'
+
+                        platforms[platform_num] = {
+                            'terminal': terminal_id,
+                            'next_station': None,
+                            'bound': bound,
+                            'source': 'infobox_intelligent'
+                        }
+
+        return platforms if platforms else None
+
+    def fix_partial_and_failed(self, log_file: str = 'platform_extraction_log.json',
+                               urls_file: str = 'station_wikipedia_urls.json',
+                               output_file: str = 'platform_data.json',
+                               fix_log: str = 'platform_fix_log.json') -> None:
+        """
+        Process partial and failed stations recorded in an extraction log and
+        attempt to improve platform data by parsing the infobox intelligently.
+        Updates `platform_data.json` and writes `platform_fix_log.json`.
+        """
+        print("🔧 Starting integrated Platform Data Fixer")
+
+        # Load extraction log
+        with open(log_file, 'r') as f:
+            log = json.load(f)
+
+        # Load URLs
+        with open(urls_file, 'r') as f:
+            urls = json.load(f)
+
+        # Load current platform data
+        with open(output_file, 'r') as f:
+            platform_data = json.load(f)
+
+        partial_stations = [entry['station_id'] for entry in log.get('partial', [])]
+        failed_stations = [entry['station_id'] for entry in log.get('failed', [])]
+        all_to_fix = partial_stations + failed_stations
+
+        improved = []
+        still_partial = []
+        still_failed = []
+
+        for i, station_id in enumerate(all_to_fix, 1):
+            url = urls.get(station_id)
+            if not url:
+                still_partial.append({'station_id': station_id, 'reason': 'no_url'})
+                continue
+
+            station_name = self.stations_by_id.get(station_id, {}).get('name', station_id)
+            print(f"[{i}/{len(all_to_fix)}] 🔍 {station_name} ({station_id})")
+
+            try:
+                response = self.session.get(url, timeout=15)
+                response.raise_for_status()
+                soup = BeautifulSoup(response.content, 'html.parser')
+
+                platforms = self.extract_platform_from_infobox_intelligent(soup, station_id)
+                if platforms:
+                    improved.append({'station_id': station_id, 'platforms': platforms})
+                    # Merge into existing platform_data
+                    if station_id in platform_data:
+                        for pnum, pdata in platforms.items():
+                            if pnum in platform_data[station_id]:
+                                platform_data[station_id][pnum].update({k: v for k, v in pdata.items() if v is not None})
+                            else:
+                                platform_data[station_id][pnum] = pdata
+                    else:
+                        platform_data[station_id] = platforms
+                    print("    ✅ IMPROVED: extracted from infobox")
+                else:
+                    still_partial.append({'station_id': station_id, 'reason': 'no_infobox_data'})
+                    print("    ⚠️  STILL_PARTIAL: no additional infobox data")
+
+            except Exception as e:
+                still_failed.append({'station_id': station_id, 'error': str(e)})
+                print(f"    ❌ ERROR: {e}")
+
+        # Save merged platform data
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(platform_data, f, indent=2, ensure_ascii=False)
+
+        # Save fix log
+        fix_summary = {
+            'summary': {
+                'attempted': len(all_to_fix),
+                'improved': len(improved),
+                'still_partial': len(still_partial),
+                'still_failed': len(still_failed)
+            },
+            'improved': improved,
+            'still_partial': still_partial,
+            'still_failed': still_failed
+        }
+        with open(fix_log, 'w', encoding='utf-8') as f:
+            json.dump(fix_summary, f, indent=2, ensure_ascii=False)
+
+        print('\n✨ Integrated fixing complete')
+        print(f"   • Attempted: {len(all_to_fix)}")
+        print(f"   • Improved: {len(improved)}")
+        print(f"   • Still partial: {len(still_partial)}")
+        print(f"   • Still failed: {len(still_failed)}")
 
 
 def main():
