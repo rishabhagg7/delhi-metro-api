@@ -5,7 +5,7 @@
     "partial": 0,
     "failed": 1,
     "missing_terminal_count": 44,
-    "missing_next_station_count": 84
+    "missing_next_station_count": 64
   },
   "success": [
     {
@@ -420,7 +420,7 @@
         },
         "1": {
           "terminal": "rithala",
-          "next_station": null,
+          "next_station": "rithala",
           "bound": "west"
         }
       },
@@ -681,7 +681,7 @@
       "platforms": {
         "2": {
           "terminal": "inderlok",
-          "next_station": null,
+          "next_station": "satguru_ram_singh_marg",
           "bound": "east"
         },
         "1": {
@@ -700,7 +700,7 @@
       "platforms": {
         "2": {
           "terminal": "kirti_nagar",
-          "next_station": null,
+          "next_station": "kirti_nagar",
           "bound": "east"
         },
         "1": {
@@ -743,7 +743,7 @@
         },
         "2": {
           "terminal": "samaypur_badli",
-          "next_station": null,
+          "next_station": "samaypur_badli",
           "bound": "north"
         }
       },
@@ -829,7 +829,7 @@
         },
         "4": {
           "terminal": "majlis_park",
-          "next_station": null,
+          "next_station": "majlis_park",
           "bound": "west"
         }
       },
@@ -1421,7 +1421,7 @@
       "platforms": {
         "1": {
           "terminal": "huda_city_centre",
-          "next_station": null,
+          "next_station": "huda_city_centre",
           "bound": "south"
         },
         "2": {
@@ -1478,7 +1478,7 @@
       "platforms": {
         "1": {
           "terminal": "vaishali",
-          "next_station": null,
+          "next_station": "vaishali",
           "bound": "east"
         },
         "2": {
@@ -2312,7 +2312,7 @@
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": null,
+          "next_station": "dwarka_sector_-_21",
           "bound": "west"
         }
       },
@@ -3103,7 +3103,7 @@
       "platforms": {
         "1": {
           "terminal": "phase_3_(rapid_metro)",
-          "next_station": null,
+          "next_station": "phase_3_(rapid_metro)",
           "bound": null,
           "source": "infobox_intelligent"
         }
@@ -3191,7 +3191,7 @@
       "platforms": {
         "2": {
           "terminal": "new_delhi",
-          "next_station": null,
+          "next_station": "new_delhi",
           "bound": "north"
         },
         "1": {
@@ -3234,7 +3234,7 @@
         },
         "2": {
           "terminal": "kashmere_gate",
-          "next_station": null,
+          "next_station": "kashmere_gate",
           "bound": "north"
         }
       },
@@ -3248,7 +3248,7 @@
       "platforms": {
         "1": {
           "terminal": "botanical_garden",
-          "next_station": null,
+          "next_station": "botanical_garden",
           "bound": "east"
         },
         "2": {
@@ -3444,7 +3444,7 @@
       "platforms": {
         "1": {
           "terminal": "sector_55-56_(rapid_metro)",
-          "next_station": null,
+          "next_station": "sector_55-56_(rapid_metro)",
           "bound": null,
           "source": "infobox_intelligent"
         },
@@ -3919,7 +3919,7 @@
         },
         "2": {
           "terminal": "janak_puri_west",
-          "next_station": null,
+          "next_station": "janak_puri_west",
           "bound": "west"
         }
       },
@@ -4033,7 +4033,7 @@
         },
         "1": {
           "terminal": "brigadier_hoshiyar_singh",
-          "next_station": null,
+          "next_station": "brigadier_hoshiyar_singh",
           "bound": "west"
         }
       },
@@ -4218,12 +4218,12 @@
       "platforms": {
         "1": {
           "terminal": "shiv_vihar",
-          "next_station": "krishna_nagar",
+          "next_station": null,
           "bound": "northeast"
         },
         "2": {
           "terminal": "majlis_park",
-          "next_station": "karkarduma",
+          "next_station": null,
           "bound": "northwest"
         }
       },
@@ -4328,7 +4328,7 @@
         },
         "2": {
           "terminal": "maujpur_-_babarpur",
-          "next_station": null,
+          "next_station": "maujpur_-_babarpur",
           "bound": "northwest"
         }
       },
@@ -4342,7 +4342,7 @@
       "platforms": {
         "1": {
           "terminal": "shiv_vihar",
-          "next_station": null,
+          "next_station": "shiv_vihar",
           "bound": "northeast"
         },
         "2": {
@@ -4380,7 +4380,7 @@
       "platforms": {
         "1": {
           "terminal": "raja_nahar_singh",
-          "next_station": null,
+          "next_station": "raja_nahar_singh",
           "bound": "south"
         },
         "2": {
@@ -4513,7 +4513,7 @@
       "platforms": {
         "2": {
           "terminal": "shaheed_sthal_(new_bus_adda)",
-          "next_station": null,
+          "next_station": "shaheed_sthal_(new_bus_adda)",
           "bound": "east"
         },
         "1": {
@@ -4722,7 +4722,7 @@
       "platforms": {
         "1": {
           "terminal": "noida_electronic_city",
-          "next_station": null,
+          "next_station": "noida_electronic_city",
           "bound": "east"
         },
         "2": {
@@ -4765,7 +4765,7 @@
         },
         "2": {
           "terminal": "dwarka",
-          "next_station": null,
+          "next_station": "dwarka",
           "bound": "east"
         }
       },
@@ -4779,7 +4779,7 @@
       "platforms": {
         "1": {
           "terminal": "dhansa_bus_stand",
-          "next_station": null,
+          "next_station": "dhansa_bus_stand",
           "bound": "west"
         },
         "2": {
@@ -4841,7 +4841,7 @@
         },
         "1": {
           "terminal": "noida_sector_51",
-          "next_station": null,
+          "next_station": "noida_sector_51",
           "bound": "north"
         }
       },
@@ -5207,7 +5207,7 @@
         },
         "1": {
           "terminal": "noida_sector_51",
-          "next_station": "gnida_office",
+          "next_station": null,
           "bound": "north"
         }
       },
@@ -5276,13 +5276,6 @@
       "platform": "1",
       "missing": "next_station",
       "bound": "west"
-    },
-    {
-      "station_id": "ashok_park_main",
-      "station_name": "Ashok Park Main",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "east"
     },
     {
       "station_id": "satguru_ram_singh_marg",
@@ -5768,6 +5761,20 @@
       "bound": "west"
     },
     {
+      "station_id": "karkarduma_court",
+      "station_name": "Karkarduma Court",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "northeast"
+    },
+    {
+      "station_id": "karkarduma_court",
+      "station_name": "Karkarduma Court",
+      "platform": "2",
+      "missing": "next_station",
+      "bound": "northwest"
+    },
+    {
       "station_id": "maujpur_-_babarpur",
       "station_name": "Maujpur - Babarpur",
       "platform": "2",
@@ -6123,6 +6130,13 @@
       "platform": "3",
       "missing": "next_station",
       "bound": "south"
+    },
+    {
+      "station_id": "depot_station",
+      "station_name": "Depot Station",
+      "platform": "1",
+      "missing": "next_station",
+      "bound": "north"
     }
   ]
 }

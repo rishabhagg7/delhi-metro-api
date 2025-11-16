@@ -235,25 +235,57 @@ class IntelligentPlatformScraper:
                                     terminal_name = links[0].get_text(strip=True)
                                     terminal_id = self.find_station_id(terminal_name, station_id)
                             
-                            # Extract NEXT STATION (from "Next Station:...")
-                            if 'next station' in other_text.lower():
-                                # Pattern: "Next Station:Jhilmil" or "Next Station:Shaheed Nagar"
-                                next_match = re.search(r'Next\s+Station\s*[:\s]+([^\n(]+)', other_text, re.I)
+                            # Extract NEXT STATION (from "Next Station:..." label or links after reference)
+                            if 'next station' in other_text.lower() or 'next' in other_text.lower():
+                                # Pattern 1 (HIGHEST PRIORITY): "Next Station:" with colon - explicit label
+                                # Use case-insensitive search and look for the colon specifically
+                                next_match = re.search(r'Next\s+Station\s*:', other_text, re.I)
                                 if next_match:
-                                    # Find the link that appears AFTER "Next Station"
-                                    next_station_pos = other_text.lower().find('next station')
+                                    # Find the link that appears immediately AFTER "Next Station:"
+                                    next_label_end_pos = next_match.end()
                                     for link in links:
                                         link_text = link.get_text(strip=True)
-                                        link_pos = other_text.lower().find(link_text.lower())
-                                        if link_pos > next_station_pos:
+                                        link_pos = other_text.find(link_text)
+                                        if link_pos >= next_label_end_pos:
                                             next_station_id = self.find_station_id(link_text, station_id)
+                                            if next_station_id:  # Successfully mapped
+                                                break
+                                    
+                                    # Fallback: extract text immediately after colon
+                                    if not next_station_id:
+                                        after_colon = other_text[next_label_end_pos:].strip()
+                                        # Take text up to next newline or parenthesis
+                                        next_name = re.split(r'[\n(]', after_colon)[0].strip()
+                                        if next_name:
+                                            next_station_id = self.find_station_id(next_name, station_id)
+                                
+                                # Pattern 2 (fallback): "Change at the next station for..." - infer from context
+                                # Only use this if Pattern 1 didn't find anything with colon
+                                if not next_station_id and 'change at the next station' in other_text.lower():
+                                    # Links appear in order: [Terminal, Line, OtherTerminal, NextStation]
+                                    # We want the LAST station link that appears after "change at the next station"
+                                    change_pos = other_text.lower().find('change at the next station')
+                                    # Find "Towards" that comes AFTER "change at the next station"
+                                    towards_matches = [(m.start(), m.group()) for m in re.finditer(r'Towards', other_text, re.I)]
+                                    second_towards_pos = None
+                                    for pos, _ in towards_matches:
+                                        if pos > change_pos:
+                                            second_towards_pos = pos
                                             break
                                     
-                                    # Fallback: use regex text
-                                    if not next_station_id:
-                                        next_name = next_match.group(1).strip()
-                                        next_name = re.sub(r'\([^)]+\)', '', next_name).strip()
-                                        next_station_id = self.find_station_id(next_name, station_id)
+                                    # Get the last station link (not line name) after "change" and before second "Towards"
+                                    last_valid_link = None
+                                    for link in links:
+                                        link_text = link.get_text(strip=True)
+                                        link_pos = other_text.find(link_text)
+                                        if link_pos > change_pos:
+                                            if second_towards_pos is None or link_pos < second_towards_pos:
+                                                # Make sure it's not a line name (lines contain "Line" keyword)
+                                                if 'line' not in link_text.lower():
+                                                    last_valid_link = link_text
+                                    
+                                    if last_valid_link:
+                                        next_station_id = self.find_station_id(last_valid_link, station_id)
                         
                         # Store platform data (even if terminal/next is None - we'll log it)
                         if platform_num not in platforms:
@@ -464,6 +496,88 @@ class IntelligentPlatformScraper:
         print(f"   • Detailed log: {log_file}")
         print("=" * 70)
     
+    def fix_penultimate_stations(self, platform_data: Dict) -> Dict:
+        """
+        Fix penultimate stations where next_station is null but should be the terminal.
+        A penultimate station is the second-to-last station where the next station IS the terminal.
+        """
+        print("\n🔧 Fixing penultimate stations (next_station = terminal)...")
+        
+        # Load GTFS data to find station sequences
+        try:
+            # Load stops.txt
+            stops_map = {}
+            with open('stops.txt', 'r') as f:
+                lines = f.readlines()
+            for line in lines[1:]:
+                parts = line.strip().split(',')
+                if len(parts) >= 3:
+                    stop_id = parts[0].strip()
+                    stop_name = parts[2].strip()
+                    stops_map[stop_id] = stop_name
+            
+            # Load stop_times.txt
+            from collections import defaultdict
+            trips = defaultdict(list)
+            with open('stop_times.txt', 'r') as f:
+                lines = f.readlines()
+            for line in lines[1:]:
+                parts = line.strip().split(',')
+                if len(parts) >= 5:
+                    trip_id = parts[0].strip()
+                    stop_id = parts[3].strip()
+                    stop_sequence = int(parts[4].strip()) if parts[4].strip().isdigit() else 0
+                    trips[trip_id].append((stop_sequence, stop_id))
+            
+            # Sort trips
+            for trip_id in trips:
+                trips[trip_id].sort()
+            
+        except FileNotFoundError:
+            print("  ⚠️  GTFS files not found, skipping penultimate fix")
+            return platform_data
+        
+        # Process each platform
+        fixed_count = 0
+        for station_id, platforms in platform_data.items():
+            station_name = self.stations_by_id.get(station_id, {}).get('name', station_id)
+            
+            for platform_num, platform_info in platforms.items():
+                terminal = platform_info.get('terminal')
+                next_station = platform_info.get('next_station')
+                
+                # Only fix if terminal exists but next_station is null
+                if terminal and not next_station:
+                    terminal_name = self.stations_by_id.get(terminal, {}).get('name', terminal)
+                    
+                    # Find if this is penultimate by checking route data
+                    current_norm = station_name.lower().strip()
+                    terminal_norm = terminal_name.lower().strip()
+                    
+                    is_penultimate = False
+                    for trip_id, stops in trips.items():
+                        stop_ids = [s[1] for s in stops]
+                        stop_names = [stops_map.get(sid, '').lower().strip() for sid in stop_ids]
+                        
+                        # Find current and terminal in this trip
+                        current_indices = [i for i, name in enumerate(stop_names) if current_norm in name or name in current_norm]
+                        terminal_indices = [i for i, name in enumerate(stop_names) if terminal_norm in name or name in terminal_norm]
+                        
+                        if current_indices and terminal_indices:
+                            current_idx = current_indices[0]
+                            terminal_idx = terminal_indices[0]
+                            
+                            # Check if terminal is exactly 1 stop after current (same direction)
+                            if terminal_idx == current_idx + 1:
+                                # Penultimate! Set next_station = terminal
+                                platform_info['next_station'] = terminal
+                                is_penultimate = True
+                                fixed_count += 1
+                                break
+        
+        print(f"  ✅ Fixed {fixed_count} penultimate stations")
+        return platform_data
+    
     def save_results(self, all_results: List[Dict], output_file: str, log_file: str):
         """Save results and logs to files."""
         
@@ -472,6 +586,19 @@ class IntelligentPlatformScraper:
         for result in all_results:
             if result['platforms']:
                 platform_data[result['station_id']] = result['platforms']
+        
+        # Fix penultimate stations
+        platform_data = self.fix_penultimate_stations(platform_data)
+        
+        # Recalculate missing data counts AFTER the fix
+        actual_missing_terminal = 0
+        actual_missing_next_station = 0
+        for station_id, platforms in platform_data.items():
+            for platform_num, platform_info in platforms.items():
+                if not platform_info.get('terminal'):
+                    actual_missing_terminal += 1
+                if not platform_info.get('next_station'):
+                    actual_missing_next_station += 1
         
         # Save platform data
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -484,8 +611,8 @@ class IntelligentPlatformScraper:
                 "success": len(self.success_log),
                 "partial": len(self.partial_log),
                 "failed": len(self.failure_log),
-                "missing_terminal_count": len([m for m in self.missing_data_log if m['missing'] == 'terminal']),
-                "missing_next_station_count": len([m for m in self.missing_data_log if m['missing'] == 'next_station'])
+                "missing_terminal_count": actual_missing_terminal,
+                "missing_next_station_count": actual_missing_next_station
             },
             "success": self.success_log,
             "partial": self.partial_log,
@@ -637,6 +764,14 @@ class IntelligentPlatformScraper:
                 print(f"    ❌ ERROR: {e}")
 
         # Save merged platform data
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(platform_data, f, indent=2, ensure_ascii=False)
+        
+        # Fix penultimate stations in the merged data
+        print("\n🔧 Applying penultimate station fix to merged data...")
+        platform_data = self.fix_penultimate_stations(platform_data)
+        
+        # Save again with penultimate fixes
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(platform_data, f, indent=2, ensure_ascii=False)
 
