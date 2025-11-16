@@ -5257,13 +5257,6 @@
       "bound": "north"
     },
     {
-      "station_id": "rohini_west",
-      "station_name": "Rohini West",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "west"
-    },
-    {
       "station_id": "rithala",
       "station_name": "Rithala",
       "platform": "1",
@@ -5278,13 +5271,6 @@
       "bound": "west"
     },
     {
-      "station_id": "satguru_ram_singh_marg",
-      "station_name": "Satguru Ram Singh Marg",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "east"
-    },
-    {
       "station_id": "samaypur_badli",
       "station_name": "Samaypur Badli",
       "platform": "2",
@@ -5297,20 +5283,6 @@
       "platform": "2",
       "missing": "next_station",
       "bound": "north"
-    },
-    {
-      "station_id": "rohini_sector_18-19",
-      "station_name": "Rohini Sector 18-19",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "north"
-    },
-    {
-      "station_id": "azadpur",
-      "station_name": "Azadpur",
-      "platform": "4",
-      "missing": "next_station",
-      "bound": "west"
     },
     {
       "station_id": "central_secretariat",
@@ -5355,13 +5327,6 @@
       "bound": null
     },
     {
-      "station_id": "iffco_chowk",
-      "station_name": "IFFCO Chowk",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "south"
-    },
-    {
       "station_id": "huda_city_centre",
       "station_name": "Huda City Centre",
       "platform": "1",
@@ -5385,13 +5350,6 @@
     {
       "station_id": "vaishali",
       "station_name": "Vaishali",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "east"
-    },
-    {
-      "station_id": "kaushambi",
-      "station_name": "Kaushambi",
       "platform": "1",
       "missing": "next_station",
       "bound": "east"
@@ -5488,13 +5446,6 @@
       "bound": "west"
     },
     {
-      "station_id": "dwarka_mor",
-      "station_name": "Dwarka Mor",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "west"
-    },
-    {
       "station_id": "dwarka",
       "station_name": "Dwarka",
       "platform": "5",
@@ -5579,13 +5530,6 @@
       "bound": null
     },
     {
-      "station_id": "moulsari_avenue_(rapid_metro)",
-      "station_name": "Moulsari Avenue (Rapid Metro)",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": null
-    },
-    {
       "station_id": "phase_3_(rapid_metro)",
       "station_name": "Phase 3 (Rapid Metro)",
       "platform": "1",
@@ -5598,27 +5542,6 @@
       "platform": "2",
       "missing": "next_station",
       "bound": null
-    },
-    {
-      "station_id": "shivaji_stadium",
-      "station_name": "Shivaji Stadium",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "north"
-    },
-    {
-      "station_id": "lal_quila",
-      "station_name": "Lal Quila",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "north"
-    },
-    {
-      "station_id": "okhla_bird_sanctuary",
-      "station_name": "Okhla Bird Sanctuary",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "east"
     },
     {
       "station_id": "phase-i_(rapid_metro)",
@@ -5659,13 +5582,6 @@
       "station_id": "sector_53-54_(rapid_metro)",
       "station_name": "Sector 53-54 (Rapid Metro)",
       "platform": "2",
-      "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "sector_54_chowk_(rapid_metro)",
-      "station_name": "Sector 54 Chowk (Rapid Metro)",
-      "platform": "1",
       "missing": "next_station",
       "bound": null
     },
@@ -5717,13 +5633,6 @@
       "platform": "2",
       "missing": "next_station",
       "bound": "clockwise"
-    },
-    {
-      "station_id": "dabri_mor_-_janakpuri_south",
-      "station_name": "Dabri Mor - Janakpuri South",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "west"
     },
     {
       "station_id": "mundka_industrial_area_(m.i.a)",
@@ -5740,13 +5649,6 @@
       "bound": "east"
     },
     {
-      "station_id": "bahadurgarh_city",
-      "station_name": "Bahadurgarh City",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "west"
-    },
-    {
       "station_id": "brigadier_hoshiyar_singh",
       "station_name": "Brigadier Hoshiyar Singh",
       "platform": "1",
@@ -5803,20 +5705,6 @@
       "bound": "south"
     },
     {
-      "station_id": "gokulpuri",
-      "station_name": "Gokulpuri",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "northwest"
-    },
-    {
-      "station_id": "johri_enclave",
-      "station_name": "Johri Enclave",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "northeast"
-    },
-    {
       "station_id": "shiv_vihar",
       "station_name": "Shiv Vihar",
       "platform": "1",
@@ -5829,13 +5717,6 @@
       "platform": "1",
       "missing": "next_station",
       "bound": "northeast"
-    },
-    {
-      "station_id": "sant_surdas_(sihi)",
-      "station_name": "Sant Surdas (Sihi)",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "south"
     },
     {
       "station_id": "raja_nahar_singh",
@@ -5866,20 +5747,6 @@
       "bound": "east"
     },
     {
-      "station_id": "hindon_river",
-      "station_name": "Hindon River",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "east"
-    },
-    {
-      "station_id": "noida_sec-62",
-      "station_name": "Noida Sec-62",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "east"
-    },
-    {
       "station_id": "noida_electronic_city",
       "station_name": "Noida Electronic City",
       "platform": "1",
@@ -5892,20 +5759,6 @@
       "platform": "1",
       "missing": "next_station",
       "bound": "east"
-    },
-    {
-      "station_id": "nangli",
-      "station_name": "Nangli",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "east"
-    },
-    {
-      "station_id": "najafgarh",
-      "station_name": "Najafgarh",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "west"
     },
     {
       "station_id": "dhansa_bus_stand",
@@ -5955,13 +5808,6 @@
       "platform": "2",
       "missing": "terminal",
       "bound": "south"
-    },
-    {
-      "station_id": "noida_sector_50",
-      "station_name": "Noida Sector 50",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "north"
     },
     {
       "station_id": "noida_sector_76",

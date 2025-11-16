@@ -590,15 +590,32 @@ class IntelligentPlatformScraper:
         # Fix penultimate stations
         platform_data = self.fix_penultimate_stations(platform_data)
         
-        # Recalculate missing data counts AFTER the fix
+        # Rebuild missing_data_log AFTER the fix to reflect actual missing data
+        updated_missing_data_log = []
         actual_missing_terminal = 0
         actual_missing_next_station = 0
+        
         for station_id, platforms in platform_data.items():
+            station_name = self.stations_by_id.get(station_id, {}).get('name', station_id)
             for platform_num, platform_info in platforms.items():
                 if not platform_info.get('terminal'):
                     actual_missing_terminal += 1
+                    updated_missing_data_log.append({
+                        'station_id': station_id,
+                        'station_name': station_name,
+                        'platform': platform_num,
+                        'missing': 'terminal',
+                        'bound': platform_info.get('bound')
+                    })
                 if not platform_info.get('next_station'):
                     actual_missing_next_station += 1
+                    updated_missing_data_log.append({
+                        'station_id': station_id,
+                        'station_name': station_name,
+                        'platform': platform_num,
+                        'missing': 'next_station',
+                        'bound': platform_info.get('bound')
+                    })
         
         # Save platform data
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -617,7 +634,7 @@ class IntelligentPlatformScraper:
             "success": self.success_log,
             "partial": self.partial_log,
             "failed": self.failure_log,
-            "missing_data": self.missing_data_log
+            "missing_data": updated_missing_data_log
         }
         
         with open(log_file, 'w', encoding='utf-8') as f:
