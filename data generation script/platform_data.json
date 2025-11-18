@@ -2041,6 +2041,18 @@
       "bound": "north"
     }
   },
+  "jama_masjid": {
+    "2": {
+      "terminal": "kashmere_gate",
+      "next_station": "lal_quila",
+      "bound": "north"
+    },
+    "1": {
+      "terminal": "raja_nahar_singh",
+      "next_station": "delhi_gate",
+      "bound": "south"
+    }
+  },
   "lal_quila": {
     "1": {
       "terminal": "raja_nahar_singh",

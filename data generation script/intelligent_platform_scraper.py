@@ -156,6 +156,28 @@ class IntelligentPlatformScraper:
         
         return best_match
     
+    def get_default_platform_data(self, station_id: str) -> Optional[Dict]:
+        """
+        Provides hardcoded platform data for stations without Wikipedia pages.
+        Returns: {platform_number: {terminal: id, next_station: id, bound: direction}}
+        """
+        default_data = {
+            'jama_masjid': {
+                '2': {
+                    'terminal': 'kashmere_gate',
+                    'next_station': 'lal_quila',
+                    'bound': 'north'
+                },
+                '1': {
+                    'terminal': 'raja_nahar_singh',
+                    'next_station': 'delhi_gate',
+                    'bound': 'south'
+                }
+            }
+        }
+        
+        return default_data.get(station_id)
+    
     def extract_platform_from_layout_table(self, soup: BeautifulSoup, station_id: str) -> Optional[Dict]:
         """
         Extract platform data from 'Station layout' tables.
@@ -429,6 +451,15 @@ class IntelligentPlatformScraper:
             "status": "failed",
             "error": None
         }
+        
+        # Check for hardcoded default data (for stations without Wikipedia pages)
+        default_platforms = self.get_default_platform_data(station_id)
+        if default_platforms:
+            result["platforms"] = default_platforms
+            result["extraction_method"] = "default_data"
+            result["status"] = "success"
+            self.success_log.append(result)
+            return result
         
         try:
             response = self.session.get(wiki_url, timeout=15)

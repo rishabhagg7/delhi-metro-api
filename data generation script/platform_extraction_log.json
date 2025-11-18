@@ -1,9 +1,9 @@
 {
   "summary": {
     "total_processed": 262,
-    "success": 261,
+    "success": 262,
     "partial": 0,
-    "failed": 1,
+    "failed": 0,
     "missing_terminal_count": 0,
     "missing_next_station_count": 0
   },
@@ -3224,6 +3224,25 @@
       "error": null
     },
     {
+      "station_id": "jama_masjid",
+      "url": "https://en.wikipedia.org/wiki/Jama_Masjid_metro_station",
+      "platforms": {
+        "2": {
+          "terminal": "kashmere_gate",
+          "next_station": "lal_quila",
+          "bound": null
+        },
+        "1": {
+          "terminal": "raja_nahar_singh",
+          "next_station": "delhi_gate",
+          "bound": null
+        }
+      },
+      "extraction_method": "default_data",
+      "status": "success",
+      "error": null
+    },
+    {
       "station_id": "lal_quila",
       "url": "https://en.wikipedia.org/wiki/Lal_Quila_metro_station",
       "platforms": {
@@ -5217,15 +5236,6 @@
     }
   ],
   "partial": [],
-  "failed": [
-    {
-      "station_id": "jama_masjid",
-      "url": "https://en.wikipedia.org/wiki/Jama_Masjid_metro_station",
-      "platforms": null,
-      "extraction_method": null,
-      "status": "no_data",
-      "error": "No platform layout or infobox data found"
-    }
-  ],
+  "failed": [],
   "missing_data": []
 }
