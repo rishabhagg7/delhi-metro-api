@@ -271,8 +271,24 @@ class IntelligentPlatformScraper:
                                         if next_name:
                                             next_station_id = self.find_station_id(next_name, station_id)
                                 
-                                # Pattern 2 (fallback): "Change at the next station for..." - infer from context
-                                # Only use this if Pattern 1 didn't find anything with colon
+                                # Pattern 2: "next station is XYZ" - common alternative format
+                                # Only use if Pattern 1 didn't find anything
+                                if not next_station_id:
+                                    # Make the space after "is" optional to handle concatenated text
+                                    next_is_match = re.search(r'next\s+station\s+is\s*', other_text, re.I)
+                                    if next_is_match:
+                                        # Find the link that appears immediately AFTER "next station is"
+                                        next_is_end_pos = next_is_match.end()
+                                        for link in links:
+                                            link_text = link.get_text(strip=True)
+                                            link_pos = other_text.find(link_text)
+                                            if link_pos >= next_is_end_pos:
+                                                next_station_id = self.find_station_id(link_text, station_id)
+                                                if next_station_id:  # Successfully mapped
+                                                    break
+                                
+                                # Pattern 3 (fallback): "Change at the next station for..." - infer from context
+                                # Only use this if Pattern 1 and 2 didn't find anything
                                 if not next_station_id and 'change at the next station' in other_text.lower():
                                     # Links appear in order: [Terminal, Line, OtherTerminal, NextStation]
                                     # We want the LAST station link that appears after "change at the next station"
@@ -590,6 +606,42 @@ class IntelligentPlatformScraper:
         print(f"  ✅ Fixed {fixed_count} penultimate stations")
         return platform_data
     
+    def infer_next_station_from_connections(self, platform_data: Dict) -> Dict:
+        """
+        Infer next_station from connections for platforms that have terminal but no next_station.
+        Uses the connections in delhi_metro_stations.json to match terminal → next_station.
+        """
+        print("\n🔧 Inferring next_station from connections...")
+        fixed_count = 0
+        
+        for station_id, platforms in platform_data.items():
+            station = self.stations_by_id.get(station_id)
+            if not station:
+                continue
+            
+            connections = station.get('connections', [])
+            if not connections:
+                continue
+            
+            for platform_num, platform_info in platforms.items():
+                terminal = platform_info.get('terminal')
+                next_station = platform_info.get('next_station')
+                
+                # Only process if terminal exists but next_station is null
+                if terminal and not next_station:
+                    # Find the connection that matches this terminal
+                    for conn in connections:
+                        if conn['terminal_station_id'] == terminal:
+                            # This connection goes toward the same terminal
+                            # So the next station is the 'to_station_id'
+                            platform_info['next_station'] = conn['to_station_id']
+                            fixed_count += 1
+                            print(f"  Inferred {station_id} Platform {platform_num}: next_station={conn['to_station_id']}")
+                            break
+        
+        print(f"  ✅ Inferred {fixed_count} next_stations from connections")
+        return platform_data
+    
     def save_results(self, all_results: List[Dict], output_file: str, log_file: str):
         """Save results and logs to files."""
         
@@ -601,6 +653,9 @@ class IntelligentPlatformScraper:
         
         # Fix penultimate stations
         platform_data = self.fix_penultimate_stations(platform_data)
+        
+        # Infer next_station from connections (for platforms with terminal but no next_station)
+        platform_data = self.infer_next_station_from_connections(platform_data)
         
         # Filter out platforms with both terminal and next_station as NULL
         # (these are incomplete terminal station platforms that shouldn't be included)

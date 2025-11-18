@@ -659,25 +659,25 @@
   "central_secretariat": {
     "1": {
       "terminal": "huda_city_centre",
-      "next_station": null,
+      "next_station": "udyog_bhawan",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "samaypur_badli",
-      "next_station": null,
+      "next_station": "patel_chowk",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "3": {
       "terminal": "raja_nahar_singh",
-      "next_station": null,
+      "next_station": "khan_market",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "4": {
       "terminal": "kashmere_gate",
-      "next_station": null,
+      "next_station": "janpath",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -885,13 +885,13 @@
   "sikanderpur": {
     "1": {
       "terminal": "sector_55-56_(rapid_metro)",
-      "next_station": null,
+      "next_station": "phase-i_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sikanderpur_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -971,25 +971,25 @@
   "karkarduma": {
     "1": {
       "terminal": "vaishali",
-      "next_station": null,
+      "next_station": "anand_vihar",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": null,
+      "next_station": "preet_vihar",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "3": {
       "terminal": "shiv_vihar",
-      "next_station": null,
+      "next_station": "karkarduma_court",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "4": {
       "terminal": "majlis_park",
-      "next_station": null,
+      "next_station": "anand_vihar",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -1204,25 +1204,25 @@
   "mandi_house": {
     "1": {
       "terminal": "noida_electronic_city",
-      "next_station": null,
+      "next_station": "supreme_court",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": null,
+      "next_station": "barakhamba",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "3": {
       "terminal": "raja_nahar_singh",
-      "next_station": null,
+      "next_station": "janpath",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "4": {
       "terminal": "kashmere_gate",
-      "next_station": null,
+      "next_station": "ito",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -1589,7 +1589,7 @@
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": null,
+      "next_station": "dwarka_sector_-_21",
       "bound": "west"
     }
   },
@@ -1945,13 +1945,13 @@
   "sikanderpur_(rapid_metro)": {
     "1": {
       "terminal": "sector_55-56_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sikanderpur",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "phase_2_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -1959,13 +1959,13 @@
   "phase_2_(rapid_metro)": {
     "1": {
       "terminal": "sector_55-56_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sikanderpur_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "belvedere_towers_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -1973,7 +1973,7 @@
   "belvedere_towers_(rapid_metro)": {
     "1": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "cyber_city_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -1981,7 +1981,7 @@
   "cyber_city_(rapid_metro)": {
     "1": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "moulsari_avenue_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -1997,7 +1997,7 @@
   "phase_3_(rapid_metro)": {
     "1": {
       "terminal": "sector_55-56_(rapid_metro)",
-      "next_station": null,
+      "next_station": "moulsari_avenue_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     },
@@ -2162,13 +2162,13 @@
   "phase-i_(rapid_metro)": {
     "1": {
       "terminal": "sector_55-56_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sector_42-43_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sikanderpur",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -2176,13 +2176,13 @@
   "sector_42-43_(rapid_metro)": {
     "1": {
       "terminal": "sector_55-56_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sector_53-54_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "phase-i_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -2190,13 +2190,13 @@
   "sector_53-54_(rapid_metro)": {
     "1": {
       "terminal": "sector_55-56_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sector_54_chowk_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sector_42-43_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -2210,7 +2210,7 @@
     },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sector_53-54_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -2218,7 +2218,7 @@
   "sector_55-56_(rapid_metro)": {
     "2": {
       "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
+      "next_station": "sector_54_chowk_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -2512,7 +2512,7 @@
     },
     "1": {
       "terminal": "brigadier_hoshiyar_singh",
-      "next_station": null,
+      "next_station": "ghevra_metro_station",
       "bound": "west"
     }
   },
@@ -2682,12 +2682,12 @@
   "karkarduma_court": {
     "1": {
       "terminal": "shiv_vihar",
-      "next_station": null,
+      "next_station": "krishna_nagar",
       "bound": "northeast"
     },
     "2": {
       "terminal": "majlis_park",
-      "next_station": null,
+      "next_station": "karkarduma",
       "bound": "northwest"
     }
   },
@@ -3274,7 +3274,7 @@
     },
     "1": {
       "terminal": "noida_sector_51",
-      "next_station": null,
+      "next_station": "gnida_office",
       "bound": "north"
     }
   }
