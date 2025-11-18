@@ -283,7 +283,7 @@
   },
   "mundka": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "rajdhani_park",
       "bound": "east"
     },
@@ -295,7 +295,7 @@
   },
   "rajdhani_park": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "nangloi_railway_station",
       "bound": "east"
     },
@@ -307,7 +307,7 @@
   },
   "nangloi_railway_station": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "nangloi",
       "bound": "east"
     },
@@ -319,7 +319,7 @@
   },
   "nangloi": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "maharaja_surajmal_stadium",
       "bound": "east"
     },
@@ -331,7 +331,7 @@
   },
   "maharaja_surajmal_stadium": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "udyog_nagar",
       "bound": "east"
     },
@@ -343,7 +343,7 @@
   },
   "udyog_nagar": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "peera_garhi",
       "bound": "east"
     },
@@ -355,7 +355,7 @@
   },
   "peera_garhi": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "paschim_vihar_(west)",
       "bound": "east"
     },
@@ -367,7 +367,7 @@
   },
   "paschim_vihar_(west)": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "paschim_vihar_(east)",
       "bound": "east"
     },
@@ -379,7 +379,7 @@
   },
   "paschim_vihar_(east)": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "madipur",
       "bound": "east"
     },
@@ -391,7 +391,7 @@
   },
   "madipur": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "shivaji_park",
       "bound": "east"
     },
@@ -403,8 +403,8 @@
   },
   "shivaji_park": {
     "2": {
-      "terminal": "inderlok",
-      "next_station": "punjabi_bagh_west",
+      "terminal": "kirti_nagar",
+      "next_station": "punjabi_bagh",
       "bound": "east"
     },
     "1": {
@@ -415,19 +415,19 @@
   },
   "punjabi_bagh": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "ashok_park_main",
       "bound": "east"
     },
     "1": {
       "terminal": "brigadier_hoshiyar_singh",
-      "next_station": "punjabi_bagh_west",
+      "next_station": "shivaji_park",
       "bound": "west"
     }
   },
   "ashok_park_main": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "satguru_ram_singh_marg",
       "bound": "east"
     },
@@ -529,7 +529,7 @@
   "model_town": {
     "1": {
       "terminal": "huda_city_centre",
-      "next_station": "moti_nagar",
+      "next_station": "guru_tegh_bahadur_nagar",
       "bound": "south"
     },
     "2": {
@@ -558,7 +558,7 @@
     },
     "2": {
       "terminal": "samaypur_badli",
-      "next_station": "moti_nagar",
+      "next_station": "guru_tegh_bahadur_nagar",
       "bound": "north"
     }
   },
@@ -624,12 +624,12 @@
   },
   "rajiv_chowk": {
     "3": {
-      "terminal": "noida_electronic_city",
+      "terminal": "dwarka_sector_-_21",
       "next_station": "rk_ashram_marg",
       "bound": "east"
     },
     "4": {
-      "terminal": "dwarka_sector_-_21",
+      "terminal": "noida_electronic_city",
       "next_station": "barakhamba",
       "bound": "west"
     },
@@ -884,14 +884,14 @@
   },
   "sikanderpur": {
     "1": {
-      "terminal": "sector_55-56_(rapid_metro)",
-      "next_station": "phase-i_(rapid_metro)",
+      "terminal": "huda_city_centre",
+      "next_station": "mg_road",
       "bound": null,
       "source": "infobox_intelligent"
     },
     "2": {
-      "terminal": "phase_3_(rapid_metro)",
-      "next_station": "sikanderpur_(rapid_metro)",
+      "terminal": "samaypur_badli",
+      "next_station": "gurudronacharya",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -1033,7 +1033,7 @@
   "noida_city_centre": {
     "1": {
       "terminal": "noida_electronic_city",
-      "next_station": "noida_sector_83",
+      "next_station": "noida_sec-34",
       "bound": "north"
     },
     "2": {
@@ -1056,13 +1056,13 @@
   },
   "botanical_garden": {
     "4": {
-      "terminal": "ip_extension",
+      "terminal": "janak_puri_west",
       "next_station": "okhla_bird_sanctuary",
       "bound": "west"
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": "noida_sector_148",
+      "next_station": "noida_sec_-18",
       "bound": "west"
     },
     "1": {
@@ -1079,26 +1079,26 @@
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": "noida_sector_146",
+      "next_station": "noida_sec_-16",
       "bound": "west"
     }
   },
   "noida_sec_-16": {
     "1": {
       "terminal": "noida_electronic_city",
-      "next_station": "noida_sector_148",
+      "next_station": "noida_sec_-18",
       "bound": "south_east"
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": "noida_sector_145",
+      "next_station": "noida_sec_-15",
       "bound": "west"
     }
   },
   "noida_sec_-15": {
     "1": {
       "terminal": "noida_electronic_city",
-      "next_station": "noida_sector_146",
+      "next_station": "noida_sec_-16",
       "bound": "south_east"
     },
     "2": {
@@ -1110,7 +1110,7 @@
   "new_ashok_nagar": {
     "1": {
       "terminal": "noida_electronic_city",
-      "next_station": "noida_sector_145",
+      "next_station": "noida_sec_-15",
       "bound": "south_east"
     },
     "2": {
@@ -1437,11 +1437,6 @@
       "terminal": "botanical_garden",
       "next_station": "dabri_mor_-_janakpuri_south",
       "bound": "east"
-    },
-    "4": {
-      "terminal": "ip_extension",
-      "next_station": null,
-      "bound": "west"
     }
   },
   "uttam_nagar_east": {
@@ -1488,7 +1483,7 @@
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": "dwarka_sector_-_21",
+      "next_station": "dwarka",
       "bound": "west"
     }
   },
@@ -1603,11 +1598,6 @@
       "terminal": "new_delhi",
       "next_station": "igi_airport",
       "bound": "south"
-    },
-    "4": {
-      "terminal": "dwarka_sector_-_12",
-      "next_station": null,
-      "bound": "north"
     }
   },
   "ito": {
@@ -1943,15 +1933,9 @@
     }
   },
   "sikanderpur_(rapid_metro)": {
-    "1": {
+    "2": {
       "terminal": "sector_55-56_(rapid_metro)",
       "next_station": "sikanderpur",
-      "bound": null,
-      "source": "infobox_intelligent"
-    },
-    "2": {
-      "terminal": "phase_3_(rapid_metro)",
-      "next_station": "phase_2_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
     }
@@ -2000,12 +1984,6 @@
       "next_station": "moulsari_avenue_(rapid_metro)",
       "bound": null,
       "source": "infobox_intelligent"
-    },
-    "2": {
-      "terminal": "phase_3_(rapid_metro)",
-      "next_station": null,
-      "bound": null,
-      "source": "infobox_intelligent"
     }
   },
   "igi_airport": {
@@ -2022,7 +2000,7 @@
       "bound": "south_west"
     },
     "1": {
-      "terminal": "dwarka_sector_-_12",
+      "terminal": "dwarka_sector_-_21",
       "next_station": "igi_airport",
       "bound": "north"
     }
@@ -2034,7 +2012,7 @@
       "bound": "north"
     },
     "1": {
-      "terminal": "dwarka_sector_-_12",
+      "terminal": "dwarka_sector_-_21",
       "next_station": "delhi_aerocity",
       "bound": "south_west"
     }
@@ -2046,7 +2024,7 @@
       "bound": "north"
     },
     "1": {
-      "terminal": "dwarka_sector_-_12",
+      "terminal": "dwarka_sector_-_21",
       "next_station": "dhaula_kuan",
       "bound": "southwest"
     }
@@ -2228,11 +2206,6 @@
       "terminal": "shiv_vihar",
       "next_station": "azadpur",
       "bound": "anticlockwise"
-    },
-    "2": {
-      "terminal": "maujpur_-_babarpur",
-      "next_station": null,
-      "bound": "clockwise"
     }
   },
   "shalimar_bagh": {
@@ -2260,16 +2233,6 @@
     }
   },
   "punjabi_bagh_west": {
-    "2": {
-      "terminal": "inderlok",
-      "next_station": "punjabi_bagh",
-      "bound": "east"
-    },
-    "1": {
-      "terminal": "brigadier_hoshiyar_singh",
-      "next_station": "shivaji_park",
-      "bound": "west"
-    },
     "3": {
       "terminal": "shiv_vihar",
       "next_station": "esi_basai_darapur",
@@ -2445,7 +2408,7 @@
     },
     "2": {
       "terminal": "janak_puri_west",
-      "next_station": "igi_airport",
+      "next_station": "terminal_1-_igi_airport",
       "bound": "west"
     }
   },
@@ -2511,7 +2474,7 @@
   },
   "mundka_industrial_area_(m.i.a)": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "mundka",
       "bound": "east"
     },
@@ -2523,7 +2486,7 @@
   },
   "ghevra_metro_station": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "mundka_industrial_area_(m.i.a)",
       "bound": "east"
     },
@@ -2535,8 +2498,8 @@
   },
   "tikri_kalan": {
     "2": {
-      "terminal": "inderlok",
-      "next_station": null,
+      "terminal": "kirti_nagar",
+      "next_station": "ghevra_metro_station",
       "bound": "east"
     },
     "1": {
@@ -2547,7 +2510,7 @@
   },
   "tikri_border": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "tikri_kalan",
       "bound": "east"
     },
@@ -2559,7 +2522,7 @@
   },
   "pandit_shree_ram_sharma": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "tikri_border",
       "bound": "east"
     },
@@ -2571,7 +2534,7 @@
   },
   "bahadurgarh_city": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "pandit_shree_ram_sharma",
       "bound": "east"
     },
@@ -2583,7 +2546,7 @@
   },
   "brigadier_hoshiyar_singh": {
     "2": {
-      "terminal": "inderlok",
+      "terminal": "kirti_nagar",
       "next_station": "bahadurgarh_city",
       "bound": "east"
     }
@@ -2735,11 +2698,11 @@
   "maujpur_-_babarpur": {
     "2": {
       "terminal": "majlis_park",
-      "next_station": "anand_vihar",
+      "next_station": "jafrabad",
       "bound": "anticlockwise"
     },
     "1": {
-      "terminal": "shiv_vihar",
+      "terminal": "majlis_park",
       "next_station": "jafrabad",
       "bound": "clockwise"
     },
@@ -2756,7 +2719,7 @@
       "bound": "northeast"
     },
     "2": {
-      "terminal": "maujpur_-_babarpur",
+      "terminal": "majlis_park",
       "next_station": "maujpur_-_babarpur",
       "bound": "northwest"
     }
@@ -2941,7 +2904,7 @@
   "noida_sec-34": {
     "1": {
       "terminal": "noida_electronic_city",
-      "next_station": "noida_sector_51",
+      "next_station": "noida_sec-52",
       "bound": "east"
     },
     "2": {
@@ -2953,36 +2916,36 @@
   "noida_sec-52": {
     "1": {
       "terminal": "noida_electronic_city",
-      "next_station": "noida_sector_51",
+      "next_station": "noida_sec-61",
       "bound": "east"
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": "noida_sector_83",
+      "next_station": "noida_sec-34",
       "bound": "west"
     }
   },
   "noida_sec-61": {
     "1": {
       "terminal": "noida_electronic_city",
-      "next_station": "noida_sector_51",
+      "next_station": "noida_sec-59",
       "bound": "east"
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": "noida_sector_51",
+      "next_station": "noida_sec-52",
       "bound": "west"
     }
   },
   "noida_sec-59": {
     "1": {
       "terminal": "noida_electronic_city",
-      "next_station": "noida_sector_76",
+      "next_station": "noida_sec-62",
       "bound": "east"
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": "noida_sector_51",
+      "next_station": "noida_sec-61",
       "bound": "west"
     }
   },
@@ -2994,14 +2957,14 @@
     },
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": "noida_sector_51",
+      "next_station": "noida_sec-59",
       "bound": "west"
     }
   },
   "noida_electronic_city": {
     "2": {
       "terminal": "dwarka_sector_-_21",
-      "next_station": "noida_sector_76",
+      "next_station": "noida_sec-62",
       "bound": "west"
     }
   },
@@ -3038,14 +3001,14 @@
   },
   "noida_sector_51": {
     "2": {
-      "terminal": "depot_station",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_50",
       "bound": "south"
     }
   },
   "noida_sector_50": {
     "2": {
-      "terminal": "depot_station",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_76",
       "bound": "south"
     },
@@ -3057,7 +3020,7 @@
   },
   "noida_sector_76": {
     "2": {
-      "terminal": "depot_station",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_101",
       "bound": "south"
     },
@@ -3069,7 +3032,7 @@
   },
   "noida_sector_101": {
     "2": {
-      "terminal": "depot_station",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_81",
       "bound": "south"
     },
@@ -3081,7 +3044,7 @@
   },
   "noida_sector_81": {
     "2": {
-      "terminal": "depot_station",
+      "terminal": "noida_sector_142",
       "next_station": "nsez",
       "bound": "south"
     },
@@ -3093,7 +3056,7 @@
   },
   "nsez": {
     "2": {
-      "terminal": "depot_station",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_83",
       "bound": "south"
     },
@@ -3105,7 +3068,7 @@
   },
   "noida_sector_83": {
     "2": {
-      "terminal": "depot_station",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_137",
       "bound": "south"
     },
@@ -3117,7 +3080,7 @@
   },
   "noida_sector_137": {
     "2": {
-      "terminal": "depot_station",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_142",
       "bound": "south"
     },
@@ -3146,7 +3109,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_142",
       "bound": "north"
     }
@@ -3158,7 +3121,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_143",
       "bound": "north"
     }
@@ -3170,7 +3133,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_144",
       "bound": "north"
     }
@@ -3182,7 +3145,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_145",
       "bound": "north"
     }
@@ -3194,7 +3157,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_146",
       "bound": "north"
     }
@@ -3206,7 +3169,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_147",
       "bound": "north"
     }
@@ -3218,7 +3181,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "noida_sector_148",
       "bound": "north"
     }
@@ -3230,7 +3193,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "knowledge_park",
       "bound": "north"
     }
@@ -3242,7 +3205,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "pari_chowk",
       "bound": "north"
     }
@@ -3254,7 +3217,7 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "alpha_1",
       "bound": "north"
     }
@@ -3266,19 +3229,19 @@
       "bound": "south"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "delta_1",
       "bound": "north"
     }
   },
   "depot_station": {
     "2": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "gnida_office",
       "bound": "north"
     },
     "1": {
-      "terminal": "noida_sector_51",
+      "terminal": "noida_sector_142",
       "next_station": "gnida_office",
       "bound": "north"
     }

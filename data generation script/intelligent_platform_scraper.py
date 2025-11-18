@@ -241,11 +241,44 @@ class IntelligentPlatformScraper:
                             
                             # Extract TERMINAL (from "Towards →...")
                             if 'towards' in other_text.lower() and ('→' in other_text or '←' in other_text):
-                                # The first link after "Towards →" is always the terminal station
+                                # The first link after "Towards →" is usually the terminal station
+                                # But sometimes there are multiple links like "Inderlok / Kirti Nagar"
+                                # Try all links and pick the first one that's a valid terminal for this station
                                 # Text format: "Towards →Terminal StationNext Station:Next" (often concatenated)
                                 if links:
-                                    terminal_name = links[0].get_text(strip=True)
-                                    terminal_id = self.find_station_id(terminal_name, station_id)
+                                    # First, try to find the exact position of "Towards" to get links after it
+                                    towards_pos = other_text.lower().find('towards')
+                                    candidate_links = []
+                                    
+                                    for link in links:
+                                        link_text = link.get_text(strip=True)
+                                        link_pos = other_text.find(link_text)
+                                        # Only consider links that appear after "Towards"
+                                        if link_pos > towards_pos:
+                                            # Stop at "Next Station" - terminals come before it
+                                            next_pos = other_text.lower().find('next station')
+                                            if next_pos == -1 or link_pos < next_pos:
+                                                candidate_links.append(link_text)
+                                    
+                                    # Try each candidate link and use the first one that's a valid terminal
+                                    # This handles cases like "Inderlok / Kirti Nagar" where we try both
+                                    # Prefer terminals that are actually in this station's connections
+                                    station_obj = self.stations_by_id.get(station_id)
+                                    valid_terminals = set()
+                                    if station_obj:
+                                        for conn in station_obj.get('connections', []):
+                                            valid_terminals.add(conn['terminal_station_id'])
+                                    
+                                    for candidate in candidate_links:
+                                        potential_terminal_id = self.find_station_id(candidate, station_id)
+                                        if potential_terminal_id:
+                                            # Prefer terminals that are in this station's connections
+                                            if potential_terminal_id in valid_terminals:
+                                                terminal_id = potential_terminal_id
+                                                break
+                                            # But keep as fallback if no valid terminal found yet
+                                            elif terminal_id is None:
+                                                terminal_id = potential_terminal_id
                             
                             # Extract NEXT STATION (from "Next Station:..." label or links after reference)
                             if 'next station' in other_text.lower() or 'next' in other_text.lower():
@@ -625,6 +658,102 @@ class IntelligentPlatformScraper:
         print(f"  ✅ Fixed {fixed_count} penultimate stations")
         return platform_data
     
+    def validate_station_references(self, platform_data: Dict) -> Dict:
+        """
+        Validate that all terminal and next_station references exist in the station database
+        AND are reachable via connections AND are consistent with each other.
+        If a reference doesn't exist, is not reachable, or is inconsistent, set it to None 
+        so it can be inferred from connections.
+        This handles cases where Wikipedia references stations that don't exist (renamed, under construction, etc.)
+        or where fuzzy matching incorrectly maps station names.
+        """
+        print("\n🔍 Validating station references...")
+        fixed_count = 0
+        
+        for station_id, platforms in platform_data.items():
+            station = self.stations_by_id.get(station_id)
+            if not station:
+                continue
+            
+            # Get all reachable stations via connections
+            connections = station.get('connections', [])
+            reachable_terminals = {conn['terminal_station_id'] for conn in connections}
+            reachable_next_stations = {conn['to_station_id'] for conn in connections}
+            
+            # Build mapping: terminal → valid next_stations
+            terminal_to_next = {}
+            for conn in connections:
+                terminal = conn['terminal_station_id']
+                next_st = conn['to_station_id']
+                if terminal not in terminal_to_next:
+                    terminal_to_next[terminal] = []
+                terminal_to_next[terminal].append(next_st)
+            
+            # Build mapping: next_station → valid terminals
+            next_to_terminal = {}
+            for conn in connections:
+                terminal = conn['terminal_station_id']
+                next_st = conn['to_station_id']
+                if next_st not in next_to_terminal:
+                    next_to_terminal[next_st] = []
+                next_to_terminal[next_st].append(terminal)
+            
+            for platform_num, platform_info in platforms.items():
+                terminal = platform_info.get('terminal')
+                next_station = platform_info.get('next_station')
+                
+                # Validate terminal existence and reachability
+                if terminal:
+                    if terminal not in self.stations_by_id:
+                        print(f"  ⚠️  {station_id} Platform {platform_num}: terminal '{terminal}' not found in station database - setting to None")
+                        platform_info['terminal'] = None
+                        terminal = None
+                        fixed_count += 1
+                    elif terminal not in reachable_terminals:
+                        print(f"  ⚠️  {station_id} Platform {platform_num}: terminal '{terminal}' not in connections (available: {reachable_terminals}) - setting to None")
+                        platform_info['terminal'] = None
+                        terminal = None
+                        fixed_count += 1
+                
+                # Validate next_station existence and reachability
+                if next_station:
+                    if next_station not in self.stations_by_id:
+                        print(f"  ⚠️  {station_id} Platform {platform_num}: next_station '{next_station}' not found in station database - setting to None")
+                        platform_info['next_station'] = None
+                        next_station = None
+                        fixed_count += 1
+                    elif next_station not in reachable_next_stations:
+                        print(f"  ⚠️  {station_id} Platform {platform_num}: next_station '{next_station}' not in connections (available: {reachable_next_stations}) - setting to None")
+                        platform_info['next_station'] = None
+                        next_station = None
+                        fixed_count += 1
+                
+                # Validate consistency between terminal and next_station
+                if terminal and next_station:
+                    # Check if this terminal→next_station pair exists in connections
+                    valid_next_for_terminal = terminal_to_next.get(terminal, [])
+                    if next_station not in valid_next_for_terminal:
+                        # Inconsistent! Determine which one to keep based on confidence
+                        # If next_station maps to exactly one terminal, trust next_station and fix terminal
+                        valid_terminals_for_next = next_to_terminal.get(next_station, [])
+                        if len(valid_terminals_for_next) == 1:
+                            correct_terminal = valid_terminals_for_next[0]
+                            print(f"  ⚠️  {station_id} Platform {platform_num}: terminal '{terminal}' inconsistent with next_station '{next_station}' - fixing terminal to '{correct_terminal}'")
+                            platform_info['terminal'] = correct_terminal
+                            fixed_count += 1
+                        else:
+                            # Ambiguous - set both to None and let inference handle it
+                            print(f"  ⚠️  {station_id} Platform {platform_num}: terminal '{terminal}' and next_station '{next_station}' are inconsistent - setting both to None")
+                            platform_info['terminal'] = None
+                            platform_info['next_station'] = None
+                            fixed_count += 1
+        
+        if fixed_count > 0:
+            print(f"  ✅ Fixed {fixed_count} invalid/inconsistent station references")
+        else:
+            print(f"  ✅ All station references are valid")
+        return platform_data
+    
     def infer_next_station_from_connections(self, platform_data: Dict) -> Dict:
         """
         Infer next_station from connections for platforms that have terminal but no next_station.
@@ -661,6 +790,42 @@ class IntelligentPlatformScraper:
         print(f"  ✅ Inferred {fixed_count} next_stations from connections")
         return platform_data
     
+    def infer_terminal_from_next_station(self, platform_data: Dict) -> Dict:
+        """
+        Infer terminal station when next_station exists but terminal is null.
+        Uses connections to find which terminal corresponds to the given next_station.
+        """
+        print(f"\n🔧 Inferring terminal from next_station...")
+        fixed_count = 0
+        
+        for station_id, platforms in platform_data.items():
+            station = self.stations_by_id.get(station_id)
+            if not station:
+                continue
+            
+            connections = station.get('connections', [])
+            if not connections:
+                continue
+            
+            for platform_num, platform_info in platforms.items():
+                terminal = platform_info.get('terminal')
+                next_station = platform_info.get('next_station')
+                
+                # Only process if next_station exists but terminal is null
+                if next_station and not terminal:
+                    # Find the connection that matches this next_station
+                    for conn in connections:
+                        if conn['to_station_id'] == next_station:
+                            # This connection has the next_station we're looking for
+                            # So the terminal is the 'terminal_station_id'
+                            platform_info['terminal'] = conn['terminal_station_id']
+                            fixed_count += 1
+                            print(f"  Inferred {station_id} Platform {platform_num}: terminal={conn['terminal_station_id']}")
+                            break
+        
+        print(f"  ✅ Inferred {fixed_count} terminals from next_stations")
+        return platform_data
+    
     def save_results(self, all_results: List[Dict], output_file: str, log_file: str):
         """Save results and logs to files."""
         
@@ -673,8 +838,14 @@ class IntelligentPlatformScraper:
         # Fix penultimate stations
         platform_data = self.fix_penultimate_stations(platform_data)
         
+        # Validate station references (remove references to non-existent stations)
+        platform_data = self.validate_station_references(platform_data)
+        
         # Infer next_station from connections (for platforms with terminal but no next_station)
         platform_data = self.infer_next_station_from_connections(platform_data)
+        
+        # Infer terminal from next_station (for platforms with next_station but no terminal)
+        platform_data = self.infer_terminal_from_next_station(platform_data)
         
         # Filter out platforms with both terminal and next_station as NULL
         # (these are incomplete terminal station platforms that shouldn't be included)
@@ -781,6 +952,9 @@ class IntelligentPlatformScraper:
             # Extract detailed platform information from "Platforms" row
             # Format: "Side platformPlatform-1 →Terminal1Platform-2 →Terminal2..."
             if 'platform' in header_text and 'Platform-' in value_text:
+                # Extract links from the HTML to handle cases like "Inderlok / Kirti Nagar"
+                value_html = str(value)
+                
                 # Split by "Platform-" to get individual platform entries
                 platform_entries = re.split(r'Platform-(\d+)', value_text)
 
@@ -793,14 +967,67 @@ class IntelligentPlatformScraper:
                         terminal_id = None
                         bound = None
 
-                        # Look for terminal after → or ←
-                        # The data after arrow goes until the next Platform- marker or end
-                        terminal_match = re.search(r'[→←]\s*(.+?)(?=Platform-|$)', platform_data)
-                        if terminal_match:
-                            terminal_name = terminal_match.group(1).strip()
-                            # Clean up the terminal name
-                            terminal_name = re.sub(r'\s+', ' ', terminal_name)
-                            terminal_id = self.find_station_id(terminal_name, station_id)
+                        # Look for terminal links after → or ←
+                        # Extract from HTML to handle multiple links like "Inderlok / Kirti Nagar"
+                        # Find the section of HTML for this platform
+                        platform_marker = f'Platform-{platform_num}'
+                        next_platform_marker = f'Platform-{int(platform_num)+1}'
+                        
+                        # Extract the HTML section for this platform
+                        start_idx = value_html.find(platform_marker)
+                        if start_idx != -1:
+                            # Find where this platform's section ends
+                            end_idx = value_html.find(next_platform_marker, start_idx)
+                            if end_idx == -1:
+                                end_idx = len(value_html)
+                            
+                            platform_section_html = value_html[start_idx:end_idx]
+                            
+                            # Parse the section to get links after the arrow
+                            platform_soup = BeautifulSoup(platform_section_html, 'html.parser')
+                            
+                            # Find arrow marker in text
+                            section_text = platform_soup.get_text()
+                            arrow_pos = -1
+                            for arrow in ['→', '←']:
+                                pos = section_text.find(arrow)
+                                if pos != -1:
+                                    arrow_pos = pos
+                                    break
+                            
+                            if arrow_pos != -1:
+                                # Get all station links in this section
+                                links = platform_soup.find_all('a', href=re.compile(r'/wiki/'))
+                                candidate_terminals = []
+                                
+                                for link in links:
+                                    link_text = link.get_text(strip=True)
+                                    # Skip if it's a platform type link (e.g., "Side platform")
+                                    if 'platform' in link_text.lower():
+                                        continue
+                                    # Check if this link appears after the arrow in the text
+                                    link_pos = section_text.find(link_text)
+                                    if link_pos > arrow_pos:
+                                        candidate_terminals.append(link_text)
+                                
+                                # Try each candidate and use the first valid one
+                                # Prefer terminals that are actually in this station's connections
+                                station_obj = self.stations_by_id.get(station_id)
+                                valid_terminals = set()
+                                if station_obj:
+                                    for conn in station_obj.get('connections', []):
+                                        valid_terminals.add(conn['terminal_station_id'])
+                                
+                                for candidate in candidate_terminals:
+                                    potential_terminal_id = self.find_station_id(candidate, station_id)
+                                    if potential_terminal_id:
+                                        # Prefer terminals that are in this station's connections
+                                        if potential_terminal_id in valid_terminals:
+                                            terminal_id = potential_terminal_id
+                                            break
+                                        # But keep as fallback if no valid terminal found yet
+                                        elif terminal_id is None:
+                                            terminal_id = potential_terminal_id
 
                         # Infer direction
                         platform_data_lower = platform_data.lower()

@@ -5,7 +5,7 @@
     "partial": 0,
     "failed": 1,
     "missing_terminal_count": 0,
-    "missing_next_station_count": 5
+    "missing_next_station_count": 0
   },
   "success": [
     {
@@ -452,7 +452,7 @@
       "url": "https://en.wikipedia.org/wiki/Mundka_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "rajdhani_park",
           "bound": "east"
         },
@@ -471,7 +471,7 @@
       "url": "https://en.wikipedia.org/wiki/Rajdhani_Park_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "nangloi_railway_station",
           "bound": "east"
         },
@@ -490,7 +490,7 @@
       "url": "https://en.wikipedia.org/wiki/Nangloi_Railway_Station_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "nangloi",
           "bound": "east"
         },
@@ -509,7 +509,7 @@
       "url": "https://en.wikipedia.org/wiki/Nangloi_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "maharaja_surajmal_stadium",
           "bound": "east"
         },
@@ -528,7 +528,7 @@
       "url": "https://en.wikipedia.org/wiki/Maharaja_Surajmal_Stadium_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "udyog_nagar",
           "bound": "east"
         },
@@ -547,7 +547,7 @@
       "url": "https://en.wikipedia.org/wiki/Udyog_Nagar_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "peera_garhi",
           "bound": "east"
         },
@@ -566,7 +566,7 @@
       "url": "https://en.wikipedia.org/wiki/Peera_Garhi_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "paschim_vihar_(west)",
           "bound": "east"
         },
@@ -585,7 +585,7 @@
       "url": "https://en.wikipedia.org/wiki/Paschim_Vihar_West_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "paschim_vihar_(east)",
           "bound": "east"
         },
@@ -604,7 +604,7 @@
       "url": "https://en.wikipedia.org/wiki/Paschim_Vihar_East_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "madipur",
           "bound": "east"
         },
@@ -623,7 +623,7 @@
       "url": "https://en.wikipedia.org/wiki/Madipur_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "shivaji_park",
           "bound": "east"
         },
@@ -642,8 +642,8 @@
       "url": "https://en.wikipedia.org/wiki/Shivaji_Park_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
-          "next_station": "punjabi_bagh_west",
+          "terminal": "kirti_nagar",
+          "next_station": "punjabi_bagh",
           "bound": "east"
         },
         "1": {
@@ -661,13 +661,13 @@
       "url": "https://en.wikipedia.org/wiki/Punjabi_Bagh_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "ashok_park_main",
           "bound": "east"
         },
         "1": {
           "terminal": "brigadier_hoshiyar_singh",
-          "next_station": "punjabi_bagh_west",
+          "next_station": "shivaji_park",
           "bound": "west"
         }
       },
@@ -680,7 +680,7 @@
       "url": "https://en.wikipedia.org/wiki/Ashok_Park_Main_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "satguru_ram_singh_marg",
           "bound": "east"
         },
@@ -843,7 +843,7 @@
       "platforms": {
         "1": {
           "terminal": "huda_city_centre",
-          "next_station": "moti_nagar",
+          "next_station": "guru_tegh_bahadur_nagar",
           "bound": "south"
         },
         "2": {
@@ -886,7 +886,7 @@
         },
         "2": {
           "terminal": "samaypur_badli",
-          "next_station": "moti_nagar",
+          "next_station": "guru_tegh_bahadur_nagar",
           "bound": "north"
         }
       },
@@ -994,12 +994,12 @@
       "url": "https://en.wikipedia.org/wiki/Rajiv_Chowk_metro_station",
       "platforms": {
         "3": {
-          "terminal": "noida_electronic_city",
+          "terminal": "dwarka_sector_-_21",
           "next_station": "rk_ashram_marg",
           "bound": "east"
         },
         "4": {
-          "terminal": "dwarka_sector_-_21",
+          "terminal": "noida_electronic_city",
           "next_station": "barakhamba",
           "bound": "west"
         },
@@ -1380,14 +1380,14 @@
       "url": "https://en.wikipedia.org/wiki/Sikanderpur_metro_station",
       "platforms": {
         "1": {
-          "terminal": "sector_55-56_(rapid_metro)",
-          "next_station": "phase-i_(rapid_metro)",
+          "terminal": "huda_city_centre",
+          "next_station": "mg_road",
           "bound": null,
           "source": "infobox_intelligent"
         },
         "2": {
-          "terminal": "phase_3_(rapid_metro)",
-          "next_station": "sikanderpur_(rapid_metro)",
+          "terminal": "samaypur_badli",
+          "next_station": "gurudronacharya",
           "bound": null,
           "source": "infobox_intelligent"
         }
@@ -1616,7 +1616,7 @@
       "platforms": {
         "1": {
           "terminal": "noida_electronic_city",
-          "next_station": "noida_sector_83",
+          "next_station": "noida_sec-34",
           "bound": "north"
         },
         "2": {
@@ -1658,13 +1658,13 @@
           "bound": "east"
         },
         "4": {
-          "terminal": "ip_extension",
+          "terminal": "janak_puri_west",
           "next_station": "okhla_bird_sanctuary",
           "bound": "west"
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": "noida_sector_148",
+          "next_station": "noida_sec_-18",
           "bound": "west"
         },
         "1": {
@@ -1688,7 +1688,7 @@
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": "noida_sector_146",
+          "next_station": "noida_sec_-16",
           "bound": "west"
         }
       },
@@ -1702,12 +1702,12 @@
       "platforms": {
         "1": {
           "terminal": "noida_electronic_city",
-          "next_station": "noida_sector_148",
+          "next_station": "noida_sec_-18",
           "bound": "south_east"
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": "noida_sector_145",
+          "next_station": "noida_sec_-15",
           "bound": "west"
         }
       },
@@ -1721,7 +1721,7 @@
       "platforms": {
         "1": {
           "terminal": "noida_electronic_city",
-          "next_station": "noida_sector_146",
+          "next_station": "noida_sec_-16",
           "bound": "south_east"
         },
         "2": {
@@ -1740,7 +1740,7 @@
       "platforms": {
         "1": {
           "terminal": "noida_electronic_city",
-          "next_station": "noida_sector_145",
+          "next_station": "noida_sec_-15",
           "bound": "south_east"
         },
         "2": {
@@ -2235,7 +2235,7 @@
           "bound": "east"
         },
         "4": {
-          "terminal": "ip_extension",
+          "terminal": null,
           "next_station": null,
           "bound": "west"
         }
@@ -2312,7 +2312,7 @@
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": "dwarka_sector_-_21",
+          "next_station": "dwarka",
           "bound": "west"
         }
       },
@@ -2502,7 +2502,7 @@
           "bound": "south"
         },
         "4": {
-          "terminal": "dwarka_sector_-_12",
+          "terminal": null,
           "next_station": null,
           "bound": "north"
         }
@@ -3030,14 +3030,14 @@
       "url": "https://en.wikipedia.org/wiki/Sikanderpur_metro_station",
       "platforms": {
         "1": {
-          "terminal": "sector_55-56_(rapid_metro)",
-          "next_station": "sikanderpur",
+          "terminal": null,
+          "next_station": null,
           "bound": null,
           "source": "infobox_intelligent"
         },
         "2": {
-          "terminal": "phase_3_(rapid_metro)",
-          "next_station": "phase_2_(rapid_metro)",
+          "terminal": "sector_55-56_(rapid_metro)",
+          "next_station": "sikanderpur",
           "bound": null,
           "source": "infobox_intelligent"
         }
@@ -3123,7 +3123,7 @@
           "source": "infobox_intelligent"
         },
         "2": {
-          "terminal": "phase_3_(rapid_metro)",
+          "terminal": null,
           "next_station": null,
           "bound": null,
           "source": "infobox_intelligent"
@@ -3157,7 +3157,7 @@
           "bound": "south_west"
         },
         "1": {
-          "terminal": "dwarka_sector_-_12",
+          "terminal": "dwarka_sector_-_21",
           "next_station": "igi_airport",
           "bound": "north"
         }
@@ -3176,7 +3176,7 @@
           "bound": "north"
         },
         "1": {
-          "terminal": "dwarka_sector_-_12",
+          "terminal": "dwarka_sector_-_21",
           "next_station": "delhi_aerocity",
           "bound": "south_west"
         }
@@ -3195,7 +3195,7 @@
           "bound": "north"
         },
         "1": {
-          "terminal": "dwarka_sector_-_12",
+          "terminal": "dwarka_sector_-_21",
           "next_station": "dhaula_kuan",
           "bound": "southwest"
         }
@@ -3490,7 +3490,7 @@
           "bound": "anticlockwise"
         },
         "2": {
-          "terminal": "maujpur_-_babarpur",
+          "terminal": null,
           "next_station": null,
           "bound": "clockwise"
         }
@@ -3542,13 +3542,13 @@
       "url": "https://en.wikipedia.org/wiki/Punjabi_Bagh_West_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
-          "next_station": "punjabi_bagh",
+          "terminal": null,
+          "next_station": null,
           "bound": "east"
         },
         "1": {
-          "terminal": "brigadier_hoshiyar_singh",
-          "next_station": "shivaji_park",
+          "terminal": null,
+          "next_station": null,
           "bound": "west"
         },
         "3": {
@@ -3824,7 +3824,7 @@
         },
         "2": {
           "terminal": "janak_puri_west",
-          "next_station": "igi_airport",
+          "next_station": "terminal_1-_igi_airport",
           "bound": "west"
         }
       },
@@ -3932,7 +3932,7 @@
       "url": "https://en.wikipedia.org/wiki/Mundka_Industrial_Area_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "mundka",
           "bound": "east"
         },
@@ -3951,7 +3951,7 @@
       "url": "https://en.wikipedia.org/wiki/Ghevra_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "mundka_industrial_area_(m.i.a)",
           "bound": "east"
         },
@@ -3970,8 +3970,8 @@
       "url": "https://en.wikipedia.org/wiki/Tikri_Kalan_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
-          "next_station": null,
+          "terminal": "kirti_nagar",
+          "next_station": "ghevra_metro_station",
           "bound": "east"
         },
         "1": {
@@ -3989,7 +3989,7 @@
       "url": "https://en.wikipedia.org/wiki/Tikri_Border_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "tikri_kalan",
           "bound": "east"
         },
@@ -4008,7 +4008,7 @@
       "url": "https://en.wikipedia.org/wiki/Pandit_Shree_Ram_Sharma_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "tikri_border",
           "bound": "east"
         },
@@ -4027,7 +4027,7 @@
       "url": "https://en.wikipedia.org/wiki/Bahadurgarh_City_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "pandit_shree_ram_sharma",
           "bound": "east"
         },
@@ -4046,7 +4046,7 @@
       "url": "https://en.wikipedia.org/wiki/Brigadier_Hoshiyar_Singh_metro_station",
       "platforms": {
         "2": {
-          "terminal": "inderlok",
+          "terminal": "kirti_nagar",
           "next_station": "bahadurgarh_city",
           "bound": "east"
         },
@@ -4294,11 +4294,11 @@
       "platforms": {
         "2": {
           "terminal": "majlis_park",
-          "next_station": "anand_vihar",
+          "next_station": "jafrabad",
           "bound": "anticlockwise"
         },
         "1": {
-          "terminal": "shiv_vihar",
+          "terminal": "majlis_park",
           "next_station": "jafrabad",
           "bound": "clockwise"
         },
@@ -4327,7 +4327,7 @@
           "bound": "northeast"
         },
         "2": {
-          "terminal": "maujpur_-_babarpur",
+          "terminal": "majlis_park",
           "next_station": "maujpur_-_babarpur",
           "bound": "northwest"
         }
@@ -4646,7 +4646,7 @@
       "platforms": {
         "1": {
           "terminal": "noida_electronic_city",
-          "next_station": "noida_sector_51",
+          "next_station": "noida_sec-52",
           "bound": "east"
         },
         "2": {
@@ -4665,12 +4665,12 @@
       "platforms": {
         "1": {
           "terminal": "noida_electronic_city",
-          "next_station": "noida_sector_51",
+          "next_station": "noida_sec-61",
           "bound": "east"
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": "noida_sector_83",
+          "next_station": "noida_sec-34",
           "bound": "west"
         }
       },
@@ -4684,12 +4684,12 @@
       "platforms": {
         "1": {
           "terminal": "noida_electronic_city",
-          "next_station": "noida_sector_51",
+          "next_station": "noida_sec-59",
           "bound": "east"
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": "noida_sector_51",
+          "next_station": "noida_sec-52",
           "bound": "west"
         }
       },
@@ -4703,12 +4703,12 @@
       "platforms": {
         "1": {
           "terminal": "noida_electronic_city",
-          "next_station": "noida_sector_76",
+          "next_station": "noida_sec-62",
           "bound": "east"
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": "noida_sector_51",
+          "next_station": "noida_sec-61",
           "bound": "west"
         }
       },
@@ -4727,7 +4727,7 @@
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": "noida_sector_51",
+          "next_station": "noida_sec-59",
           "bound": "west"
         }
       },
@@ -4746,7 +4746,7 @@
         },
         "2": {
           "terminal": "dwarka_sector_-_21",
-          "next_station": "noida_sector_76",
+          "next_station": "noida_sec-62",
           "bound": "west"
         }
       },
@@ -4816,7 +4816,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_51_metro_station",
       "platforms": {
         "2": {
-          "terminal": "depot_station",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_50",
           "bound": "south"
         },
@@ -4835,7 +4835,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_50_metro_station",
       "platforms": {
         "2": {
-          "terminal": "depot_station",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_76",
           "bound": "south"
         },
@@ -4854,7 +4854,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_76_metro_station",
       "platforms": {
         "2": {
-          "terminal": "depot_station",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_101",
           "bound": "south"
         },
@@ -4873,7 +4873,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_101_metro_station",
       "platforms": {
         "2": {
-          "terminal": "depot_station",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_81",
           "bound": "south"
         },
@@ -4892,7 +4892,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_81_metro_station",
       "platforms": {
         "2": {
-          "terminal": "depot_station",
+          "terminal": "noida_sector_142",
           "next_station": "nsez",
           "bound": "south"
         },
@@ -4911,7 +4911,7 @@
       "url": "https://en.wikipedia.org/wiki/NSEZ_metro_station",
       "platforms": {
         "2": {
-          "terminal": "depot_station",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_83",
           "bound": "south"
         },
@@ -4930,7 +4930,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_83_metro_station",
       "platforms": {
         "2": {
-          "terminal": "depot_station",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_137",
           "bound": "south"
         },
@@ -4949,7 +4949,7 @@
       "url": "https://en.wikipedia.org/wiki/Noida_Sector_137_metro_station",
       "platforms": {
         "2": {
-          "terminal": "depot_station",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_142",
           "bound": "south"
         },
@@ -4992,7 +4992,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_142",
           "bound": "north"
         }
@@ -5011,7 +5011,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_143",
           "bound": "north"
         }
@@ -5030,7 +5030,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_144",
           "bound": "north"
         }
@@ -5049,7 +5049,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_145",
           "bound": "north"
         }
@@ -5068,7 +5068,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_146",
           "bound": "north"
         }
@@ -5087,7 +5087,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_147",
           "bound": "north"
         }
@@ -5106,7 +5106,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "noida_sector_148",
           "bound": "north"
         }
@@ -5125,7 +5125,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "knowledge_park",
           "bound": "north"
         }
@@ -5144,7 +5144,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "pari_chowk",
           "bound": "north"
         }
@@ -5163,7 +5163,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "alpha_1",
           "bound": "north"
         }
@@ -5182,7 +5182,7 @@
           "bound": "south"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "delta_1",
           "bound": "north"
         }
@@ -5201,12 +5201,12 @@
           "bound": "south"
         },
         "2": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "gnida_office",
           "bound": "north"
         },
         "1": {
-          "terminal": "noida_sector_51",
+          "terminal": "noida_sector_142",
           "next_station": "gnida_office",
           "bound": "north"
         }
@@ -5227,41 +5227,5 @@
       "error": "No platform layout or infobox data found"
     }
   ],
-  "missing_data": [
-    {
-      "station_id": "janak_puri_west",
-      "station_name": "Janak Puri West",
-      "platform": "4",
-      "missing": "next_station",
-      "bound": "west"
-    },
-    {
-      "station_id": "dwarka_sector_-_21",
-      "station_name": "Dwarka Sector - 21",
-      "platform": "4",
-      "missing": "next_station",
-      "bound": "north"
-    },
-    {
-      "station_id": "phase_3_(rapid_metro)",
-      "station_name": "Phase 3 (Rapid Metro)",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "majlis_park",
-      "station_name": "Majlis Park",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "clockwise"
-    },
-    {
-      "station_id": "tikri_kalan",
-      "station_name": "Tikri Kalan",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "east"
-    }
-  ]
+  "missing_data": []
 }
