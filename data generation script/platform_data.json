@@ -59,12 +59,12 @@
       "bound": "west"
     },
     "3": {
-      "terminal": null,
+      "terminal": "shiv_vihar",
       "next_station": "jafrabad",
       "bound": "anticlockwise"
     },
     "4": {
-      "terminal": null,
+      "terminal": "majlis_park",
       "next_station": "east_azad_nagar",
       "bound": "clockwise"
     }
@@ -2224,6 +2224,11 @@
     }
   },
   "majlis_park": {
+    "1": {
+      "terminal": "shiv_vihar",
+      "next_station": "azadpur",
+      "bound": "anticlockwise"
+    },
     "2": {
       "terminal": "maujpur_-_babarpur",
       "next_station": null,
@@ -2729,12 +2734,12 @@
   },
   "maujpur_-_babarpur": {
     "2": {
-      "terminal": null,
+      "terminal": "majlis_park",
       "next_station": "anand_vihar",
       "bound": "anticlockwise"
     },
     "1": {
-      "terminal": null,
+      "terminal": "shiv_vihar",
       "next_station": "jafrabad",
       "bound": "clockwise"
     },

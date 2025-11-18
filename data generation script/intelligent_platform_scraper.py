@@ -405,9 +405,28 @@ class IntelligentPlatformScraper:
             
             # Strategy 1: Try layout table (preferred)
             platforms = self.extract_platform_from_layout_table(soup, station_id)
+            
+            # Strategy 1.5: If layout table has platforms but missing terminals, try to fill from infobox
             if platforms:
+                # Check if any platform is missing terminal data
+                missing_terminal_count = sum(1 for p in platforms.values() if not p.get('terminal'))
+                
+                if missing_terminal_count > 0:
+                    # Try to get terminal info from infobox_intelligent
+                    infobox_platforms = self.extract_platform_from_infobox_intelligent(soup, station_id)
+                    if infobox_platforms:
+                        # Merge terminal data from infobox into layout table data
+                        for pnum, infobox_data in infobox_platforms.items():
+                            if pnum in platforms:
+                                # Fill in missing terminal from infobox
+                                if not platforms[pnum].get('terminal') and infobox_data.get('terminal'):
+                                    platforms[pnum]['terminal'] = infobox_data['terminal']
+                        
+                        result["extraction_method"] = "layout_table+infobox_terminal"
+                
                 result["platforms"] = platforms
-                result["extraction_method"] = "layout_table"
+                if not result.get("extraction_method"):
+                    result["extraction_method"] = "layout_table"
                 result["status"] = "success"
                 self.success_log.append(result)
                 return result

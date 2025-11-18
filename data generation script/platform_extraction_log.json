@@ -4,7 +4,7 @@
     "success": 261,
     "partial": 0,
     "failed": 1,
-    "missing_terminal_count": 4,
+    "missing_terminal_count": 0,
     "missing_next_station_count": 5
   },
   "success": [
@@ -99,17 +99,17 @@
           "bound": "west"
         },
         "3": {
-          "terminal": null,
+          "terminal": "shiv_vihar",
           "next_station": "jafrabad",
           "bound": "anticlockwise"
         },
         "4": {
-          "terminal": null,
+          "terminal": "majlis_park",
           "next_station": "east_azad_nagar",
           "bound": "clockwise"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -186,7 +186,7 @@
           "bound": "north"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -443,7 +443,7 @@
           "bound": "west"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -728,7 +728,7 @@
           "bound": "north"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -1449,7 +1449,7 @@
           "bound": "north"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -1468,7 +1468,7 @@
           "bound": "west"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -1673,7 +1673,7 @@
           "bound": "east"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -2068,7 +2068,7 @@
           "bound": "west"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -3485,8 +3485,8 @@
       "url": "https://en.wikipedia.org/wiki/Majlis_Park_metro_station",
       "platforms": {
         "1": {
-          "terminal": null,
-          "next_station": null,
+          "terminal": "shiv_vihar",
+          "next_station": "azadpur",
           "bound": "anticlockwise"
         },
         "2": {
@@ -3495,7 +3495,7 @@
           "bound": "clockwise"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -4056,7 +4056,7 @@
           "bound": "west"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -4293,12 +4293,12 @@
       "url": "https://en.wikipedia.org/wiki/Maujpur_-_Babarpur_metro_station",
       "platforms": {
         "2": {
-          "terminal": null,
+          "terminal": "majlis_park",
           "next_station": "anand_vihar",
           "bound": "anticlockwise"
         },
         "1": {
-          "terminal": null,
+          "terminal": "shiv_vihar",
           "next_station": "jafrabad",
           "bound": "clockwise"
         },
@@ -4313,7 +4313,7 @@
           "bound": "south"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -4370,7 +4370,7 @@
           "bound": "northwest"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -4408,7 +4408,7 @@
           "bound": "north"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -4503,7 +4503,7 @@
           "bound": "west"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -4750,7 +4750,7 @@
           "bound": "west"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -4807,7 +4807,7 @@
           "bound": "east"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -4826,7 +4826,7 @@
           "bound": "north"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     },
@@ -5211,7 +5211,7 @@
           "bound": "north"
         }
       },
-      "extraction_method": "layout_table",
+      "extraction_method": "layout_table+infobox_terminal",
       "status": "success",
       "error": null
     }
@@ -5228,20 +5228,6 @@
     }
   ],
   "missing_data": [
-    {
-      "station_id": "welcome",
-      "station_name": "Welcome",
-      "platform": "3",
-      "missing": "terminal",
-      "bound": "anticlockwise"
-    },
-    {
-      "station_id": "welcome",
-      "station_name": "Welcome",
-      "platform": "4",
-      "missing": "terminal",
-      "bound": "clockwise"
-    },
     {
       "station_id": "janak_puri_west",
       "station_name": "Janak Puri West",
@@ -5276,20 +5262,6 @@
       "platform": "2",
       "missing": "next_station",
       "bound": "east"
-    },
-    {
-      "station_id": "maujpur_-_babarpur",
-      "station_name": "Maujpur - Babarpur",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "anticlockwise"
-    },
-    {
-      "station_id": "maujpur_-_babarpur",
-      "station_name": "Maujpur - Babarpur",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "clockwise"
     }
   ]
 }
