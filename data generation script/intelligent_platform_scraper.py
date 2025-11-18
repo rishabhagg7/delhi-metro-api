@@ -602,6 +602,32 @@ class IntelligentPlatformScraper:
         # Fix penultimate stations
         platform_data = self.fix_penultimate_stations(platform_data)
         
+        # Filter out platforms with both terminal and next_station as NULL
+        # (these are incomplete terminal station platforms that shouldn't be included)
+        print("\n🔧 Filtering out platforms with both terminal and next_station NULL...")
+        removed_count = 0
+        filtered_platform_data = {}
+        
+        for station_id, platforms in platform_data.items():
+            filtered_platforms = {}
+            for platform_num, platform_info in platforms.items():
+                terminal = platform_info.get('terminal')
+                next_station = platform_info.get('next_station')
+                
+                # Keep platform only if at least one of terminal or next_station has data
+                if terminal is not None or next_station is not None:
+                    filtered_platforms[platform_num] = platform_info
+                else:
+                    removed_count += 1
+                    print(f"  Removed {station_id} Platform {platform_num} (both NULL)")
+            
+            # Only include station if it has at least one valid platform
+            if filtered_platforms:
+                filtered_platform_data[station_id] = filtered_platforms
+        
+        platform_data = filtered_platform_data
+        print(f"  ✅ Removed {removed_count} platforms with both NULL")
+        
         # Rebuild missing_data_log AFTER the fix to reflect actual missing data
         updated_missing_data_log = []
         actual_missing_terminal = 0

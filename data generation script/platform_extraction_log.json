@@ -4,8 +4,8 @@
     "success": 261,
     "partial": 0,
     "failed": 1,
-    "missing_terminal_count": 24,
-    "missing_next_station_count": 59
+    "missing_terminal_count": 4,
+    "missing_next_station_count": 39
   },
   "success": [
     {
@@ -5243,48 +5243,6 @@
       "bound": "clockwise"
     },
     {
-      "station_id": "kashmere_gate",
-      "station_name": "Kashmere Gate",
-      "platform": "6",
-      "missing": "terminal",
-      "bound": "north"
-    },
-    {
-      "station_id": "kashmere_gate",
-      "station_name": "Kashmere Gate",
-      "platform": "6",
-      "missing": "next_station",
-      "bound": "north"
-    },
-    {
-      "station_id": "rithala",
-      "station_name": "Rithala",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "west"
-    },
-    {
-      "station_id": "rithala",
-      "station_name": "Rithala",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "west"
-    },
-    {
-      "station_id": "samaypur_badli",
-      "station_name": "Samaypur Badli",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "north"
-    },
-    {
-      "station_id": "samaypur_badli",
-      "station_name": "Samaypur Badli",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "north"
-    },
-    {
       "station_id": "central_secretariat",
       "station_name": "Central Secretariat",
       "platform": "1",
@@ -5327,34 +5285,6 @@
       "bound": null
     },
     {
-      "station_id": "huda_city_centre",
-      "station_name": "Huda City Centre",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "huda_city_centre",
-      "station_name": "Huda City Centre",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "south"
-    },
-    {
-      "station_id": "vaishali",
-      "station_name": "Vaishali",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "east"
-    },
-    {
-      "station_id": "vaishali",
-      "station_name": "Vaishali",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "east"
-    },
-    {
       "station_id": "karkarduma",
       "station_name": "Karkarduma",
       "platform": "1",
@@ -5383,20 +5313,6 @@
       "bound": null
     },
     {
-      "station_id": "botanical_garden",
-      "station_name": "Botanical Garden",
-      "platform": "3",
-      "missing": "terminal",
-      "bound": "east"
-    },
-    {
-      "station_id": "botanical_garden",
-      "station_name": "Botanical Garden",
-      "platform": "3",
-      "missing": "next_station",
-      "bound": "east"
-    },
-    {
       "station_id": "mandi_house",
       "station_name": "Mandi House",
       "platform": "1",
@@ -5423,20 +5339,6 @@
       "platform": "4",
       "missing": "next_station",
       "bound": null
-    },
-    {
-      "station_id": "kirti_nagar",
-      "station_name": "Kirti Nagar",
-      "platform": "4",
-      "missing": "terminal",
-      "bound": "east"
-    },
-    {
-      "station_id": "kirti_nagar",
-      "station_name": "Kirti Nagar",
-      "platform": "4",
-      "missing": "next_station",
-      "bound": "east"
     },
     {
       "station_id": "janak_puri_west",
@@ -5446,37 +5348,9 @@
       "bound": "west"
     },
     {
-      "station_id": "dwarka",
-      "station_name": "Dwarka",
-      "platform": "5",
-      "missing": "terminal",
-      "bound": "west"
-    },
-    {
-      "station_id": "dwarka",
-      "station_name": "Dwarka",
-      "platform": "5",
-      "missing": "next_station",
-      "bound": "west"
-    },
-    {
       "station_id": "dwarka_sector_-_8",
       "station_name": "Dwarka Sector - 8",
       "platform": "2",
-      "missing": "next_station",
-      "bound": "west"
-    },
-    {
-      "station_id": "dwarka_sector_-_21",
-      "station_name": "Dwarka Sector - 21",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "west"
-    },
-    {
-      "station_id": "dwarka_sector_-_21",
-      "station_name": "Dwarka Sector - 21",
-      "platform": "1",
       "missing": "next_station",
       "bound": "west"
     },
@@ -5595,37 +5469,9 @@
     {
       "station_id": "sector_55-56_(rapid_metro)",
       "station_name": "Sector 55-56 (Rapid Metro)",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": null
-    },
-    {
-      "station_id": "sector_55-56_(rapid_metro)",
-      "station_name": "Sector 55-56 (Rapid Metro)",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": null
-    },
-    {
-      "station_id": "sector_55-56_(rapid_metro)",
-      "station_name": "Sector 55-56 (Rapid Metro)",
       "platform": "2",
       "missing": "next_station",
       "bound": null
-    },
-    {
-      "station_id": "majlis_park",
-      "station_name": "Majlis Park",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "anticlockwise"
-    },
-    {
-      "station_id": "majlis_park",
-      "station_name": "Majlis Park",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "anticlockwise"
     },
     {
       "station_id": "majlis_park",
@@ -5647,20 +5493,6 @@
       "platform": "2",
       "missing": "next_station",
       "bound": "east"
-    },
-    {
-      "station_id": "brigadier_hoshiyar_singh",
-      "station_name": "Brigadier Hoshiyar Singh",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "west"
-    },
-    {
-      "station_id": "brigadier_hoshiyar_singh",
-      "station_name": "Brigadier Hoshiyar Singh",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "west"
     },
     {
       "station_id": "karkarduma_court",
@@ -5689,118 +5521,6 @@
       "platform": "1",
       "missing": "terminal",
       "bound": "clockwise"
-    },
-    {
-      "station_id": "maujpur_-_babarpur",
-      "station_name": "Maujpur - Babarpur",
-      "platform": "4",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "maujpur_-_babarpur",
-      "station_name": "Maujpur - Babarpur",
-      "platform": "4",
-      "missing": "next_station",
-      "bound": "south"
-    },
-    {
-      "station_id": "shiv_vihar",
-      "station_name": "Shiv Vihar",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "northeast"
-    },
-    {
-      "station_id": "shiv_vihar",
-      "station_name": "Shiv Vihar",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "northeast"
-    },
-    {
-      "station_id": "raja_nahar_singh",
-      "station_name": "Raja Nahar Singh",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "raja_nahar_singh",
-      "station_name": "Raja Nahar Singh",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "south"
-    },
-    {
-      "station_id": "shaheed_sthal_(new_bus_adda)",
-      "station_name": "Shaheed Sthal (New Bus Adda)",
-      "platform": "2",
-      "missing": "terminal",
-      "bound": "east"
-    },
-    {
-      "station_id": "shaheed_sthal_(new_bus_adda)",
-      "station_name": "Shaheed Sthal (New Bus Adda)",
-      "platform": "2",
-      "missing": "next_station",
-      "bound": "east"
-    },
-    {
-      "station_id": "noida_electronic_city",
-      "station_name": "Noida Electronic City",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "east"
-    },
-    {
-      "station_id": "noida_electronic_city",
-      "station_name": "Noida Electronic City",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "east"
-    },
-    {
-      "station_id": "dhansa_bus_stand",
-      "station_name": "Dhansa Bus Stand",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "west"
-    },
-    {
-      "station_id": "dhansa_bus_stand",
-      "station_name": "Dhansa Bus Stand",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "west"
-    },
-    {
-      "station_id": "noida_sector_51",
-      "station_name": "Noida Sector 51",
-      "platform": "1",
-      "missing": "terminal",
-      "bound": "north"
-    },
-    {
-      "station_id": "noida_sector_51",
-      "station_name": "Noida Sector 51",
-      "platform": "1",
-      "missing": "next_station",
-      "bound": "north"
-    },
-    {
-      "station_id": "depot_station",
-      "station_name": "Depot Station",
-      "platform": "3",
-      "missing": "terminal",
-      "bound": "south"
-    },
-    {
-      "station_id": "depot_station",
-      "station_name": "Depot Station",
-      "platform": "3",
-      "missing": "next_station",
-      "bound": "south"
     },
     {
       "station_id": "depot_station",

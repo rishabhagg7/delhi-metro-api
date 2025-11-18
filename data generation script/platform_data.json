@@ -118,11 +118,6 @@
       "terminal": "raja_nahar_singh",
       "next_station": "lal_quila",
       "bound": "south"
-    },
-    "6": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "north"
     }
   },
   "tis_hazari": {
@@ -284,11 +279,6 @@
       "terminal": "shaheed_sthal_(new_bus_adda)",
       "next_station": "rohini_west",
       "bound": "east"
-    },
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "west"
     }
   },
   "mundka": {
@@ -464,11 +454,6 @@
       "terminal": "huda_city_centre",
       "next_station": "rohini_sector_18-19",
       "bound": "south"
-    },
-    "2": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "north"
     }
   },
   "rohini_sector_18-19": {
@@ -936,11 +921,6 @@
     }
   },
   "huda_city_centre": {
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "south"
-    },
     "2": {
       "terminal": "samaypur_badli",
       "next_station": "iffco_chowk",
@@ -948,11 +928,6 @@
     }
   },
   "vaishali": {
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "east"
-    },
     "2": {
       "terminal": "dwarka_sector_-_21",
       "next_station": "kaushambi",
@@ -1080,11 +1055,6 @@
     }
   },
   "botanical_garden": {
-    "3": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "east"
-    },
     "4": {
       "terminal": "ip_extension",
       "next_station": "okhla_bird_sanctuary",
@@ -1352,11 +1322,6 @@
       "next_station": "moti_nagar",
       "bound": "west"
     },
-    "4": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "east"
-    },
     "3": {
       "terminal": "brigadier_hoshiyar_singh",
       "next_station": "satguru_ram_singh_marg",
@@ -1533,11 +1498,6 @@
       "next_station": "nangli",
       "bound": "east"
     },
-    "5": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "west"
-    },
     "1": {
       "terminal": "noida_electronic_city",
       "next_station": "dwarka_mor",
@@ -1638,11 +1598,6 @@
       "terminal": "noida_electronic_city",
       "next_station": "dwarka_sector_-_8",
       "bound": "east"
-    },
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "west"
     },
     "3": {
       "terminal": "new_delhi",
@@ -2261,12 +2216,6 @@
     }
   },
   "sector_55-56_(rapid_metro)": {
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": null,
-      "source": "infobox_intelligent"
-    },
     "2": {
       "terminal": "phase_3_(rapid_metro)",
       "next_station": null,
@@ -2275,11 +2224,6 @@
     }
   },
   "majlis_park": {
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "anticlockwise"
-    },
     "2": {
       "terminal": "maujpur_-_babarpur",
       "next_station": null,
@@ -2637,11 +2581,6 @@
       "terminal": "inderlok",
       "next_station": "bahadurgarh_city",
       "bound": "east"
-    },
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "west"
     }
   },
   "sir_vishweshwaraiah_moti_bagh": {
@@ -2803,11 +2742,6 @@
       "terminal": "shiv_vihar",
       "next_station": "gokulpuri",
       "bound": "north"
-    },
-    "4": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "south"
     }
   },
   "gokulpuri": {
@@ -2835,11 +2769,6 @@
     }
   },
   "shiv_vihar": {
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "northeast"
-    },
     "2": {
       "terminal": "majlis_park",
       "next_station": "johri_enclave",
@@ -2859,11 +2788,6 @@
     }
   },
   "raja_nahar_singh": {
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "south"
-    },
     "2": {
       "terminal": "kashmere_gate",
       "next_station": "sant_surdas_(sihi)",
@@ -2919,11 +2843,6 @@
     }
   },
   "shaheed_sthal_(new_bus_adda)": {
-    "2": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "east"
-    },
     "1": {
       "terminal": "rithala",
       "next_station": "hindon_river",
@@ -3075,11 +2994,6 @@
     }
   },
   "noida_electronic_city": {
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "east"
-    },
     "2": {
       "terminal": "dwarka_sector_-_21",
       "next_station": "noida_sector_76",
@@ -3111,11 +3025,6 @@
     }
   },
   "dhansa_bus_stand": {
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "west"
-    },
     "2": {
       "terminal": "dwarka",
       "next_station": "najafgarh",
@@ -3127,11 +3036,6 @@
       "terminal": "depot_station",
       "next_station": "noida_sector_50",
       "bound": "south"
-    },
-    "1": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "north"
     }
   },
   "noida_sector_50": {
@@ -3363,11 +3267,6 @@
     }
   },
   "depot_station": {
-    "3": {
-      "terminal": null,
-      "next_station": null,
-      "bound": "south"
-    },
     "2": {
       "terminal": "noida_sector_51",
       "next_station": "gnida_office",
