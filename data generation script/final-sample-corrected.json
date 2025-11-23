@@ -1,0 +1,407 @@
+[
+  {
+    "id": "kashmere_gate",
+    "name": "Kashmere Gate",
+    "coordinates": {
+      "latitude": 28.667879,
+      "longitude": 77.228012
+    },
+    "lines": [
+      {
+        "name": "red",
+        "dwell_time_seconds": 45
+      },
+      {
+        "name": "yellow",
+        "dwell_time_seconds": 45
+      },
+      {
+        "name": "violet",
+        "dwell_time_seconds": 45
+      }
+    ],
+    "connections": [
+      {
+        "to_station_id": "civil_lines",
+        "line": "yellow",
+        "travel_time_seconds": 120,
+        "terminal_station_id": "samaypur_badli",
+        "platform_number": "2",
+        "direction": "Northbound"
+      },
+      {
+        "to_station_id": "chandni_chowk",
+        "line": "yellow",
+        "travel_time_seconds": 120,
+        "terminal_station_id": "huda_city_centre",
+        "platform_number": "1",
+        "direction": "Southbound"
+      },
+      {
+        "to_station_id": "tis_hazari",
+        "line": "red",
+        "travel_time_seconds": 120,
+        "terminal_station_id": "rithala",
+        "platform_number": "3",
+        "direction": "Westbound"
+      },
+      {
+        "to_station_id": "shastri_park",
+        "line": "red",
+        "travel_time_seconds": 120,
+        "terminal_station_id": "shaheed_sthal_new_bus_adda",
+        "platform_number": "4",
+        "direction": "Eastbound"
+      },
+      {
+        "to_station_id": "lal_quila",
+        "line": "violet",
+        "travel_time_seconds": 120,
+        "terminal_station_id": "raja_nahar_singh",
+        "platform_number": "5",
+        "direction": "Southbound"
+      }
+    ],
+    "interchange_info": {
+      "is_interchange": true,
+      "interchange_lines": [
+        "red",
+        "yellow",
+        "violet"
+      ],
+      "walking_time_between_lines": [
+        {
+          "from_line": "red",
+          "to_line": "yellow",
+          "time_seconds": 180,
+          "from_platform": "3",
+          "from_direction": "Westbound",
+          "direction_options": [
+            {
+              "to_station_id": "chandni_chowk",
+              "terminal_station_id": "huda_city_centre",
+              "to_platform": "1",
+              "to_direction": "Southbound"
+            },
+            {
+              "to_station_id": "civil_lines",
+              "terminal_station_id": "samaypur_badli",
+              "to_platform": "2",
+              "to_direction": "Northbound"
+            }
+          ]
+        },
+        {
+          "from_line": "red",
+          "to_line": "yellow",
+          "time_seconds": 180,
+          "from_platform": "4",
+          "from_direction": "Eastbound",
+          "direction_options": [
+            {
+              "to_station_id": "chandni_chowk",
+              "terminal_station_id": "huda_city_centre",
+              "to_platform": "1",
+              "to_direction": "Southbound"
+            },
+            {
+              "to_station_id": "civil_lines",
+              "terminal_station_id": "samaypur_badli",
+              "to_platform": "2",
+              "to_direction": "Northbound"
+            }
+          ]
+        },
+        {
+          "from_line": "red",
+          "to_line": "violet",
+          "time_seconds": 180,
+          "from_platform": "3",
+          "from_direction": "Westbound",
+          "direction_options": [
+            {
+              "to_station_id": "lal_quila",
+              "terminal_station_id": "raja_nahar_singh",
+              "to_platform": "5",
+              "to_direction": "Southbound"
+            }
+          ]
+        },
+        {
+          "from_line": "red",
+          "to_line": "violet",
+          "time_seconds": 180,
+          "from_platform": "4",
+          "from_direction": "Eastbound",
+          "direction_options": [
+            {
+              "to_station_id": "lal_quila",
+              "terminal_station_id": "raja_nahar_singh",
+              "to_platform": "5",
+              "to_direction": "Southbound"
+            }
+          ]
+        },
+        {
+          "from_line": "yellow",
+          "to_line": "red",
+          "time_seconds": 180,
+          "from_platform": "1",
+          "from_direction": "Southbound",
+          "direction_options": [
+            {
+              "to_station_id": "tis_hazari",
+              "terminal_station_id": "rithala",
+              "to_platform": "3",
+              "to_direction": "Westbound"
+            },
+            {
+              "to_station_id": "shastri_park",
+              "terminal_station_id": "shaheed_sthal_new_bus_adda",
+              "to_platform": "4",
+              "to_direction": "Eastbound"
+            }
+          ]
+        },
+        {
+          "from_line": "yellow",
+          "to_line": "red",
+          "time_seconds": 180,
+          "from_platform": "2",
+          "from_direction": "Northbound",
+          "direction_options": [
+            {
+              "to_station_id": "tis_hazari",
+              "terminal_station_id": "rithala",
+              "to_platform": "3",
+              "to_direction": "Westbound"
+            },
+            {
+              "to_station_id": "shastri_park",
+              "terminal_station_id": "shaheed_sthal_new_bus_adda",
+              "to_platform": "4",
+              "to_direction": "Eastbound"
+            }
+          ]
+        },
+        {
+          "from_line": "yellow",
+          "to_line": "violet",
+          "time_seconds": 180,
+          "from_platform": "1",
+          "from_direction": "Southbound",
+          "direction_options": [
+            {
+              "to_station_id": "lal_quila",
+              "terminal_station_id": "raja_nahar_singh",
+              "to_platform": "5",
+              "to_direction": "Southbound"
+            }
+          ]
+        },
+        {
+          "from_line": "yellow",
+          "to_line": "violet",
+          "time_seconds": 180,
+          "from_platform": "2",
+          "from_direction": "Northbound",
+          "direction_options": [
+            {
+              "to_station_id": "lal_quila",
+              "terminal_station_id": "raja_nahar_singh",
+              "to_platform": "5",
+              "to_direction": "Southbound"
+            }
+          ]
+        },
+        {
+          "from_line": "violet",
+          "to_line": "red",
+          "time_seconds": 180,
+          "from_platform": "5",
+          "from_direction": "Southbound",
+          "direction_options": [
+            {
+              "to_station_id": "tis_hazari",
+              "terminal_station_id": "rithala",
+              "to_platform": "3",
+              "to_direction": "Westbound"
+            },
+            {
+              "to_station_id": "shastri_park",
+              "terminal_station_id": "shaheed_sthal_new_bus_adda",
+              "to_platform": "4",
+              "to_direction": "Eastbound"
+            }
+          ]
+        },
+        {
+          "from_line": "violet",
+          "to_line": "yellow",
+          "time_seconds": 180,
+          "from_platform": "5",
+          "from_direction": "Southbound",
+          "direction_options": [
+            {
+              "to_station_id": "chandni_chowk",
+              "terminal_station_id": "huda_city_centre",
+              "to_platform": "1",
+              "to_direction": "Southbound"
+            },
+            {
+              "to_station_id": "civil_lines",
+              "terminal_station_id": "samaypur_badli",
+              "to_platform": "2",
+              "to_direction": "Northbound"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "welcome",
+    "name": "Welcome",
+    "coordinates": {
+      "latitude": 28.671986,
+      "longitude": 77.277931
+    },
+    "lines": [
+      {
+        "name": "red",
+        "dwell_time_seconds": 45
+      },
+      {
+        "name": "pink",
+        "dwell_time_seconds": 45
+      }
+    ],
+    "connections": [
+      {
+        "to_station_id": "shahdara",
+        "line": "red",
+        "travel_time_seconds": 120,
+        "terminal_station_id": "shaheed_sthal_new_bus_adda",
+        "platform_number": "1",
+        "direction": "Southbound"
+      },
+      {
+        "to_station_id": "seelam_pur",
+        "line": "red",
+        "travel_time_seconds": 120,
+        "terminal_station_id": "rithala",
+        "platform_number": "2",
+        "direction": "Northbound"
+      },
+      {
+        "to_station_id": "east_azad_nagar",
+        "line": "pink",
+        "travel_time_seconds": 120,
+        "terminal_station_id": "majlis_park",
+        "platform_number": "1",
+        "direction": "Northbound"
+      },
+      {
+        "to_station_id": "jafrabad",
+        "line": "pink",
+        "travel_time_seconds": 120,
+        "terminal_station_id": "shiv_vihar",
+        "platform_number": "2",
+        "direction": "Southbound"
+      }
+    ],
+    "interchange_info": {
+      "is_interchange": true,
+      "interchange_lines": [
+        "red",
+        "pink"
+      ],
+      "walking_time_between_lines": [
+        {
+          "from_line": "red",
+          "to_line": "pink",
+          "time_seconds": 180,
+          "from_platform": "1",
+          "from_direction": "Southbound",
+          "direction_options": [
+            {
+              "to_station_id": "east_azad_nagar",
+              "terminal_station_id": "majlis_park",
+              "to_platform": "1",
+              "to_direction": "Northbound"
+            },
+            {
+              "to_station_id": "jafrabad",
+              "terminal_station_id": "shiv_vihar",
+              "to_platform": "2",
+              "to_direction": "Southbound"
+            }
+          ]
+        },
+        {
+          "from_line": "red",
+          "to_line": "pink",
+          "time_seconds": 180,
+          "from_platform": "2",
+          "from_direction": "Northbound",
+          "direction_options": [
+            {
+              "to_station_id": "east_azad_nagar",
+              "terminal_station_id": "majlis_park",
+              "to_platform": "1",
+              "to_direction": "Northbound"
+            },
+            {
+              "to_station_id": "jafrabad",
+              "terminal_station_id": "shiv_vihar",
+              "to_platform": "2",
+              "to_direction": "Southbound"
+            }
+          ]
+        },
+        {
+          "from_line": "pink",
+          "to_line": "red",
+          "time_seconds": 180,
+          "from_platform": "1",
+          "from_direction": "Northbound",
+          "direction_options": [
+            {
+              "to_station_id": "shahdara",
+              "terminal_station_id": "shaheed_sthal_new_bus_adda",
+              "to_platform": "1",
+              "to_direction": "Southbound"
+            },
+            {
+              "to_station_id": "seelam_pur",
+              "terminal_station_id": "rithala",
+              "to_platform": "2",
+              "to_direction": "Northbound"
+            }
+          ]
+        },
+        {
+          "from_line": "pink",
+          "to_line": "red",
+          "time_seconds": 180,
+          "from_platform": "2",
+          "from_direction": "Southbound",
+          "direction_options": [
+            {
+              "to_station_id": "shahdara",
+              "terminal_station_id": "shaheed_sthal_new_bus_adda",
+              "to_platform": "1",
+              "to_direction": "Southbound"
+            },
+            {
+              "to_station_id": "seelam_pur",
+              "terminal_station_id": "rithala",
+              "to_platform": "2",
+              "to_direction": "Northbound"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
